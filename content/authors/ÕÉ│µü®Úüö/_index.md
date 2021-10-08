@@ -1,6 +1,5 @@
 ---
-bio: My research interests include distributed robotics, mobile computing and programmable
-  matter.
+bio: My research interests include Agrometeorology, Soil Fertility and Machine Learning with Tidymodel
 education:
   courses:
   - course: MSc in Agrometeorology
@@ -9,7 +8,7 @@ education:
   - course: BSc in Soil Science
     institution: University of Calabar
     year: 2015
-email: ""
+email: "oluwafemioyedele908@gmail.com"
 interests:
 - Agrometeorology
 - Artificial Intelligence
