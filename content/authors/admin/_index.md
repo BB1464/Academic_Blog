@@ -8,7 +8,7 @@ education:
   - course: BSc in Soil Science
     institution: University of Calabar
     year: 2015
-email: ""
+email: "oluwafemioyedele908@gmail.com"
 highlight_name: true
 interests:
 - Agrometeorology
