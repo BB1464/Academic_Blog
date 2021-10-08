@@ -20,5 +20,5 @@ features = ["page builder", "widgets", "color themes", "dark mode", "customizabl
             "blog", "create landing pages", "gallery", "contact form"]
 
 [author]
-  name = "George Cushen"
-  homepage = "https://georgecushen.com"
+  name = "Oluwafemi Oyedele"
+  homepage =
