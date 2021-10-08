@@ -18,7 +18,7 @@ interests:
 organizations:
 - name: University of Ibadan
   url: https://www.stanford.edu/
-role: Agrometeorology
+role: MSc in Agrometeorology
 social:
 - icon: envelope
   icon_pack: fas
@@ -34,7 +34,7 @@ social:
   link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
 - icon: github
   icon_pack: fab
-  link: https://github.com/gcushen
+  link: https://github.com/BB1464
 - icon: linkedin
   icon_pack: fab
   link: https://www.linkedin.com/
@@ -42,6 +42,6 @@ superuser: true
 title: Oluwafemi Oyedele
 ---
 
-**Oluwafemi Oyedele** is a data analyst and R studio instructor. I earned my MSc. in Agrometeorology from the University of Ibadan, Nigeria, under the supervision of Prof. K. O. Oluwasemire, Dr. Stefan Hauser, Dr. Moses Ogunlade and Mr. Deo Gratias Hougni. My research focuses on statistical machine learning, soil fertility and agrometeorology. During the past few years, I discovered the power of the statistical programming language R. Since then I have turned into a big enthusiast, using the software almost every day for work and many private programming projects. I love analyzing data and making beautiful charts with R and I have mentored countless students and scientists in everything from experimental design to using R for creating figures for their publication. 
+**Oluwafemi Oyedele** is a data analyst and a R studio instructor. I earned my Master degree in Agrometeorology from the University of Ibadan, Nigeria, under the supervision of Prof. K. O. Oluwasemire, Dr. Stefan Hauser, Dr. Moses Ogunlade and Mr. Deo Gratias Hougni. My research focuses on machine learning, soil fertility and agrometeorology. During the past few years, I discovered the power of the statistical programming language R. Since then I have turned into a big enthusiast, using the software almost every day for work and many private programming projects. I love analyzing data and making beautiful charts with R and I have mentored countless students and scientists in everything from experimental design to using R for creating figures for their publication. 
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
