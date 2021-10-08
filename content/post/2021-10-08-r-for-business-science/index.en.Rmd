@@ -1,0 +1,22 @@
+---
+title: R for Business Science
+author: Oluwafemi Oyedele
+date: '2021-10-08'
+slug: r-for-business-science
+categories:
+  - R
+tags:
+  - regression
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-10-08T02:16:40-11:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+# R is a very powerful programming language

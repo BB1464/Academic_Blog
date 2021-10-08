@@ -1,6 +1,5 @@
 ---
-bio: My research interests include distributed robotics, mobile computing and programmable
-  matter.
+bio: My research interests include Agrometeorology, Soil Fertility and Machine Learning with Tidyverse.
 education:
   courses:
   - course: MSc in Agrometeorology 
