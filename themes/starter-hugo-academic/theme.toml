@@ -40,8 +40,8 @@ features = ["page builder", "widgets", "themes", "search", "research publication
             "blog", "create courses", "talks", "events", "slides", "gallery", "contact form"]
 
 [author]
-  name = "George Cushen"
-  homepage = "https://georgecushen.com"
+  name = "Oluwafemi Oyedele"
+  homepage =
 
 # If porting an existing theme
 [original]
