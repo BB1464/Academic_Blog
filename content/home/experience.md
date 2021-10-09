@@ -23,7 +23,7 @@ date_format: Jan 2006
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
   - title: Research Fellow
-    company: IITA
+    company: International Institute of Tropical Agriculture (IITA)
     company_url: ''
     # company_logo: org-gc
     location: Ibadan

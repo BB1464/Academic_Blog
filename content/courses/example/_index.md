@@ -2,7 +2,7 @@
 date: "2021-01-24"
 linkTitle: Data Science
 summary: This course is all about applying the tidyverse principle to solve real world problem.
-title: "\U0001F4CA Learn Data Science using the tidyverse"
+title: "\U0001F4CA Learn Data Science using the Tidyverse"
 type: book
 ---
 

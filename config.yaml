@@ -6,7 +6,7 @@ theme: "starter-hugo-academic"
 
 title:  Home # Website name
 baseurl: 'http://ecstatic-shirley-fb74e8.netlify.app/' # Website URL
-copyright: '' # Footer text, e.g. '© {year} Me'
+copyright: ''  #Footer text, e.g. '© {year} Me'
 
 ############################
 ## LANGUAGE

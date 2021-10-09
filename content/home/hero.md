@@ -2,9 +2,9 @@
 widget: hero
 headless: true
 weight: 10
-title: 
+title:  
 hero_media: hero-academic.png
-cta:
+cta: 
 cta_alt:
   label: 
 cta_note: 
@@ -18,7 +18,9 @@ design:
 advanced:
   css_class: fullscreen
 ---
-  Hi,my name is Oluwafemi Oyedele. Welcome to my website !!!
+  
+  
+  Hi, my name is **Oluwafemi Oyedele**. Welcome to my website !!!
 
    
 
