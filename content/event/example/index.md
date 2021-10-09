@@ -1,37 +1,34 @@
 ---
-abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellusac
-  convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac
-  faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien
-  eu, pulvinar tempor diam.
+abstract: I will be presenting the introduction to R using the tidyverse principles to research fellow at IITA, Hubs, in West and Central Africa. I will also explain to them some of the best practices on how to use R inorder for them to overcome the steap learning curve.
 address:
-  city: Stanford
-  country: United States
+  city: Ibadan
+  country: Nigeria
   postcode: "94305"
-  region: CA
+  region: NG
   street: 450 Serra Mall
 all_day: false
 authors: []
-date: "2030-06-01T13:00:00Z"
-date_end: "2030-06-01T15:00:00Z"
-event: Wowchemy Conference
-event_url: https://example.org
+date: "2021-11-01T13:00:00Z"
+date_end: "2021-11-01T15:00:00Z"
+event: IARSAF Training for Research Fellow
+# event_url: https://example.org
 featured: false
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/bzdhc5b3Bxs)'
+  caption: 'Image credit: [**Oluwafemi Oyedele**](https://unsplash.com/photos/bzdhc5b3Bxs)'
   focal_point: Right
 links:
 - icon: twitter
   icon_pack: fab
   name: Follow
   url: https://twitter.com/georgecushen
-location: Wowchemy HQ
+location: IITA West Africa Hub, Ibadan
 projects:
 - internal-project
 publishDate: "2017-01-01T00:00:00Z"
 slides: example
-summary: An example talk using Wowchemy's Markdown slides feature.
+#summary: An example talk using Wowchemy's Markdown slides feature.
 tags: []
-title: Example Talk
+title: Introduction to R using the Tidyverse Principles
 url_code: ""
 url_pdf: ""
 url_slides: ""
