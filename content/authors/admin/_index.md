@@ -12,11 +12,11 @@ email: "oluwafemioyedele908@gmail.com"
 highlight_name: true
 interests:
 - Agrometeorology
-- Artificial Intelligence
-- Machine Learning with Tidymodels
+- Soil Fertility
+- Predictive Modelling using DSSAT and Tidymodel in R
 organizations:
 - name: University of Ibadan
-  url: https://www.stanford.edu/
+  # url: https://www.stanford.edu/
 role: MSc in Agrometeorology
 social:
 - icon: envelope

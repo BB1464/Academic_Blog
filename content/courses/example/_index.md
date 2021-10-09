@@ -1,8 +1,8 @@
 ---
 date: "2021-01-24"
 linkTitle: Data Science
-summary: An example of using Wowchemy's Book layout for publishing online courses.
-title: "\U0001F4CA Learn Data Science"
+summary: An example of using the tidyverse to solve real world problem.
+title: "\U0001F4CA Data Management using the Tidyverse"
 type: book
 ---
 
@@ -12,13 +12,13 @@ type: book
 
 ## What you will learn
 
-- Fundamental {{<hl>}}Python programming skills{{</hl>}}
+- Fundamentals {{<hl>}}of the Tidyverse{{</hl>}}
 - {{<hl>}}Statistical concepts{{</hl>}} and how to apply them in practice
-- Gain experience with the {{<hl>}}Scikit{{</hl>}}, including data visualization with {{<hl>}}Plotly{{</hl>}} and data wrangling with {{<hl>}}Pandas{{</hl>}}
+- Gain experience with the {{<hl>}}Data management workflow in R{{</hl>}}, including data visualization with {{<hl>}}ggplot2{{</hl>}} and data wrangling with {{<hl>}}dplyr{{</hl>}}
 
 ## Program overview
 
-The demand for skilled data science practitioners is rapidly growing. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi.
+The demand for skilled data science practitioners is rapidly growing. This course will expose you to how to use the tidyverse to solve real world problem.
 
 ## Courses in this program
 
@@ -38,4 +38,4 @@ There are no prerequisites for the first course.
 Continuously, at your own pace.
 {{< /spoiler >}}
 
-{{< cta cta_text="Begin the course" cta_link="python" >}}
+{{< cta cta_text="Begin the course" cta_link="R" >}}
