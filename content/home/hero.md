@@ -18,8 +18,7 @@ design:
 advanced:
   css_class: fullscreen
 ---
-  Oluwafemi Oyedele
+  Hi,my name is Oluwafemi Oyedele. Welcome to my website !!!
 
-   Msc,University of Ibadan, Nigeria
-
+   
 

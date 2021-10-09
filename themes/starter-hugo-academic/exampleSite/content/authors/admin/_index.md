@@ -1,16 +1,15 @@
 ---
 # Display name
-title: Alice Bighetti (吳恩達)
-
+title: Oluwafemi Oyedele
 # Is this the primary user of the site?
 superuser: true
 
 # Role/position/tagline
-role: Professor of Artificial Intelligence
+role: Agrometeorology
 
 # Organizations/Affiliations to show in About widget
 organizations:
-- name: Stanford University
+- name: University of Ibadan
   url: https://www.stanford.edu/
 
 # Short bio (displayed in user profile at end of posts)
@@ -18,22 +17,19 @@ bio: My research interests include distributed robotics, mobile computing and pr
 
 # Interests to show in About widget
 interests:
-- Artificial Intelligence
-- Computational Linguistics
-- Information Retrieval
+- Agrometeorology
+- Soil Fertility
+- Predictive Modelling using DSSAT and Tidymodels Package in R
 
 # Education to show in About widget
 education:
   courses:
-  - course: PhD in Artificial Intelligence
-    institution: Stanford University
-    year: 2012
-  - course: MEng in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2009
-  - course: BSc in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2008
+  - course: MSc in Agrometeorology
+    institution: University of Ibadan
+    year: 2021
+  - course: BSc in Soil Science
+    institution: University of Calabar
+    year: 2015
 
 # Social/Academic Networking
 # For available icons, see: https://wowchemy.com/docs/getting-started/page-builder/#icons
