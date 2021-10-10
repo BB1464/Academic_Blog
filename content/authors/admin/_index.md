@@ -15,6 +15,7 @@ interests:
 - Predictive modelling 
 - R programming
 - Time series analysis and forecasting
+- Geospatial analysis
 organizations:
 - name: University of Ibadan
   url: https://www.stanford.edu/
