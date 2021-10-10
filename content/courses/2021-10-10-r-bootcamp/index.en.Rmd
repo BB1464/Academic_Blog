@@ -1,0 +1,22 @@
+---
+title: R Bootcamp
+author: Oluwafemi Oyedele
+date: '2021-10-10'
+slug: r-bootcamp
+categories: []
+tags:
+  - R
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-10-10T04:33:22-11:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+
+A 3-day workshop introducing the Tidyverse, basic modelling, and R markdown. In the R Bootcamp, you will learn reading, transforming, tidying, and visualizing data. You'll also learn the basics of modelling in R and how to write reproducible documents with R Markdown.

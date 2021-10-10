@@ -34,16 +34,16 @@ experience:
         
         * Analysing
         * Modelling
-        * Writting of Report
+        * Writting Report
         
-  - title: Data Analyst 
+  - title: Business Scientist 
     company: University of Ibadan
     company_url: ''
     # company_logo: org-x
     location: Ibadan
     date_start: '2018-01-01'
     date_end: 
-    description: I was involved in analyzing and teaching students on how to use R statistical software.
+    description: I was involved in analyzing and teaching students on how to use R statistical software for reproducible research.
 
 design:
   columns: '2'

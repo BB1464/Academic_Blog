@@ -11,8 +11,9 @@ education:
 email: "oluwafemioyedele908@gmail.com"
 interests:
 - Agrometeorology
-- Artificial Intelligence
-- Machine Learning with Tidymodels
+- Soil Fertility
+- Statistical modelling
+- Programming
 organizations:
 - name: University of Ibadan
   url: ""

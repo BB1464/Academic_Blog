@@ -1,0 +1,22 @@
+---
+title: Fundamentals of Data Visualization with ggplot2 Bootcamp
+author: Oluwafemi Oyedele
+date: '2021-10-10'
+slug: fundamentals-of-data-visualization-with-ggplot2-bootcamp
+categories: []
+tags:
+  - ggplot2
+  - R
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-10-10T04:36:58-11:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+A 1/3-day workshop that take your ggplot2 data visualizations to the next level. You'll create beautiful, expressive plots that communicate effectively. You'll learn highlighting, direct labelling, annotation, combining plots and more.

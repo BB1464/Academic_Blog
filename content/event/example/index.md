@@ -1,5 +1,5 @@
 ---
-abstract: I will be presenting the introduction to R using the tidyverse principles to research fellow at IITA, Hubs, in West and Central Africa. I will also explain to them some of the best practices on how to use R inorder for them to overcome the steap learning curve.
+abstract: I will be presenting the introduction to R using the tidyverse principles to research fellow at the International Institute of Tropical Agriculture (IITA), Ibadan, Nigeria. I will also explain to them some of the best practices on how to use R, so that they can overcome they can easily overcome the steap learning curve of R.
 address:
   city: Ibadan
   country: Nigeria
