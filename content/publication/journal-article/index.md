@@ -6,7 +6,7 @@ author_notes:
 authors:
 - admin
 date: "2019-09-01T00:00:00Z"
-doi: ""
+doi: "https://doi.org/10.9734/ajaar/2019/v10i430036"
 featured: false
 image:
   caption: 'Image credit: [**Oluwafemi Oyedele**](https://unsplash.com/photos/jdD8gXaTZsc)'
@@ -32,4 +32,8 @@ title: journal article
 # url_source: ""
 # url_video: ""
 ---
+<style>
+body{
+text-align: justify}
+</style>
 

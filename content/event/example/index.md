@@ -35,3 +35,7 @@ url_slides: ""
 url_video: ""
 ---
 
+<style>
+body{
+text-align: justify}
+</style>

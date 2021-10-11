@@ -34,3 +34,10 @@ Tuples
 {{< spoiler text="Is Python case-sensitive?" >}}
 Yes
 {{< /spoiler >}}
+
+
+<style>
+body{
+text-align: justify}
+</style>
+

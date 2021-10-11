@@ -20,7 +20,11 @@ advanced:
 ---
   
   
-  Hi, my name is **Oluwafemi Oyedele**. Welcome to my website !!!
+  Hi, my name is **Oluwafemi Oyedele**. Welcome to my page !!!
 
    
+<style>
+body{
+text-align: justify}
+</style>
 

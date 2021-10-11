@@ -23,7 +23,7 @@ publication_types:
 #   ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
 tags:
 # - Source Themes
-title: An example preprint / working paper
+title: Preprint / working paper
 # url_code: https://github.com/wowchemy/wowchemy-hugo-themes
 # url_dataset: '#'
 # url_pdf: http://arxiv.org/pdf/1512.04133v1
@@ -34,3 +34,7 @@ title: An example preprint / working paper
 # url_video: '#'
 ---
 
+<style>
+body{
+text-align: justify}
+</style>

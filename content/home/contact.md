@@ -28,3 +28,8 @@ content:
 design:
   columns: '2'
 ---
+
+<style>
+body{
+text-align: justify}
+</style>

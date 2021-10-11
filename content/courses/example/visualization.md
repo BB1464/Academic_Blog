@@ -5,8 +5,7 @@ title: Visualization
 type: book
 weight: 30
 ---
-
-Learn how to visualize data with Plotly.
+Learn how to visualize data with ggplot2.
 
 <!--more-->
 
@@ -22,11 +21,17 @@ Learn how to visualize data with Plotly.
 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 {{< /spoiler >}}
 
-{{< spoiler text="Write Plotly code to render a bar chart" >}}
-```python
-import plotly.express as px
-data_canada = px.data.gapminder().query("country == 'Canada'")
-fig = px.bar(data_canada, x='year', y='pop')
-fig.show()
+{{< spoiler text="Write ggplot2 code to render a bar chart" >}}
+```{r}
+data(mtcars)
+library(ggplot2)
+ggplot(mtcars,aes(mpg,hp))+geom_point()
 ```
 {{< /spoiler >}}
+
+
+<style>
+body{
+text-align: justify}
+</style>
+

@@ -1,5 +1,5 @@
 ---
-title: Recent & Upcoming Talks
+title: Recent and Upcoming Talks
 
 # View.
 #   1 = List
@@ -12,3 +12,7 @@ header:
   caption: ""
   image: ""
 ---
+<style>
+body{
+text-align: justify}
+</style>

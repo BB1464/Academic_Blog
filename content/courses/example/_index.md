@@ -14,7 +14,7 @@ type: book
 
 - Fundamental {{<hl>}}Tidyverse programming skills{{</hl>}}
 - {{<hl>}}Data management{{</hl>}} using the tidyverse
-- Gain experience with the {{<hl>}}Scikit{{</hl>}}, including data visualization with {{<hl>}}ggplot2{{</hl>}} and data wrangling with {{<hl>}}dplyr, lubridate and forcat{{</hl>}}
+- Gain experience with the {{<hl>}}Tidyverse{{</hl>}}, including data visualization with {{<hl>}}ggplot2{{</hl>}} and data wrangling with {{<hl>}}dplyr, lubridate and forcat{{</hl>}}
 
 ## Program overview
 
@@ -39,3 +39,10 @@ Continuously, at your own pace.
 {{< /spoiler >}}
 
 {{< cta cta_text="Begin the course" cta_link="python" >}}
+
+
+<style>
+body{
+text-align: justify}
+</style>
+

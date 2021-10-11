@@ -39,3 +39,7 @@ design:
   #   4 = Citation (publication only)
   view: 2
 ---
+<style>
+body{
+text-align: justify}
+</style>

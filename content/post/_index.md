@@ -6,3 +6,7 @@ header:
 title: Post
 view: 2
 ---
+<style>
+body{
+text-align: justify}
+</style>

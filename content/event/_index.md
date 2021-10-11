@@ -2,6 +2,11 @@
 header:
   caption: ""
   image: ""
-title: Recent & Upcoming Talks
+title: Recent and Upcoming Talks
 view: 2
 ---
+
+<style>
+body{
+text-align: justify}
+</style>
