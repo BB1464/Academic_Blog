@@ -5,7 +5,7 @@
     <link>http://ecstatic-shirley-fb74e8.netlify.app/publication/</link>
       <atom:link href="http://ecstatic-shirley-fb74e8.netlify.app/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>Publications</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 01 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 21 Jan 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>http://ecstatic-shirley-fb74e8.netlify.app/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_3.png</url>
       <title>Publications</title>
@@ -13,7 +13,19 @@
     </image>
     
     <item>
-      <title>journal article</title>
+      <title>Evaluation of Saturated Hydraulic Characteristics and its Influence on Some Physical and Chemical Properties of Soils Developed on Coastal Plain Sands of Obufa Esuk Orok in Calabar, Cross River State, Nigeria</title>
+      <link>http://ecstatic-shirley-fb74e8.netlify.app/publication/journal-articles/</link>
+      <pubDate>Thu, 21 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>http://ecstatic-shirley-fb74e8.netlify.app/publication/journal-articles/</guid>
+      <description>&lt;style&gt;
+body{
+text-align: justify}
+&lt;/style&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Evaluation of Infiltration Characteristics of Soils Developed on Coastal Plain Sands in Calabar Municipality Local Government Area, Cross River State, Nigeria.</title>
       <link>http://ecstatic-shirley-fb74e8.netlify.app/publication/journal-article/</link>
       <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
       <guid>http://ecstatic-shirley-fb74e8.netlify.app/publication/journal-article/</guid>
@@ -29,11 +41,7 @@ text-align: justify}
       <link>http://ecstatic-shirley-fb74e8.netlify.app/publication/conference-paper/</link>
       <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
       <guid>http://ecstatic-shirley-fb74e8.netlify.app/publication/conference-paper/</guid>
-      <description>&lt;style&gt;
-body{
-text-align: justify}
-&lt;/style&gt;
-</description>
+      <description></description>
     </item>
     
     <item>
