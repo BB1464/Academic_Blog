@@ -1,5 +1,5 @@
 ---
-abstract: I will be presenting the introduction to R using the tidyverse principles to research fellow at the International Institute of Tropical Agriculture (IITA), Ibadan, Nigeria. I will also explain to them the basic functions of data import, data management and then I will introduce them to data visualization using ggplot2. 
+abstract: I will be presenting the introduction to R using the tidyverse principles to research fellows at the International Institute of Tropical Agriculture (IITA), Ibadan, Nigeria. I will also explain to them the basic functions of data import, data management and then I will introduce them to data visualization using ggplot2. 
 address:
   city: Ibadan
   country: Nigeria

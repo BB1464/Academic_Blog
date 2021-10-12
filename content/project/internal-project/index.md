@@ -23,8 +23,7 @@ url_video: ""
 # **Contribution of cocoa litter to nutrients recycling in low-shade Southwestern Nigeria**.
  
 
-This was my research work in which I conducted at the International Institute of Tropical Agriculture (IITA), Ibadan as a resesrch fellow that led to the award of my MSc degree in the department of Soil Resources Management at the University of Ibadan, Nigeria.
-
+Contribution of cocoa litter to nutrients recycling in low-shade Southwestern Nigeria. This was my research work in which I conducted at the International Institute of Tropical Agriculture (IITA), Ibadan as a research fellow that led to the award of my MSc degree in the department of Soil Resources Management at the University of Ibadan, Nigeria.
 
 <style>
 body{
