@@ -1,15 +1,17 @@
 ---
-abstract: I will be presenting the introduction to R using the tidyverse principles to research fellow at the International Institute of Tropical Agriculture (IITA), Ibadan, Nigeria. I will also explain to them the basic functions of data import, data management and then I will introduce them to data visualization using ggplot2.
+abstract: I will be presenting the introduction to R using the tidyverse principles to research fellow at the International Institute of Tropical Agriculture (IITA), Ibadan, Nigeria. I will also explain to them the basic functions of data import, data management and then I will introduce them to data visualization using ggplot2. 
 address:
   city: Ibadan
   country: Nigeria
-  postcode: "94305"
+  postcode: "5320"
   region: NG
-  street: 450 Serra Mall
+  street: Akingbile Street, Oyo Road, Ibadan
 all_day: false
 authors: []
-date: "2021-11-01T13:00:00Z"
-date_end: "2021-11-01T15:00:00Z"
+date: "2021-11-22T10:00:15Z"
+date_end: "2021-11-24T12:00:00Z"
+#date: "2021-11-01T15:00:15Z"
+#date_end: "2021-11-01T15:00:00Z"
 event: IARSAF Training for Research Fellow
 # event_url: https://example.org
 featured: false
@@ -24,7 +26,7 @@ links:
 location: IITA West Africa Hub, Ibadan
 projects:
 - internal-project
-publishDate: "2017-01-01T00:00:00Z"
+publishDate: "2021-10-01T00:00:00Z"
 #slides: example
 #summary: An example talk using Wowchemy's Markdown slides feature.
 tags: []

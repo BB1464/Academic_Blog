@@ -154,9 +154,6 @@ collections:
       - label: Academic
         value: ai
       widget: select
-    - label: Icon (see https://wowchemy.com/docs/page-builder/#icons)
-      name: icon
-      widget: string
     - label: Label (tooltip)
       name: label
       required: false
@@ -383,10 +380,6 @@ collections:
         value: ai
       required: false
       widget: select
-    - label: Icon (see https://wowchemy.com/docs/page-builder/#icons)
-      name: icon
-      required: false
-      widget: string
     label: Links
     name: links
     required: false
@@ -725,12 +718,7 @@ collections:
     name: tags
     required: false
     widget: list
-  - fields:
-    - default: black
-      label: Theme (see https://github.com/hakimel/reveal.js#theming)
-      name: theme
-      required: false
-      widget: string
+  - fields: null
     label: Slide options
     name: slides
     required: false

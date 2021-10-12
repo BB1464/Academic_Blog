@@ -113,7 +113,7 @@ collections:
               - {label: "Regular", value: "far"}
               - {label: "Brand", value: "fab"}
               - {label: "Academic", value: "ai"}
-          - {label: Icon (see https://wowchemy.com/docs/page-builder/#icons), name: icon, widget: string}
+          #- {label: Icon (see https://wowchemy.com/docs/page-builder/#icons), name: icon, widget: string}
           - {label: Label (tooltip), name: label, widget: string, required: false}
           - label: Display in About widget and...
             name: display
@@ -263,7 +263,7 @@ collections:
               - {label: "Regular", value: "far"}
               - {label: "Brand", value: "fab"}
               - {label: "Academic", value: "ai"}
-          - {label: "Icon (see https://wowchemy.com/docs/page-builder/#icons)", name: icon, widget: string, required: false}
+          #- {label: "Icon (see https://wowchemy.com/docs/page-builder/#icons)", name: icon, widget: string, required: false}
       - label: "Featured Image"
         name: "image"
         required: false
@@ -470,7 +470,7 @@ collections:
         required: false
         widget: object
         fields:
-          - { label: "Theme (see https://github.com/hakimel/reveal.js#theming)", name: theme, widget: string, required: false, default: black }
+          #- { label: "Theme (see https://github.com/hakimel/reveal.js#theming)", name: theme, widget: string, required: false, default: black }
       - label: "Featured Image"
         name: "image"
         required: false

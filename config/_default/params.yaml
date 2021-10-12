@@ -30,8 +30,8 @@ address:
   country: Nigeria
   country_code: NG
 coordinates:
-  latitude: '37.4275'
-  longitude: '-122.1697'
+  latitude: '7.452'
+  longitude: '3.8835'
 # directions: Enter Building 1 and take the stairs to Office 200 on Floor 2
 office_hours:
   - 'Monday 10:00 to 05:00 PM'
