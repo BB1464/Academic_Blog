@@ -37,7 +37,14 @@ url_slides: ""
 url_video: ""
 ---
 
+<style type="text/css">
+
+h1.title {
+  font-size: 12px;
+  color: Dark;
+  text-align: centre;
+}
+
 <style>
 body{
 text-align: justify}
-</style>

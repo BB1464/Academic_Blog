@@ -40,6 +40,13 @@ Continuously, at your own pace.
 
 {{< cta cta_text="Begin the course" cta_link="python" >}}
 
+<style type="text/css">
+
+h1.title {
+  font-size: 12px;
+  color: Dark;
+  text-align: centre;
+}
 
 <style>
 body{

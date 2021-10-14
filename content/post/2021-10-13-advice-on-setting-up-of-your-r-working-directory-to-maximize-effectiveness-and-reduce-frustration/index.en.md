@@ -47,8 +47,20 @@ I agree with this opinion from Jenny Bryan! Here I explain why these habits can 
 
 In conclusion projects can not only help solve the problems of *setwd()* but also *rm(list=ls())*. The need for *setwd()* is automatically eliminated by using projects because the default directory will be wherever the project is located. You can learn more by reading the vignette of the here package.
 
+
+<style type="text/css">
+
+h1.title {
+  font-size: 12px;
+  color: Dark;
+  text-align: centre;
+}
+
 <style>
 body{
 text-align: justify}
-</style>
+
+
+
+
 

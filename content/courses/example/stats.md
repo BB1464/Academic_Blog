@@ -32,6 +32,14 @@ The variance of the distribution is $\sigma^{2}$.
 The parameter $\mu$ is the mean or expectation of the distribution.
 {{< /spoiler >}}
 
+<style type="text/css">
+
+h1.title {
+  font-size: 12px;
+  color: Dark;
+  text-align: centre;
+}
+
 <style>
 body{
 text-align: justify}

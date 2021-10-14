@@ -30,6 +30,14 @@ ggplot(mtcars,aes(mpg,hp))+geom_point()
 {{< /spoiler >}}
 
 
+<style type="text/css">
+
+h1.title {
+  font-size: 12px;
+  color: Dark;
+  text-align: centre;
+}
+
 <style>
 body{
 text-align: justify}

@@ -20,7 +20,7 @@ advanced:
 ---
   
   
-  Hi there! I'm **Oluwafemi Oyedele** the guy behind statistical inference, a data science consulting firm. Welcome !!!
+  Hi there! I'm **Oluwafemi Oyedele**, Welcome !!!
 
    
 <style>
