@@ -13,7 +13,7 @@ interests:
 - Agrometeorology
 - Soil Fertility
 - Statistical modelling
-- rogramming
+- Programming
 organizations:
 - name: University of Ibadan
   url: ""
