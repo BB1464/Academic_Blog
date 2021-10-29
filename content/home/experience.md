@@ -36,7 +36,7 @@ experience:
         * Modelling
         * Writting Report
         
-  - title: Business Scientist 
+  - title: Data Scientist 
     company: University of Ibadan
     company_url: ''
     # company_logo: org-x
