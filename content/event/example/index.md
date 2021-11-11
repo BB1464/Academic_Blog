@@ -8,8 +8,8 @@ address:
   street: Akingbile Street, Oyo Road, Ibadan
 all_day: false
 authors: []
-date: "2021-11-22T10:00:15Z"
-date_end: "2021-11-24T12:00:00Z"
+date: "2021-11-15T10:00:15Z"
+date_end: "2021-11-19T12:00:00Z"
 #date: "2021-11-01T15:00:15Z"
 #date_end: "2021-11-01T15:00:00Z"
 event: IARSAF Training for Research Fellow
