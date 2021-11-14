@@ -8,7 +8,7 @@ address:
   street: Akingbile Street, Oyo Road, Ibadan
 all_day: false
 authors: []
-date: "2021-11-15T10:00:15Z"
+date: "2021-11-15T10:00:16Z"
 date_end: "2021-11-19T12:00:00Z"
 #date: "2021-11-01T15:00:15Z"
 #date_end: "2021-11-01T15:00:00Z"
