@@ -15,6 +15,7 @@ interests:
 - Statistical modelling
 - Programming
 - Reproducible research
+
 organizations:
 - name: University of Ibadan
   url: ""
