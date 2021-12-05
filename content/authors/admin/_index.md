@@ -12,10 +12,13 @@ email: "oluwafemioyedele908@gmail.com"
 highlight_name: true
 interests:
 - Agrometeorology
+- Soil Fertility
 - Predictive modelling 
 - R programming
-- Time series analysis and forecasting
+- Time series analysis
 - Geospatial analysis
+- Reproducible research
+
 organizations:
 - name: University of Ibadan
   url: 
