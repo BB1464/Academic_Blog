@@ -3,9 +3,15 @@ authors: []
 categories: []
 date: "2019-02-05T00:00:00Z"
 slides:
+<<<<<<< HEAD
   highlight_style: dracula
   theme: black
 summary: 
+=======
+highlight_style: dracula
+theme: black
+summary: An introduction to using Wowchemy's Slides feature.
+>>>>>>> main
 tags: []
 title: Slides
 ---

@@ -1,11 +1,11 @@
 ---
 date: "2021-01-01"
-title: Python basics
+title: R basics
 type: book
 weight: 20
 ---
 
-Build a foundation in Python.
+Build a foundation in R.
 
 <!--more-->
 
@@ -31,7 +31,7 @@ Tuples
 - Syntax: `a_tuple = (1, 2.0, 'Hello world')`
 {{< /spoiler >}}
 
-{{< spoiler text="Is Python case-sensitive?" >}}
+{{< spoiler text="Is R case-sensitive?" >}}
 Yes
 {{< /spoiler >}}
 

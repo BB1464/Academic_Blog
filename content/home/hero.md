@@ -2,6 +2,7 @@
 widget: hero
 headless: true
 weight: 10
+<<<<<<< HEAD
 title:  
 hero_media: hero-academic.png
 cta: 
@@ -12,12 +13,27 @@ cta_note:
     
 design:
   background: 
+=======
+title: 
+hero_media: hero-academic.png
+cta:
+  label: 
+  url: 
+cta_alt:
+  label: 
+  url: 
+cta_note:
+  label: >-
+design: 
+  background:
+>>>>>>> main
     gradient_end: '#1976d2'
     gradient_start: '#004ba0'
     text_color_light: true
 advanced:
   css_class: fullscreen
 ---
+<<<<<<< HEAD
   
   
   Hi there! I'm **Oluwafemi Oyedele**, Welcome !!!
@@ -28,3 +44,9 @@ body{
 text-align: justify}
 </style>
 
+=======
+
+ Oluwafemi Oyedele
+ 
+ MSc, Agrometeorology, University of Ibadan, Nigeria
+>>>>>>> main

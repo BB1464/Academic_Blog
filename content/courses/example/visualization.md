@@ -5,6 +5,10 @@ title: Visualization
 type: book
 weight: 30
 ---
+<<<<<<< HEAD
+=======
+
+>>>>>>> main
 Learn how to visualize data with ggplot2.
 
 <!--more-->

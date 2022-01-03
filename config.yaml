@@ -5,8 +5,13 @@ theme: "starter-hugo-academic"
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 title:  Home # Website name
+<<<<<<< HEAD
 baseurl: 'https://statisticalinference.netlify.app/' # Website URL
 copyright: ''  #Footer text, e.g. '© {year} Me'
+=======
+baseurl: 'http://ecstatic-shirley-fb74e8.netlify.app/' # Website URL
+copyright: '' # Footer text, e.g. '© {year} Me'
+>>>>>>> main
 
 ############################
 ## LANGUAGE
