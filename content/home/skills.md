@@ -32,6 +32,18 @@ feature:
   icon: chart-line
   icon_pack: fas
   name: Statistics
+- description: 60%
+  icon: chart-line
+  name: Agricultural experimentation
+  icon_pack: fas
+- description: 90%
+  icon: pagelines
+  name: Plant Breeding
+  icon_pack: fab
+- description: 90%
+  icon: markdown
+  name: Reproducible research
+  icon_pack: fab
 - description: 30%
   icon: js
   icon_pack: fab
@@ -40,7 +52,8 @@ feature:
   icon: camera-retro
   icon_pack: fas
   name: Photography
-
+  
+  
 # - description: 'I began learning JavaScript this past year, specifically using <a href = #"https://www.jspsych.org/" target="_blank" rel="noopener noreferrer" style="color: #F76F8E">jspsych</a> to #run some of my computer-based experiments online.'
 #   icon: js
 #   icon_pack: fab
