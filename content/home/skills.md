@@ -41,17 +41,17 @@ feature:
   icon_pack: ai
   name: Open Science Framework
 
-# - description: 'I began learning JavaScript this past year, specifically using <a href = "https://www.jspsych.org/" target="_blank" rel="noopener noreferrer" style="color: #F76F8E">jspsych</a> to run some of my computer-based experiments online.'
+# - description: 'I began learning JavaScript this past year, specifically using <a href = #"https://www.jspsych.org/" target="_blank" rel="noopener noreferrer" style="color: #F76F8E">jspsych</a> to #run some of my computer-based experiments online.'
 #   icon: js
 #   icon_pack: fab
 #   name: JavaScript
 
-# - description: 'In addition to JavaScript, I often use Python to code my psychology experiments. I have a couple of years of experience using Python.'
+# - description: 'In addition to JavaScript, I often use Python to code my psychology experiments. I have a #couple of years of experience using Python.'
 #   icon: python
 #   icon_pack: fab
 #   name: Python
-#   
-# - description: 'I am an avid supporter of open science and greatly value their mission to "increase the openness, integrity, and reproducibility of scientific research."'
+
+# - description: 'I am an avid supporter of open science and greatly value their mission to "increase the #openness, integrity, and reproducibility of scientific research."'
 #   icon: osf
 #   icon_pack: ai
 #   name: Open Science Framework
