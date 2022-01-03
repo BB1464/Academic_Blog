@@ -13,7 +13,6 @@ highlight_name: true
 interests:
 - Agrometeorology
 - Soil Fertility
-<<<<<<< HEAD
 - Predictive modelling 
 - R programming
 - Time series analysis
@@ -23,12 +22,10 @@ interests:
 organizations:
 - name: University of Ibadan
   url: 
-=======
 - Predictive Modelling using DSSAT and Tidymodel in R
 organizations:
 - name: University of Ibadan
   # url: https://www.stanford.edu/
->>>>>>> main
 role: MSc in Agrometeorology
 social:
 - icon: envelope
