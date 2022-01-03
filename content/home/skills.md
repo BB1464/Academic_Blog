@@ -28,15 +28,15 @@ feature:
   icon: camera-retro
   icon_pack: fas
   name: Photography
--description: 30%
+- description: 30%
   icon: js
   icon_pack: fab
   name: JavaScript
--description: 50%
+- description: 50%
   icon: python
   icon_pack: fab
   name: Python
--description: 90%
+- description: 90%
   icon: osf
   icon_pack: ai
   name: Open Science Framework
