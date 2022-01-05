@@ -21,6 +21,4 @@ advanced:
   css_class: fullscreen
 ---
 
- Oluwafemi Oyedele
  
- MSc, Agrometeorology, University of Ibadan, Nigeria
