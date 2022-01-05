@@ -1,5 +1,5 @@
 ---
-bio: My research interests include Agrometeorology, Predictive Modelling, R Programming, Time Series Analysis, and Geospatial Analysis.
+bio: My research interests include Agrometeorology, Soil Fertility and Machine Learning with Tidyverse.
 education:
   courses:
   - course: MSc in Agrometeorology 
@@ -13,15 +13,6 @@ highlight_name: true
 interests:
 - Agrometeorology
 - Soil Fertility
-- Predictive modelling 
-- R programming
-- Time series analysis
-- Geospatial analysis
-- Reproducible research
-
-organizations:
-- name: University of Ibadan
-  url: 
 - Predictive Modelling using DSSAT and Tidymodel in R
 organizations:
 - name: University of Ibadan
@@ -33,27 +24,23 @@ social:
   link: /#contact
 - display:
     header: true
-  # icon: twitter
-  # icon_pack: fab
-  # label: Follow me on Twitter
-  # link: https://twitter.com/GeorgeCushen
-# - icon: graduation-cap
-#   icon_pack: fas         
-#   link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
+  icon: twitter
+  icon_pack: fab
+  label: Follow me on Twitter
+  link: https://twitter.com/GeorgeCushen
+- icon: graduation-cap
+  icon_pack: fas
+  link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
 - icon: github
   icon_pack: fab
   link: https://github.com/BB1464
-# - icon: linkedin
-#   icon_pack: fab
-#   link: https://www.linkedin.com/
+- icon: linkedin
+  icon_pack: fab
+  link: https://www.linkedin.com/
 superuser: true
 title: Oluwafemi Oyedele
 ---
 
-<style>
-body{
-text-align: justify}
-</style>
-# Biography
+**Oluwafemi Oyedele** is a data analyst and an R studio instructor. I earned my Master degree in Agrometeorology from the University of Ibadan, Nigeria, under the supervision of Prof. K. O. Oluwasemire, Dr. Stefan Hauser, Dr. Moses Ogunlade and Mr. Deo Gratias Hougni. My research focuses on machine learning, soil fertility and agrometeorology. During the past few years, I discovered the power of the statistical programming language R. Since then I have turned into a big enthusiast, using the software almost every day for work and many private programming projects. I love analyzing data and making beautiful charts with R and I have mentored countless students and scientists in everything from experimental design to using R for creating figures for their publication. 
 
-I am a data scientist, R developer, and agrometeorologist. I earned my Master degree in Agrometeorology from the University of Ibadan, Nigeria. My main research interests are related to Predictive modelling and Experimental Statistics. During the past few years, I discovered the power of the statistical programming language R. Since then I have turned into a big enthusiast, using the software almost every day for work and many private programming projects. I love analyzing data and making beautiful visualization with R. I have mentored countless students and scientists in everything from experimental design to using R for creating figures for their publication. I am also strongly committed to developing open-source packages to facilitate reproducible research. I devote a lot of my time to hosting local meetups to increase the popularity of R among users in Nigeria.
+{{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
