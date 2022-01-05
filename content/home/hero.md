@@ -31,7 +31,6 @@ advanced:
   css_class: fullscreen
 ---
 
-  
   Hi there! I'm **Oluwafemi Oyedele**, Welcome !!!
 
    
@@ -42,5 +41,3 @@ text-align: justify}
 
 
  Oluwafemi Oyedele
- 
- MSc, Agrometeorology, University of Ibadan, Nigeria
