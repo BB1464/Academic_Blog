@@ -1,5 +1,5 @@
 ---
-abstract: I will be presenting the introduction to R using the tidyverse principles to research fellows at the International Institute of Tropical Agriculture (IITA), Ibadan, Nigeria. I will also explain to them the basic functions of data import, data management and then I will introduce them to data visualization using ggplot2. 
+abstract: I along side with Dr Ibnou Dieng (Head of Biometric Unit, IITA, Ibadan), Mr Moshood Bakare and Kayode will be presenting the introduction to R using the tidyverse principles to research fellows at the International Institute of Tropical Agriculture (IITA), Ibadan, Nigeria. We will also explain to them the basic functions of data import, data management and then We will introduce them to data visualization using ggplot2. We will also cover multi-Location Trial using LME4 package in R, LmerTest, statgenSTA, statgenGxE and then we will summarize with multivariate analysis in R using Factoextra package. 
 address:
   city: Ibadan
   country: Nigeria
