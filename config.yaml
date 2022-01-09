@@ -7,7 +7,7 @@ theme: "starter-hugo-academic"
 title:  Home # Website name
 baseurl: 'https://statisticalinference.netlify.app/' # Website URL
 copyright: ''  #Footer text, e.g. '© {year} Me'
-baseurl: 'http://ecstatic-shirley-fb74e8.netlify.app/' # Website URL
+#baseurl: 'http://ecstatic-shirley-fb74e8.netlify.app/' # Website URL
 copyright: '' # Footer text, e.g. '© {year} Me'
 
 
