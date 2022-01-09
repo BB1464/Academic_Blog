@@ -20,7 +20,7 @@ interests:
 - Programming
 organizations:
 - name: University of Ibadan
-url: https://www.ui.edu.ng
+#url: https://www.ui.edu.ng#
 role: MSc in Agrometeorology
 social:
 - icon: envelope
