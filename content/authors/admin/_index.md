@@ -13,7 +13,9 @@ highlight_name: true
 interests:
 - Agrometeorology
 - Soil Fertility
-- Predictive Modelling using DSSAT and Tidymodel in R
+- Predictive Modelling using tidymodels in R
+- Simulation model using DSSAT
+- Plant breeding
 organizations:
 - name: University of Ibadan
   # url: https://www.stanford.edu/
