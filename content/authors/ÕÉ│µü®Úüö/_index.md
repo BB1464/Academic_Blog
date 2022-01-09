@@ -1,5 +1,5 @@
 ---
-bio: My research interests include Agrometeorology, Soil Fertility and Machine Learning with Tidymodel
+bio: My research interests include Agrometeorology, Soil Fertility and Machine Learning with tidymodel, simulation modeling using DSSAT and Plant breeding
 education:
   courses:
   - course: MSc in Agrometeorology
@@ -12,9 +12,11 @@ email: "oluwafemioyedele908@gmail.com"
 interests:
 - Agrometeorology
 - Soil Fertility
-- Statistical modelling
+- Plant breeding
+- Statistical modeling
 - Programming
 - Reproducible research
+- Simulation modeling
 
 organizations:
 - name: University of Ibadan
