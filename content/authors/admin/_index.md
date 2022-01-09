@@ -13,7 +13,7 @@ highlight_name: true
 interests:
 - Agrometeorology
 - Soil Fertility
-- Predictive Modeling using tidymodels in R
+- Predictive Modeling using tidymodel in R
 - Simulation model using DSSAT
 - Plant breeding
 - Reproducible research
