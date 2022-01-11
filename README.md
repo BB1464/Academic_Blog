@@ -1,2 +1,2 @@
 # Academic_Blog
-My blog repository
+This repository contains all the files used in my blog post
