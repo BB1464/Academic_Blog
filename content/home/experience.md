@@ -30,9 +30,9 @@ experience:
     date_start: '2019-11-01'
     date_end: ''
     description: |2-
-        Responsibilities include:I conducted research work on the contribution of cocoa litter to nutrients recycling in low-shade Southwestern Nigeria.
+        Responsibilities include: I conducted research work on the contribution of cocoa litter to nutrients recycling in low-shade Southwestern Nigeria.
         
-        * Analysing
+        * Data Analysis
         * Modelling
         * Writting Report
         
@@ -43,7 +43,11 @@ experience:
     location: Ibadan
     date_start: '2018-01-01'
     date_end: 
-    
-design:
+    Responsibilities include: I was involved in training post graduate students and research fellow on how to express theirself in R.
+        * Data Analysis
+        * Modelling
+        * Writting Report
+  
+  design:
   columns: '2'
 ---
