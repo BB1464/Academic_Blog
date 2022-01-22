@@ -22,7 +22,7 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
-  - title: Research Fellow
+  - title: **Research Fellow**
     company: International Institute of Tropical Agriculture (IITA)
     company_url: ''
     # company_logo: org-gc
@@ -32,11 +32,11 @@ experience:
     description: |2-
         Responsibilities include: I conducted research work on the contribution of cocoa litter to nutrients recycling in low-shade Southwestern Nigeria.
         
-        * Data Analysis
-        * Modelling
-        * Writting Report
+        * **Data Analysis**
+        * **Modelling**
+        * **Writting Report**
         
-  - title: Data Analyst
+  - title: **Data Analyst**
     company: University of Ibadan
     company_url: ''
     # company_logo: org-gc
@@ -45,9 +45,9 @@ experience:
     date_end: ''
     description: |2-
         Responsibilities include: I was involved in training post graduate students and research fellow on how to express themselve in R.      
-        * Data Analysis
-        * Modelling
-        * Report Writting
+        * **Data Analysis**
+        * **Modelling**
+        * **Report Writting**
     
 design:
   columns: '2'
