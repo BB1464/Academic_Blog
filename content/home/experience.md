@@ -43,26 +43,7 @@ experience:
     location: Ibadan
     date_start: '2018-01-01'
     date_end: 
-    description: I was involved in data analysis and teaching students how to use R statistical software for reproducible research.
-    location: Nigeria
-    date_start: '2019-11-01'
-    date_end: ''
-    description: |2-
-        Responsibilities include: I conducted an experiment that involve the contribution of cocoa litter to nutrients recycling in low-shade cocoa plantation found in southwestern Nigeria.
-        
-        * Analysing
-        * Modelling
-        * Communicating
-        
-  - title: Data Analyst 
-    company: University of Ibadan
-    company_url: ''
-    # company_logo: org-x
-    location: Nigeria
-    date_start: '2018-01-01'
-    date_end: 
-    description: I was involved in analyzing data for students and also mentoring them on how to use the R statistical software to carryout their analysis. 
-
+    
 design:
   columns: '2'
 ---
