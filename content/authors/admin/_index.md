@@ -40,7 +40,7 @@ social:
   link: https://github.com/BB1464
 - icon: linkedin
   icon_pack: fab
-  link: https://www.linkedin.com/in/oluwafemi-oyedele-a02b12158/
+  link: https://www.linkedin.com/in/oluwafemi-oyedele-a02b12158?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BqG7p9kF7QZuBtHZpZcwRDA%3D%3D
 superuser: true
 title: Oluwafemi Oyedele
 ---
