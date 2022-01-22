@@ -43,6 +43,7 @@ experience:
     location: Ibadan
     date_start: '2018-01-01'
     date_end: 
+    description: |2-
     Responsibilities include: I was involved in training post graduate students and research fellow on how to express theirself in R.
         
         * Data Analysis
