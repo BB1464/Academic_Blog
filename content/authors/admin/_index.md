@@ -38,10 +38,9 @@ social:
 - icon: github
   icon_pack: fab
   link: https://github.com/BB1464
-- icon: facebook
+- icon: linkedin
   icon_pack: fab
   link: https://www.linkedin.com/feed/
-  icon: twitter
 superuser: true
 title: Oluwafemi Oyedele
 ---
