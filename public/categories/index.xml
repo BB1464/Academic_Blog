@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories | Home</title>
-    <link>http://ecstatic-shirley-fb74e8.netlify.app/categories/</link>
-      <atom:link href="http://ecstatic-shirley-fb74e8.netlify.app/categories/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://statisticalinference.netlify.app/categories/</link>
+      <atom:link href="https://statisticalinference.netlify.app/categories/index.xml" rel="self" type="application/rss+xml" />
     <description>Categories</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 11 Nov 2021 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://ecstatic-shirley-fb74e8.netlify.app/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_3.png</url>
+      <url>https://statisticalinference.netlify.app/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_3.png</url>
       <title>Categories</title>
-      <link>http://ecstatic-shirley-fb74e8.netlify.app/categories/</link>
+      <link>https://statisticalinference.netlify.app/categories/</link>
     </image>
     
   </channel>

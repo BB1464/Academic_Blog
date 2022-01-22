@@ -2,105 +2,125 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://ecstatic-shirley-fb74e8.netlify.app/courses/example/python/</loc>
+    <loc>https://statisticalinference.netlify.app/courses/example/python/</loc>
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://ecstatic-shirley-fb74e8.netlify.app/courses/example/visualization/</loc>
+    <loc>https://statisticalinference.netlify.app/courses/example/visualization/</loc>
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://ecstatic-shirley-fb74e8.netlify.app/courses/example/stats/</loc>
+    <loc>https://statisticalinference.netlify.app/courses/example/stats/</loc>
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://ecstatic-shirley-fb74e8.netlify.app/</loc>
-    <lastmod>2021-11-22T10:00:15+00:00</lastmod>
+    <loc>https://statisticalinference.netlify.app/</loc>
+    <lastmod>2021-11-18T10:00:16+00:00</lastmod>
   </url><url>
-    <loc>http://ecstatic-shirley-fb74e8.netlify.app/talk/introduction-to-r-using-the-tidyverse-principles/</loc>
-    <lastmod>2021-11-22T10:00:15+00:00</lastmod>
+    <loc>https://statisticalinference.netlify.app/talk/introduction-to-r-using-the-tidyverse-principles/</loc>
+    <lastmod>2021-11-18T10:00:16+00:00</lastmod>
   </url><url>
-    <loc>http://ecstatic-shirley-fb74e8.netlify.app/event/</loc>
-    <lastmod>2021-11-22T10:00:15+00:00</lastmod>
+    <loc>https://statisticalinference.netlify.app/event/</loc>
+    <lastmod>2021-11-18T10:00:16+00:00</lastmod>
   </url><url>
-    <loc>http://ecstatic-shirley-fb74e8.netlify.app/courses/data-visualization-with-ggplot2-bootcamp/</loc>
+    <loc>https://statisticalinference.netlify.app/post/automating-exploratory-plots-with-ggplot2-and-purrr/</loc>
+    <lastmod>2021-11-11T02:53:49-11:00</lastmod>
+  </url><url>
+    <loc>https://statisticalinference.netlify.app/categories/</loc>
+    <lastmod>2021-11-11T02:53:49-11:00</lastmod>
+  </url><url>
+    <loc>https://statisticalinference.netlify.app/category/functional-programming/</loc>
+    <lastmod>2021-11-11T02:53:49-11:00</lastmod>
+  </url><url>
+    <loc>https://statisticalinference.netlify.app/post/</loc>
+    <lastmod>2021-11-11T02:53:49-11:00</lastmod>
+  </url><url>
+    <loc>https://statisticalinference.netlify.app/tag/purrr/</loc>
+    <lastmod>2021-11-11T02:53:49-11:00</lastmod>
+  </url><url>
+    <loc>https://statisticalinference.netlify.app/tags/</loc>
+    <lastmod>2021-11-11T02:53:49-11:00</lastmod>
+  </url><url>
+    <loc>https://statisticalinference.netlify.app/post/2021-10-13-advice-on-setting-up-of-your-r-working-directory-to-maximize-effectiveness-and-reduce-frustration/</loc>
+    <lastmod>2021-10-13T02:39:23-11:00</lastmod>
+  </url><url>
+    <loc>https://statisticalinference.netlify.app/tag/here/</loc>
+    <lastmod>2021-10-13T02:39:23-11:00</lastmod>
+  </url><url>
+    <loc>https://statisticalinference.netlify.app/category/r-path/</loc>
+    <lastmod>2021-10-13T02:39:23-11:00</lastmod>
+  </url><url>
+    <loc>https://statisticalinference.netlify.app/courses/data-visualization-with-ggplot2-bootcamp/</loc>
     <lastmod>2021-10-10T04:36:58-11:00</lastmod>
   </url><url>
-    <loc>http://ecstatic-shirley-fb74e8.netlify.app/tag/ggplot2/</loc>
+    <loc>https://statisticalinference.netlify.app/tag/ggplot2/</loc>
     <lastmod>2021-10-10T04:36:58-11:00</lastmod>
   </url><url>
-    <loc>http://ecstatic-shirley-fb74e8.netlify.app/tag/r/</loc>
+    <loc>https://statisticalinference.netlify.app/tag/r/</loc>
     <lastmod>2021-10-10T04:36:58-11:00</lastmod>
   </url><url>
-    <loc>http://ecstatic-shirley-fb74e8.netlify.app/courses/r-bootcamp/</loc>
+    <loc>https://statisticalinference.netlify.app/courses/r-bootcamp/</loc>
     <lastmod>2021-10-10T04:33:22-11:00</lastmod>
   </url><url>
-    <loc>http://ecstatic-shirley-fb74e8.netlify.app/tags/</loc>
+    <loc>https://statisticalinference.netlify.app/courses/</loc>
     <lastmod>2021-10-10T04:36:58-11:00</lastmod>
   </url><url>
-    <loc>http://ecstatic-shirley-fb74e8.netlify.app/courses/</loc>
-    <lastmod>2021-10-10T04:36:58-11:00</lastmod>
-  </url><url>
-    <loc>http://ecstatic-shirley-fb74e8.netlify.app/courses/example/</loc>
+    <loc>https://statisticalinference.netlify.app/courses/example/</loc>
     <lastmod>2021-01-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://ecstatic-shirley-fb74e8.netlify.app/publication-type/2/</loc>
+    <loc>https://statisticalinference.netlify.app/publication-type/2/</loc>
     <lastmod>2021-10-11T02:13:10-11:00</lastmod>
   </url><url>
-    <loc>http://ecstatic-shirley-fb74e8.netlify.app/publication/journal-articles/</loc>
+    <loc>https://statisticalinference.netlify.app/publication/journal-articles/</loc>
     <lastmod>2021-10-11T02:13:10-11:00</lastmod>
   </url><url>
-    <loc>http://ecstatic-shirley-fb74e8.netlify.app/publication_types/</loc>
+    <loc>https://statisticalinference.netlify.app/publication_types/</loc>
     <lastmod>2021-10-11T02:13:10-11:00</lastmod>
   </url><url>
-    <loc>http://ecstatic-shirley-fb74e8.netlify.app/publication/</loc>
+    <loc>https://statisticalinference.netlify.app/publication/</loc>
     <lastmod>2021-10-11T02:13:10-11:00</lastmod>
   </url><url>
-    <loc>http://ecstatic-shirley-fb74e8.netlify.app/publication-type/1/</loc>
+    <loc>https://statisticalinference.netlify.app/publication-type/1/</loc>
     <lastmod>2020-07-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://ecstatic-shirley-fb74e8.netlify.app/authors/</loc>
+    <loc>https://statisticalinference.netlify.app/authors/</loc>
     <lastmod>2020-07-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://ecstatic-shirley-fb74e8.netlify.app/publication/conference-paper/</loc>
+    <loc>https://statisticalinference.netlify.app/publication/conference-paper/</loc>
     <lastmod>2020-07-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://ecstatic-shirley-fb74e8.netlify.app/author/oluwafemi-oyedele/</loc>
+    <loc>https://statisticalinference.netlify.app/author/oluwafemi-oyedele/</loc>
     <lastmod>2020-07-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://ecstatic-shirley-fb74e8.netlify.app/project/internal-project/</loc>
+    <loc>https://statisticalinference.netlify.app/project/internal-project/</loc>
     <lastmod>2019-11-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://ecstatic-shirley-fb74e8.netlify.app/tag/nutrient-cycling/</loc>
+    <loc>https://statisticalinference.netlify.app/tag/nutrient-cycling/</loc>
     <lastmod>2019-11-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://ecstatic-shirley-fb74e8.netlify.app/project/</loc>
+    <loc>https://statisticalinference.netlify.app/project/</loc>
     <lastmod>2019-11-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://ecstatic-shirley-fb74e8.netlify.app/publication/journal-article/</loc>
+    <loc>https://statisticalinference.netlify.app/publication/journal-article/</loc>
     <lastmod>2019-09-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://ecstatic-shirley-fb74e8.netlify.app/publication-type/3/</loc>
+    <loc>https://statisticalinference.netlify.app/publication-type/3/</loc>
     <lastmod>2019-04-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://ecstatic-shirley-fb74e8.netlify.app/publication/preprint/</loc>
+    <loc>https://statisticalinference.netlify.app/publication/preprint/</loc>
     <lastmod>2019-04-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://ecstatic-shirley-fb74e8.netlify.app/slides/</loc>
+    <loc>https://statisticalinference.netlify.app/slides/</loc>
     <lastmod>2019-02-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://ecstatic-shirley-fb74e8.netlify.app/slides/example/</loc>
+    <loc>https://statisticalinference.netlify.app/slides/example/</loc>
     <lastmod>2019-02-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://ecstatic-shirley-fb74e8.netlify.app/tag/demo/</loc>
+    <loc>https://statisticalinference.netlify.app/tag/demo/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://ecstatic-shirley-fb74e8.netlify.app/project/external-project/</loc>
+    <loc>https://statisticalinference.netlify.app/project/external-project/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://ecstatic-shirley-fb74e8.netlify.app/admin/</loc>
+    <loc>https://statisticalinference.netlify.app/admin/</loc>
   </url><url>
-    <loc>http://ecstatic-shirley-fb74e8.netlify.app/author/</loc>
-  </url><url>
-    <loc>http://ecstatic-shirley-fb74e8.netlify.app/categories/</loc>
-  </url><url>
-    <loc>http://ecstatic-shirley-fb74e8.netlify.app/post/</loc>
+    <loc>https://statisticalinference.netlify.app/author/</loc>
   </url>
 </urlset>

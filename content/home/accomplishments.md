@@ -25,14 +25,6 @@ active: false
 #   Leave other parameters empty if not required.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 item:
-- certificate_url:
-date_end:''
-date_start: "2019-11-12"
-description: 'Research Fellow CocoaSoils Project'
-organization: 'International Institutute of Tropical Agriculture (IITA)'
-organization: IITA,Ibadan
-title:Research Fellow CocoaSoils Project
-
 - certificate_url: https://www.coursera.org
   date_end: ""
   date_start: "2021-01-25"

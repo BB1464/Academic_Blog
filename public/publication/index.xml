@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Publications | Home</title>
-    <link>http://ecstatic-shirley-fb74e8.netlify.app/publication/</link>
-      <atom:link href="http://ecstatic-shirley-fb74e8.netlify.app/publication/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://statisticalinference.netlify.app/publication/</link>
+      <atom:link href="https://statisticalinference.netlify.app/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>Publications</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 21 Jan 2021 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://ecstatic-shirley-fb74e8.netlify.app/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_3.png</url>
+      <url>https://statisticalinference.netlify.app/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_3.png</url>
       <title>Publications</title>
-      <link>http://ecstatic-shirley-fb74e8.netlify.app/publication/</link>
+      <link>https://statisticalinference.netlify.app/publication/</link>
     </image>
     
     <item>
       <title>Evaluation of Saturated Hydraulic Characteristics and its Influence on Some Physical and Chemical Properties of Soils Developed on Coastal Plain Sands of Obufa Esuk Orok in Calabar, Cross River State, Nigeria</title>
-      <link>http://ecstatic-shirley-fb74e8.netlify.app/publication/journal-articles/</link>
+      <link>https://statisticalinference.netlify.app/publication/journal-articles/</link>
       <pubDate>Thu, 21 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>http://ecstatic-shirley-fb74e8.netlify.app/publication/journal-articles/</guid>
+      <guid>https://statisticalinference.netlify.app/publication/journal-articles/</guid>
       <description>&lt;style&gt;
 body{
 text-align: justify}
@@ -26,17 +26,17 @@ text-align: justify}
     
     <item>
       <title>Conference paper</title>
-      <link>http://ecstatic-shirley-fb74e8.netlify.app/publication/conference-paper/</link>
+      <link>https://statisticalinference.netlify.app/publication/conference-paper/</link>
       <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
-      <guid>http://ecstatic-shirley-fb74e8.netlify.app/publication/conference-paper/</guid>
+      <guid>https://statisticalinference.netlify.app/publication/conference-paper/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Evaluation of Infiltration Characteristics of Soils Developed on Coastal Plain Sands in Calabar Municipality Local Government Area, Cross River State, Nigeria.</title>
-      <link>http://ecstatic-shirley-fb74e8.netlify.app/publication/journal-article/</link>
+      <link>https://statisticalinference.netlify.app/publication/journal-article/</link>
       <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>http://ecstatic-shirley-fb74e8.netlify.app/publication/journal-article/</guid>
+      <guid>https://statisticalinference.netlify.app/publication/journal-article/</guid>
       <description>&lt;style&gt;
 body{
 text-align: justify}
@@ -46,9 +46,9 @@ text-align: justify}
     
     <item>
       <title>Preprint / working paper</title>
-      <link>http://ecstatic-shirley-fb74e8.netlify.app/publication/preprint/</link>
+      <link>https://statisticalinference.netlify.app/publication/preprint/</link>
       <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>http://ecstatic-shirley-fb74e8.netlify.app/publication/preprint/</guid>
+      <guid>https://statisticalinference.netlify.app/publication/preprint/</guid>
       <description>&lt;style&gt;
 body{
 text-align: justify}

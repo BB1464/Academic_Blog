@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>📊 Learn Data Science using the Tidyverse | Home</title>
-    <link>http://ecstatic-shirley-fb74e8.netlify.app/courses/example/</link>
-      <atom:link href="http://ecstatic-shirley-fb74e8.netlify.app/courses/example/index.xml" rel="self" type="application/rss+xml" />
-    <description>📊 Learn Data Science using the Tidyverse</description>
+    <title>📊 Data Management using the Tidyverse | Home</title>
+    <link>https://statisticalinference.netlify.app/courses/example/</link>
+      <atom:link href="https://statisticalinference.netlify.app/courses/example/index.xml" rel="self" type="application/rss+xml" />
+    <description>📊 Data Management using the Tidyverse</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 24 Jan 2021 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://ecstatic-shirley-fb74e8.netlify.app/courses/example/featured.jpg</url>
-      <title>📊 Learn Data Science using the Tidyverse</title>
-      <link>http://ecstatic-shirley-fb74e8.netlify.app/courses/example/</link>
+      <url>https://statisticalinference.netlify.app/courses/example/featured.jpg</url>
+      <title>📊 Data Management using the Tidyverse</title>
+      <link>https://statisticalinference.netlify.app/courses/example/</link>
     </image>
     
     <item>
-      <title>Python basics</title>
-      <link>http://ecstatic-shirley-fb74e8.netlify.app/courses/example/python/</link>
+      <title>R basics</title>
+      <link>https://statisticalinference.netlify.app/courses/example/python/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>http://ecstatic-shirley-fb74e8.netlify.app/courses/example/python/</guid>
-      <description>&lt;p&gt;Build a foundation in Python.&lt;/p&gt;
+      <guid>https://statisticalinference.netlify.app/courses/example/python/</guid>
+      <description>&lt;p&gt;Build a foundation in R.&lt;/p&gt;
 &lt;p&gt;
   &lt;i class=&#34;fas fa-clock  pr-1 fa-fw&#34;&gt;&lt;/i&gt; 1-2 hours per week, for 8 weeks&lt;/p&gt;
 &lt;h2 id=&#34;learn&#34;&gt;Learn&lt;/h2&gt;
@@ -44,9 +44,17 @@
 &lt;/p&gt;
 &lt;/details&gt;
 &lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-3&#34;&gt;
-  &lt;summary&gt;Is Python case-sensitive?&lt;/summary&gt;
+  &lt;summary&gt;Is R case-sensitive?&lt;/summary&gt;
   &lt;p&gt;Yes&lt;/p&gt;
 &lt;/details&gt;
+&lt;style type=&#34;text/css&#34;&gt;
+
+h1.title {
+  font-size: 12px;
+  color: Dark;
+  text-align: centre;
+}
+
 &lt;style&gt;
 body{
 text-align: justify}
@@ -55,10 +63,26 @@ text-align: justify}
     
     <item>
       <title>Visualization</title>
-      <link>http://ecstatic-shirley-fb74e8.netlify.app/courses/example/visualization/</link>
+      <link>https://statisticalinference.netlify.app/courses/example/visualization/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>http://ecstatic-shirley-fb74e8.netlify.app/courses/example/visualization/</guid>
-      <description>&lt;p&gt;Learn how to visualize data with ggplot2.&lt;/p&gt;
+      <guid>https://statisticalinference.netlify.app/courses/example/visualization/</guid>
+      <description>&lt;h1 id=&#34;-head&#34;&gt;&amp;laquo;&amp;laquo;&amp;laquo;&amp;lt; HEAD&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;main
+Learn how to visualize data with ggplot2.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;
   &lt;i class=&#34;fas fa-clock  pr-1 fa-fw&#34;&gt;&lt;/i&gt; 1-2 hours per week, for 8 weeks&lt;/p&gt;
 &lt;h2 id=&#34;learn&#34;&gt;Learn&lt;/h2&gt;
@@ -80,6 +104,14 @@ ggplot(mtcars,aes(mpg,hp))+geom_point()
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/p&gt;
 &lt;/details&gt;
+&lt;style type=&#34;text/css&#34;&gt;
+
+h1.title {
+  font-size: 12px;
+  color: Dark;
+  text-align: centre;
+}
+
 &lt;style&gt;
 body{
 text-align: justify}
@@ -88,9 +120,9 @@ text-align: justify}
     
     <item>
       <title>Statistics</title>
-      <link>http://ecstatic-shirley-fb74e8.netlify.app/courses/example/stats/</link>
+      <link>https://statisticalinference.netlify.app/courses/example/stats/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>http://ecstatic-shirley-fb74e8.netlify.app/courses/example/stats/</guid>
+      <guid>https://statisticalinference.netlify.app/courses/example/stats/</guid>
       <description>&lt;p&gt;Introduction to statistics for data science.&lt;/p&gt;
 &lt;p&gt;
   &lt;i class=&#34;fas fa-clock  pr-1 fa-fw&#34;&gt;&lt;/i&gt; 1-2 hours per week, for 8 weeks&lt;/p&gt;
@@ -112,6 +144,14 @@ The variance of the distribution is $\sigma^{2}$.
   &lt;summary&gt;What is the parameter $\mu$?&lt;/summary&gt;
   &lt;p&gt;The parameter $\mu$ is the mean or expectation of the distribution.&lt;/p&gt;
 &lt;/details&gt;
+&lt;style type=&#34;text/css&#34;&gt;
+
+h1.title {
+  font-size: 12px;
+  color: Dark;
+  text-align: centre;
+}
+
 &lt;style&gt;
 body{
 text-align: justify}

@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects | Home</title>
-    <link>http://ecstatic-shirley-fb74e8.netlify.app/project/</link>
-      <atom:link href="http://ecstatic-shirley-fb74e8.netlify.app/project/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://statisticalinference.netlify.app/project/</link>
+      <atom:link href="https://statisticalinference.netlify.app/project/index.xml" rel="self" type="application/rss+xml" />
     <description>Projects</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 12 Nov 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://ecstatic-shirley-fb74e8.netlify.app/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_3.png</url>
+      <url>https://statisticalinference.netlify.app/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_3.png</url>
       <title>Projects</title>
-      <link>http://ecstatic-shirley-fb74e8.netlify.app/project/</link>
+      <link>https://statisticalinference.netlify.app/project/</link>
     </image>
     
     <item>
       <title>Internal Project</title>
-      <link>http://ecstatic-shirley-fb74e8.netlify.app/project/internal-project/</link>
+      <link>https://statisticalinference.netlify.app/project/internal-project/</link>
       <pubDate>Tue, 12 Nov 2019 00:00:00 +0000</pubDate>
-      <guid>http://ecstatic-shirley-fb74e8.netlify.app/project/internal-project/</guid>
+      <guid>https://statisticalinference.netlify.app/project/internal-project/</guid>
       <description>&lt;h1 id=&#34;contribution-of-cocoa-litter-to-nutrients-recycling-in-low-shade-southwestern-nigeria&#34;&gt;&lt;strong&gt;Contribution of cocoa litter to nutrients recycling in low-shade Southwestern Nigeria&lt;/strong&gt;.&lt;/h1&gt;
-&lt;p&gt;This was my research work in which I conducted at the International Institute of Tropical Agriculture (IITA), Ibadan as a resesrch fellow that led to the award of my MSc degree in the department of Soil Resources Management at the University of Ibadan, Nigeria.&lt;/p&gt;
+&lt;p&gt;Contribution of cocoa litter to nutrients recycling in low-shade Southwestern Nigeria. This was my research work in which I conducted at the International Institute of Tropical Agriculture (IITA), Ibadan as a research fellow that led to the award of my MSc degree in the department of Soil Resources Management at the University of Ibadan, Nigeria.&lt;/p&gt;
 &lt;style&gt;
 body{
 text-align: justify}
@@ -28,9 +28,9 @@ text-align: justify}
     
     <item>
       <title>External Project</title>
-      <link>http://ecstatic-shirley-fb74e8.netlify.app/project/external-project/</link>
+      <link>https://statisticalinference.netlify.app/project/external-project/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>http://ecstatic-shirley-fb74e8.netlify.app/project/external-project/</guid>
+      <guid>https://statisticalinference.netlify.app/project/external-project/</guid>
       <description></description>
     </item>
     

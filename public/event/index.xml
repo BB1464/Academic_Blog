@@ -2,25 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Recent and Upcoming Talks | Home</title>
-    <link>http://ecstatic-shirley-fb74e8.netlify.app/event/</link>
-      <atom:link href="http://ecstatic-shirley-fb74e8.netlify.app/event/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://statisticalinference.netlify.app/event/</link>
+      <atom:link href="https://statisticalinference.netlify.app/event/index.xml" rel="self" type="application/rss+xml" />
     <description>Recent and Upcoming Talks</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 22 Nov 2021 10:00:15 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 18 Nov 2021 10:00:16 +0000</lastBuildDate>
     <image>
-      <url>http://ecstatic-shirley-fb74e8.netlify.app/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_3.png</url>
+      <url>https://statisticalinference.netlify.app/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_3.png</url>
       <title>Recent and Upcoming Talks</title>
-      <link>http://ecstatic-shirley-fb74e8.netlify.app/event/</link>
+      <link>https://statisticalinference.netlify.app/event/</link>
     </image>
     
     <item>
       <title>Introduction to R using the Tidyverse Principles</title>
-      <link>http://ecstatic-shirley-fb74e8.netlify.app/talk/introduction-to-r-using-the-tidyverse-principles/</link>
-      <pubDate>Mon, 22 Nov 2021 10:00:15 +0000</pubDate>
-      <guid>http://ecstatic-shirley-fb74e8.netlify.app/talk/introduction-to-r-using-the-tidyverse-principles/</guid>
-      <description>&lt;style&gt;
+      <link>https://statisticalinference.netlify.app/talk/introduction-to-r-using-the-tidyverse-principles/</link>
+      <pubDate>Thu, 18 Nov 2021 10:00:16 +0000</pubDate>
+      <guid>https://statisticalinference.netlify.app/talk/introduction-to-r-using-the-tidyverse-principles/</guid>
+      <description>&lt;style type=&#34;text/css&#34;&gt;
+
+h1.title {
+  font-size: 12px;
+  color: Dark;
+  text-align: centre;
+}
+
+&lt;style&gt;
 body{
 text-align: justify}
-&lt;/style&gt;
 </description>
     </item>
     
