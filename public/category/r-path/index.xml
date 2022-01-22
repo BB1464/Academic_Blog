@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>R path | Home</title>
+    <link>https://statisticalinference.netlify.app/category/r-path/</link>
+      <atom:link href="https://statisticalinference.netlify.app/category/r-path/index.xml" rel="self" type="application/rss+xml" />
+    <description>R path</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 13 Oct 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://statisticalinference.netlify.app/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_3.png</url>
+      <title>R path</title>
+      <link>https://statisticalinference.netlify.app/category/r-path/</link>
+    </image>
+    
+    <item>
+      <title>Advice on setting up your working directory in R to maximize effectiveness and reduce frustration</title>
+      <link>https://statisticalinference.netlify.app/post/2021-10-13-advice-on-setting-up-of-your-r-working-directory-to-maximize-effectiveness-and-reduce-frustration/</link>
+      <pubDate>Wed, 13 Oct 2021 00:00:00 +0000</pubDate>
+      <guid>https://statisticalinference.netlify.app/post/2021-10-13-advice-on-setting-up-of-your-r-working-directory-to-maximize-effectiveness-and-reduce-frustration/</guid>
+      <description>&lt;p&gt;The goal of the here package is to enable easy file referencing in a project-oriented workflow. In contrast to using setwd(), which is fragile and dependent on the way you organize your files, here uses the top-level directory of a project to easily build paths to files. 
+When I got started with R, I learned to put setwd() and rm(list=ls()) at the beginning of my scripts. It made sense to me but it seems like it got rid of any leftovers in the environment and set up the working directory, so I could use relative paths. That seems to be a good practice, right? The idea definitely is, but setwd() and rm(list=ls()) are problematic. rm() doesn&amp;rsquo;t give you a clean R session; it won&amp;rsquo;t for instance, detach packages. setwd(), meanwhile, is completely dependent on the way you organize your files because the absolute file path in your computer is different from the file path in my computer; so if you have to share that R script with anyone the file path needs to be modified before that script will run in another system.
+In 2017, Jenny Bryan gave a talk at the R studio conference on Project-oriented workflow. A couple of slides, in particular, set off a bit of controversy:
+If the first line of your R script is:&lt;/p&gt;
+&lt;p&gt;setwd(&amp;lsquo;C:/Users/Jenny/Path/that/only/I/have&amp;rsquo;)&lt;/p&gt;
+&lt;p&gt;I will come into your office and &lt;strong&gt;SET YOUR COMPUTER ON FIRE&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;If the first line of your R script is:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-{r}&#34;&gt;rm(list=ls())
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I will come into your office and &lt;strong&gt;SET YOUR COMPUTER ON FIRE&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I agree with this opinion from Jenny Bryan! Here I explain why these habits can be harmful and may be indicative of an awkward workflow.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;I strongly recommend that we should use the R studio projects. These set up a local working directory in a fresh R session, which makes it much easier for someone else to open and run your code.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Use &lt;em&gt;here()&lt;/em&gt; from here package to write file paths.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;When we want to write a file into a specific folder we can also use the here package to write the absolute path to save the file.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-{r}&#34;&gt;write.csv(mtcars,here::here(&#39;post/mtcars.csv&#39;))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We can also use the here package to read file from a specific location within a particular directory of the project we are working on.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-{r}&#34;&gt;read.csv(here::here(&#39;post/mtcars.csv&#39;))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In conclusion projects can not only help solve the problems of &lt;em&gt;setwd()&lt;/em&gt; but also &lt;em&gt;rm(list=ls())&lt;/em&gt;. The need for &lt;em&gt;setwd()&lt;/em&gt; is automatically eliminated by using projects because the default directory will be wherever the project is located. You can learn more by reading the vignette of the here package in R by clicking &lt;a href=&#34;https://cran.r-project.org/web/packages/here/here.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;here&lt;/strong&gt;&lt;/a&gt; or Jenny Bryan tutorial by clicking &lt;a href=&#34;https://www.tidyverse.org/blog/2017/12/workflow-vs-script/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;here&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;style type=&#34;text/css&#34;&gt;
+h1.title {
+  font-size: 12px;
+  color: Dark;
+  text-align: justify;
+}
+&lt;style&gt;
+body{
+text-align: justify}
+
+
+
+
+</description>
+    </item>
+    
+  </channel>
+</rss>
