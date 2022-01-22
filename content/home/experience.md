@@ -45,9 +45,9 @@ experience:
     date_end: ''
     description: |2-
         Responsibilities include: I was involved in training post graduate students and research fellow on how to express themselve in R.      
-        * **Data Analysis**
-        * **Modelling**
-        * **Report Writting**
+        * Data Analysis
+        * Modelling
+        * Report Writting
     
 design:
   columns: '2'
