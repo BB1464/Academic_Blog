@@ -36,20 +36,19 @@ experience:
         * Modelling
         * Writting Report
         
-  - title: Data Analyst 
+  - title: Data Analyst
     company: University of Ibadan
     company_url: ''
-    # company_logo: org-x
+    # company_logo: org-gc
     location: Ibadan
-    date_start: '2018-01-01'
-    date_end: 
+    date_start: '2018-11-01'
+    date_end: ''
     description: |2-
-    Responsibilities include: I was involved in training post graduate students and research fellow on how to express theirself in R.
-        
+        Responsibilities include: I was involved in training post graduate students and research fellow on how to express themselve in R.      
         * Data Analysis
         * Modelling
         * Writting Report
-  
+    
 design:
   columns: '2'
 ---
