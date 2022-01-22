@@ -44,7 +44,6 @@ experience:
     date_start: '2018-01-01'
     date_end: 
         Responsibilities include: I was involved in training post graduate students and research fellow on how to express theirself in R.
-    
         * Data Analysis
         * Modelling
         * Writting Report
