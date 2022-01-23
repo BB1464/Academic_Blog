@@ -10,7 +10,6 @@ cta_alt:
 cta_note: 
   label: >-
 
-active: false   # To deactivate the hero.md 
 
 design:
   background: 
