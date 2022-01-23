@@ -25,8 +25,8 @@ feature:
   icon_pack: fab
   name: Python
 - description: 90%
-  icon: osf
-  icon_pack: ai
+  icon: github
+  icon_pack: fab
   name: Open Science Framework
 - description: 100%
   icon: chart-line
