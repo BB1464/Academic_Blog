@@ -35,6 +35,10 @@ social:
 - icon: github
   icon_pack: fab
   link: https://github.com/BB1464
+- icon: linkedin
+  icon_pack: fab
+  link: https://www.linkedin.com/in/oluwafemioyedele/
+  label: Follow me on linkedin
 superuser: false
 title: 
 ---
