@@ -44,14 +44,14 @@ feature:
   icon: markdown
   name: Reproducible research
   icon_pack: fab
+- description: 80%
+  icon: git
+  icon_pack: fab
+  name: 
 - description: 30%
   icon: js
   icon_pack: fab
   name: JavaScript
-- description: 10%
-  icon: camera-retro
-  icon_pack: fas
-  name: Photography
   
   
 # - description: 'I began learning JavaScript this past year, specifically using <a href = #"https://www.jspsych.org/" target="_blank" rel="noopener noreferrer" style="color: #F76F8E">jspsych</a> to #run some of my computer-based experiments online.'
