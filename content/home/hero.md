@@ -3,7 +3,7 @@ widget: hero
 headless: true
 weight: 10
 title:  
-hero_media: hero-academic.png
+hero_media: tree.jpg
 cta: 
 cta_alt:
   label: 
@@ -14,7 +14,7 @@ cta_note:
 design:
   background: 
 title: 
-hero_media: hero-academic.png
+hero_media: tree.jpg
 cta:
   label: 
   url: 
