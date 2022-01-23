@@ -106,6 +106,8 @@
       
         
       
+        
+      
     
     
     
@@ -808,40 +810,41 @@
   
 
   
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
     
     
-  
-
-  
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-
-  
+    
   
 
   
@@ -853,11 +856,11 @@
   
 
   
-  <section id="hero" class="home-section wg-hero dark fullscreen"  >
-   <div class="home-section-bg " style="background-image: linear-gradient(90deg, #004ba0, #1976d2);">
+  <section id="slider" class="home-section wg-slider   carousel slide"  data-ride="carousel" data-interval="5000">
+   <div class="home-section-bg " >
      
    </div>
-    <div class="container">
+    
 
     
 
@@ -866,71 +869,183 @@
 
 
 
-<div class="row">
-  <div class="col-12 col-md-6 text-center text-md-left">
-
-
-    
-
-    
-      <div class="hero-lead"><p>Hi there! I&rsquo;m <strong>Oluwafemi Oyedele</strong>, Welcome !!!</p>
-<style>
-body{
-text-align: justify}
-</style>
-</div>
-    
-
-    
-    
-
-    
-    
-    <p class="hero-note text-muted mb-3 mb-md-1">
-      
-    </p>
-    
-
+<ol class="carousel-indicators">
   
+  <li data-target="#slider" data-slide-to="0" class="active"></li>
   
-  </div>
-  <div class="col-12 mx-auto col-md-6  hero-media">
-      
-      
+  <li data-target="#slider" data-slide-to="1" ></li>
+  
+  <li data-target="#slider" data-slide-to="2" ></li>
+  
+  <li data-target="#slider" data-slide-to="3" ></li>
+  
+</ol>
 
-        
-        
-        
-        
 
-        
-          
-          
-            
-          
-          
-        
-          
-          
-          
-        
-          
-          
-          
-        
-        
+<div class="carousel-inner">
+  
 
-        <img src="/home/hero-academic_hua75925f1da9f98bfed7e63d61222146f_374903_400x0_resize_lanczos_3.png" srcset="/home/hero-academic_hua75925f1da9f98bfed7e63d61222146f_374903_1200x0_resize_lanczos_3.png 1200w,/home/hero-academic_hua75925f1da9f98bfed7e63d61222146f_374903_800x0_resize_lanczos_3.png 800w,/home/hero-academic_hua75925f1da9f98bfed7e63d61222146f_374903_400x0_resize_lanczos_3.png 400w" width="651" height="661" alt="">
+    
+    
       
     
+    
+      
+    
+    
+      
+      
+        
+      
+      
+        
+      
+   
+
+  <div class="wg-hero dark carousel-item active" style=" height: 400px; background-color: #56B4E9;filter: brightness(0.2);">
+    <div class="container" style="text-align: center;">
+        <h1 class="hero-title">
+          Book a workshop
+        </h1>
+
+        
+        <p class="hero-lead" style="margin: 0 auto 0 auto;">
+          Courses in the data manipulation and visualization in R, modeling, Shiny, and more.
+        </p>
+        
+
+        
+        
+        
+        
+          
+        
+        <p>
+          <a href="/training" class="btn btn-light btn-lg"><i class="fas fa-graduation-cap" style="padding-right: 10px;"></i>See available workshops</a>
+        </p>
+        
+      </div>
   </div>
+  
+
+    
+    
+      
+    
+    
+      
+    
+    
+      
+      
+        
+      
+      
+        
+      
+   
+
+  <div class="wg-hero dark carousel-item" style=" height: 400px; background-color: #56B4E9;filter: brightness(0.2);">
+    <div class="container" style="text-align: center;">
+        <h1 class="hero-title">
+          
+        </h1>
+
+        
+
+        
+      </div>
+  </div>
+  
+
+    
+    
+      
+    
+    
+      
+    
+    
+      
+      
+        
+      
+      
+        
+      
+   
+
+  <div class="wg-hero dark carousel-item" style=" height: 400px; background-color: #56B4E9;filter: brightness(0.2);">
+    <div class="container" style="text-align: center;">
+        <h1 class="hero-title">
+          Let&rsquo;s build something
+        </h1>
+
+        
+        <p class="hero-lead" style="margin: 0 auto 0 auto;">
+          Data solutions for R packages, Shiny apps, and other data science and research needs.
+        </p>
+        
+
+        
+        
+        
+        
+          
+        
+        <p>
+          <a href="/consulting" class="btn btn-light btn-lg"><i class="fas fa-hammer" style="padding-right: 10px;"></i>See available services</a>
+        </p>
+        
+      </div>
+  </div>
+  
+
+    
+    
+      
+    
+    
+      
+    
+    
+      
+      
+        
+      
+      
+        
+      
+   
+
+  <div class="wg-hero dark carousel-item" style=" height: 400px; background-color: #56B4E9;filter: brightness(0.2);">
+    <div class="container" style="text-align: center;">
+        <h1 class="hero-title">
+          
+        </h1>
+
+        
+
+        
+      </div>
+  </div>
+  
 </div>
 
 
+<a class="carousel-control-prev" href="#slider" data-slide="prev">
+  <span class="carousel-control-prev-icon"></span>
+  <span class="sr-only">Previous</span>
+</a>
+<a class="carousel-control-next" href="#slider" data-slide="next">
+  <span class="carousel-control-next-icon"></span>
+  <span class="sr-only">Next</span>
+</a>
+
 
     
 
-    </div>
+    
   </section>
 
   
@@ -1293,9 +1408,11 @@ text-align: justify}
   
   
   
+    
+  
   <div class="col-12 col-sm-4">
     
-    <div class="featurette-icon"><i class="ai ai-osf"></i></div>
+    <div class="featurette-icon"><i class="fab fa-github"></i></div>
     
     <div class="section-subheading">Open Science Framework</div>
     <p>90%</p>
@@ -1360,10 +1477,10 @@ text-align: justify}
   
   <div class="col-12 col-sm-4">
     
-    <div class="featurette-icon"><i class="fab fa-js"></i></div>
+    <div class="featurette-icon"><i class="fab fa-git"></i></div>
     
-    <div class="section-subheading">JavaScript</div>
-    <p>30%</p>
+    <div class="section-subheading"></div>
+    <p>80%</p>
   </div>
   
   
@@ -1373,10 +1490,10 @@ text-align: justify}
   
   <div class="col-12 col-sm-4">
     
-    <div class="featurette-icon"><i class="fas fa-camera-retro"></i></div>
+    <div class="featurette-icon"><i class="fab fa-js"></i></div>
     
-    <div class="section-subheading">Photography</div>
-    <p>10%</p>
+    <div class="section-subheading">JavaScript</div>
+    <p>30%</p>
   </div>
   
 </div>
