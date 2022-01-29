@@ -54,6 +54,19 @@ contact_links:
      icon_pack: fas
      name: Discuss on Forum
      link: 'https://disqus.com/home/'
+# Which page types are commentable?
+  - commentable = {page = true, post = true, docs = true, project = true, publication = true, talk = true}
+
+  # Configuration of Disqus.
+  [comments.disqus]
+  - shortname = "https-taiye-rbind-io"  # Paste the shortname from your Disqus dashboard.
+  - show_count = true  # Show comment count in page header? (true/false)
+
+  # Configuration of Commento.
+  [comments.commento]
+    # If self-hosting Commento, enter its URL here (e.g. "https://commento.?.com"), otherwise leave empty.
+    url = ""
+
 
  #https://discourse.gohugo.io
 # Site header
