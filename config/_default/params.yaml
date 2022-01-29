@@ -4,8 +4,8 @@
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 # Appearance
-
-theme: minimal
+#theme: ocean, forest, minimal
+theme: ocean
 day_night: true
 font: ''
 font_size: L
@@ -19,6 +19,8 @@ description: ''
 twitter: ''
 
 # Contact (edit or remove options as required)
+
+
 
 email: oluwafemioyedele908@gmail.com
 phone: 7068626564
