@@ -53,8 +53,8 @@ contact_links:
    - icon: comments
      icon_pack: fas
      name: Discuss on Forum
-     link: 'https://statisticalinference-netlify-app.disqus.com/admin/install/complete'
-
+     link: 'https://disqus.com/by/oluwafemioyedele/'
+ #https://statisticalinference-netlify-app.disqus.com/admin/install/complete
  #https://discourse.gohugo.io
 # Site header
 
