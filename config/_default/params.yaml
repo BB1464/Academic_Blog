@@ -53,8 +53,9 @@ contact_links:
   # - icon: comments
   #   icon_pack: fas
   #   name: Discuss on Forum
-  #   link: 'https://discourse.gohugo.io'
+     link: 'https://disqus.com/home/'
 
+ #https://discourse.gohugo.io
 # Site header
 
 main_menu:
