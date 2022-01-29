@@ -50,9 +50,9 @@ contact_links:
   #   icon_pack: fab
   #   name: Chat on Keybase
   #   link: 'https://keybase.io/'
-  # - icon: comments
-  #   icon_pack: fas
-  #   name: Discuss on Forum
+   - icon: comments
+     icon_pack: fas
+     name: Discuss on Forum
      link: 'https://disqus.com/home/'
 
  #https://discourse.gohugo.io
