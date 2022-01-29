@@ -1,5 +1,8 @@
 ---
 bio: My research interests include Agrometeorology, Soil Fertility and Machine Learning with tidymodel.
+
+href="https://github.com/sponsors/BB1464?preview=true" class="btn btn-light btn-lg btn-sponsor" ><i class="fas fa-heart" style="padding-right: 10px;"></i>Sponsor me on GitHub</a>
+
 education:
   courses:
   - course: MSc in Agrometeorology 
@@ -47,4 +50,5 @@ title: Oluwafemi Oyedele
 ---
 
 **Oluwafemi Oyedele** is a data analyst and a R studio instructor. I earned my Master degree in Agrometeorology from the University of Ibadan, Nigeria, under the supervision of Prof. K. O. Oluwasemire, Dr. Stefan Hauser, Dr. Moses Ogunlade and Mr. Deo Gratias Hougni. My research focuses on soil fertility, agrometeorology, simulation modeling, agricultural field experimentation and machine learning. During the past few years, I discovered the power of the statistical programming language R. Since then I have turned into a big enthusiast, using the software almost every day for work and many private programming projects. I love analyzing data and making beautiful charts with R and I have mentored countless students and scientists in everything from experimental design to using R for creating figures for their publication. 
+<a href="https://github.com/sponsors/BB1464?preview=true" class="btn btn-light btn-lg btn-sponsor" ><i class="fas fa-heart" style="padding-right: 10px;"></i>Sponsor me on GitHub</a>
 

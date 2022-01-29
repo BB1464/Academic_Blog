@@ -1,0 +1,297 @@
+/* fix navbar font weight */
+
+.navbar-light .navbar-nav>.nav-item>.nav-link,
+.navbar-light .navbar-nav>.nav-item>.nav-link:focus,
+.navbar-light .navbar-nav>.nav-item>.nav-link:hover {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+/* change dark headers and body text color */
+
+h1, h2, h3, h4, h5, h6 {
+  color: #474747;
+}
+
+body {
+  color: #474747;
+}
+
+.portrait-title h2 {
+  color: #474747;
+}
+
+/* fix padding of profile description */
+
+section#profile-page.pt-5 div.container div.row div.col-12.col-lg-8{
+  padding-top: 30px !important;
+}
+
+/* Navbar */
+
+/* set max height of logo */
+
+.navbar-brand img {
+  max-height: 44px;
+}
+
+.navbar {
+  min-height: 80px !important;
+}
+
+.shrink-header {
+  min-height: 80px !important;
+}
+
+/*
+#navbar-main {
+  box-shadow: none;
+}
+*/
+
+a.nav-link {
+  text-transform: uppercase;
+}
+
+body {
+  margin-top: 80px !important;
+}
+
+/* White space */
+
+
+.hero-lead {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.hero-media {
+  padding-left: 2em;
+}
+
+a.hero-cta-alt:active,
+a.hero-cta-alt:focus,
+a.hero-cta-alt:hover {
+  transform: none;
+}
+
+.hero-title {
+	line-height: 1.2;
+}
+
+/* buttons */
+
+.btn.btn-sm, .btn-group-sm > .btn {
+  border-radius: 0px; /*undo rounded corners*/
+  font-size: 0.8rem;
+}
+
+.btn.btn-outline-primary.my-1.mr-1 {
+  border-radius: 0px; /*undo rounded corners*/
+  font-size: 0.8rem;
+}
+
+.btn-slider {
+  margin: 0 auto;
+  border-color: #fff;
+  background-color: #fff;
+}
+
+.btn {
+  border-radius: 0px;
+}
+
+.btn.btn-sm {
+  border-radius: 0px;
+  background-color: #fff;
+}
+
+.btn-toolbar .btn:first-child {
+  border-radius: 0px;
+}
+
+.btn-toolbar .btn:last-child {
+  border-radius: 0px;
+}
+
+/* code */
+pre, code {
+  background: #4D4D4DFF;
+	font-weight: 500;
+	font-size: 0.8rem;
+	color: #EDEEEFFF;
+  border-radius: 6px;
+  padding: 4px;
+}
+
+.hljs {
+  background: #4D4D4DFF;
+	color: #EDEEEFFF;
+  border-radius: 8px;
+}
+
+table {
+	font-size: .9rem;
+}
+
+/* slider*/
+.article-container {
+  max-width: 900px !important;
+}
+
+.container-slider {
+  position:absolute;
+  background:rgba(0,0,0,0.4);
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%); 
+}
+
+.container-slider h1{
+  text-align: center;
+}
+
+.media-body-slider {
+  text-align: left;
+}
+
+.section-heading-slider h1 {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.dark .article-metadata {
+  color: #fff;
+}
+
+
+.dark .article-metadata-slider {
+  overflow: hidden;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  color: #fff;
+}
+
+.article-title-slider {
+  font-weight: 400;
+}
+
+.article-title a {
+  color: #474747;
+  transition: color .6s ease;
+}
+
+.media.stream-item .article-title, .card-simple .article-title {
+  font-size: 1.8em;
+  padding-bottom: 10px;
+}
+
+.article-style-slider {  
+  font-style: italic;
+  font-size: 1em !important;
+  color: #fff;
+  padding-right: 5em;
+}
+
+.see-all {
+  margin-top: 0;
+  padding-bottom: 10px;
+}
+
+.see-all-slider a {
+  padding-top: 0;
+  padding-bottom: 10;
+  text-align: left;
+  color: #fff;
+}
+
+.slider-content {
+  text-align: center;
+}
+
+.media.stream-item {
+  margin-bottom: 0;
+}
+
+.media.stream-item {
+  margin-bottom: 0;
+}
+
+.btn-links {
+  margin-bottom: 15px;
+}
+
+/*hide certain elements in small screens*/
+@media screen and (max-width: 991px) {
+  .hide-element { 
+    display: none; 
+  }
+}
+
+/*single pages*/
+
+.featured-image {
+  width: auto;
+}
+
+.article-header-caption {
+  right: 100px;
+}
+
+.aboutme-header {
+  position:relative;height: 400px;
+  padding: 3em 0;
+  clear: both; 
+  background-size: cover;
+  background-repeat: no-repeat; 
+  background-position: center;
+}
+
+/* project cards */
+
+.card .card-image.hover-overlay:after {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  content: '';
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card:hover .card-image.hover-overlay:before {
+  opacity: 0;
+}
+
+.card:hover .card-image.hover-overlay:after {
+  opacity: 0;
+}
+
+/* featurettes */
+
+.featurette p {
+  margin-bottom: 2rem;
+}
+
+.featurette h3 {
+  margin-bottom: 15px;
+}
+
+.btn-sponsor {
+  margin-top: 25px;
+  margin-bottom: 20px;
+  background-color: #0072b2;
+  color: #FFF;
+}
+
+.btn-sponsor:hover {
+  background-color: #0072b2;
+  border-color: #f7f7f7;
+  border-radius: 0;
+  color: #FFF;
+}
