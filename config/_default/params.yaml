@@ -50,10 +50,10 @@ contact_links:
   #   icon_pack: fab
   #   name: Chat on Keybase
   #   link: 'https://keybase.io/'
-   - icon: comments
-     icon_pack: fas
-     name: Discuss on Forum
-     link: 'https://disqus.com/by/oluwafemioyedele/'
+   #- icon: comments
+    # icon_pack: fas
+     #name: Discuss on Forum
+     #link: 'https://disqus.com/by/oluwafemioyedele/'
  #https://statisticalinference-netlify-app.disqus.com/admin/install/complete
  #https://discourse.gohugo.io
 # Site header
