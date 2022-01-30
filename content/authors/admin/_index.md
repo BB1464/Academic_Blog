@@ -28,7 +28,7 @@ role: MSc in Agrometeorology
 social:
 - icon: envelope
   icon_pack: fas
-  link: /#contact
+  link: /#Contact
 - display:
     header: true
   icon: twitter
