@@ -9,7 +9,6 @@ education:
     institution: University of Calabar
     year: 2015
 email: "oluwafemioyedele908@gmail.com"
--my link: (mailito:oluwafemioyedele908@gmail.com)
 interests:
 - Agrometeorology
 - Soil Fertility
@@ -26,7 +25,7 @@ role: Agrometeorology
 social:
 - icon: envelope
   icon_pack: fas
-  link: '#contact'
+  link: "mailto:oluwafemioyedele908@gmail.com"
 - icon: twitter
   icon_pack: fab
   link: https://twitter.com/home

@@ -28,7 +28,7 @@ role: MSc in Agrometeorology
 social:
 - icon: envelope
   icon_pack: fas
-  link: /#Contact
+  link: "mailto:oluwafemioyedele908@gmail.com"
 - display:
     header: true
   icon: twitter
