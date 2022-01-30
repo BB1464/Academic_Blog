@@ -23,5 +23,5 @@ main:
     url: courses/
     weight: 60
   - name: Contact
-    url: '#contact'
+    url: 'mailito:oluwafemioyedele908@gmail.com'
     weight: 70
