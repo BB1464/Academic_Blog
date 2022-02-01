@@ -40,10 +40,10 @@ office_hours:
   - 'Friday 09:00 to 05:00 PM'
 #appointment_url: 'https://calendly.com'
 contact_links:
-  # - icon: twitter
-  #   icon_pack: fab
-  #   name: DM Me
-  #   link: 'https://twitter.com/Twitter'
+   - icon: twitter
+     icon_pack: fab
+     name: DM Me
+     link: 'https://twitter.com/OluwafemOyedele'
   # - icon: skype
   #   icon_pack: fab
   #   name: Skype Me
