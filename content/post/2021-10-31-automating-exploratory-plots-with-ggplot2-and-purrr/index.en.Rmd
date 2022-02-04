@@ -21,7 +21,7 @@ image:
 projects: []
 ---
 
-
+# Load the necessary library
 ```{r setup, include=TRUE}
 library(ggplot2)
 library(purrr)
@@ -40,11 +40,6 @@ This post is based on an example that involves plotting bivariate relationships 
 ### Load R packages
 
 I'll be plotting with ggplot2 and looping with purrr. I'll also be using package cowplot later to combine individual plots into one, but will use the package functions via cowplot:: instead of loading the package.
-
-```{r,include=TRUE}
-library(ggplot2) 
-library(purrr) 
-```
 
 
 ### The set-up
