@@ -108,8 +108,8 @@ expl</code></pre>
 <h3>Looping through one vector of variables</h3>
 <p>One way to make all the plots I want is to loop through each explanatory variable for a fixed response variable. With this approach I would need a separate loop for each response variable.</p>
 </div>
-<div id="i-will-use-map-from-package-purrr-for-the-looping." class="section level3">
-<h3>I will use map() from package purrr for the looping.</h3>
+<div id="here-i-will-use-the-map-function-from-purrr-package-for-looping." class="section level3">
+<h3>Here I will use the map function from purrr package for looping.</h3>
 <p>I pass each explanatory variable to the first argument in scatter_fun() and I fix the second argument to “elev”. I use the formula coding in map() and so refer to the element of the explanatory vector via .x within scatter_fun().</p>
 <pre class="r"><code>elev_plots = map(expl, ~scatter_fun(.x, &quot;elev&quot;) )</code></pre>
 <p>The output is a list of 4 plots (since there are 4 explanatory variables). You’ll notice that each element of the list has the variable name associated with it. This is why I used set_names() earlier, since this is convenient for printing the plots and, you’ll see later, is convenient when saving the plots in files with understandable names.</p>
