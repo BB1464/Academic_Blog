@@ -133,7 +133,7 @@ scatter_fun(x = "lat", y = "elev")
 
 One way to make all the plots I want is to loop through each explanatory variable for a fixed response variable. With this approach I would need a separate loop for each response variable.
 
-### I will use map() from package purrr for the looping.
+### Here I will use the map function from purrr package for looping.
 
 I pass each explanatory variable to the first argument in scatter_fun() and I fix the second argument to "elev". I use the formula coding in map() and so refer to the element of the explanatory vector via .x within scatter_fun().
 
