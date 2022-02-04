@@ -24,22 +24,22 @@ projects: []
 <script src="{{< blogdown/postref >}}index.en_files/header-attrs/header-attrs.js"></script>
 
 
-<div id="load-the-necessary-library" class="section level1">
-<h1>Load the necessary library</h1>
-<pre class="r"><code>library(ggplot2)
-library(purrr)
-library(cowplot)</code></pre>
 <p>When you have a lot of variables and need to make multiple exploratory plots it’s usually worthwhile to automate the process in R instead of manually copying and pasting code for every plot, this thing happen to me alot but when I read Hadley Wickham Advance R book on functional programming, I knew that what I was doing was wrong. However, the coding approach needed to automate plots can look pretty daunting to a beginner R user. It can look so daunting, in fact, that it can appear easier to manually make the plots (like in Excel) rather than using R at all.</p>
 <p>Unfortunately making plots manually can backfire. The efficiency of using a software program you already know is quickly out-weighed by being unable to easily reproduce the plots when needed. I know I invariably have to re-make even exploratory plots, and it’d be a bummer if I had to remake them all manually rather than re-running some code.</p>
 <p>So while I often assure students working under time constraints that it is perfectly OK to use software they already know rather than spending the time to learn how to do something in R, making many plots is a special case. To get them started I will provide students who need to automate plotting in R some example code (with explanation).</p>
 <p>This post is based on an example that involves plotting bivariate relationships between many continuous variables.</p>
-<div id="load-r-packages" class="section level3">
-<h3>Load R packages</h3>
-<p>I’ll be plotting with ggplot2 and looping with purrr. I’ll also be using package cowplot later to combine individual plots into one, but will use the package functions via cowplot:: instead of loading the package.</p>
+<div id="load-r-packages" class="section level2">
+<h2>Load R packages</h2>
+<div id="load-the-necessary-library" class="section level3">
+<h3>Load the necessary library</h3>
+<pre class="r"><code>library(ggplot2)
+library(purrr)
+library(cowplot)</code></pre>
+<p>I’ll be plotting with ggplot2 and looping with purrr package. I’ll also be using package cowplot later to combine individual plots into one, but will use the package functions via my name space cowplot:: instead of loading the package.</p>
 </div>
 <div id="the-set-up" class="section level3">
 <h3>The set-up</h3>
-<p>Today I’m going to make an example dataset with 3 response (y) variables and 4 explanatory (x) variables for plotting.</p>
+<p>Here I’m going to make an example dataset with 3 response (y) variables and 4 explanatory (x) variables for plotting.</p>
 <pre class="r"><code>set.seed(16)
 dat = data.frame(elev = round( runif(20, 100, 500), 1),
                  resp = round( runif(20, 0, 10), 1),
@@ -56,13 +56,10 @@ head(dat)</code></pre>
 ## 4 191.8  4.3 0.07 29.6 44.95022 122.7290 19
 ## 5 445.4  2.3 0.43 16.5 44.79784 122.9836 15
 ## 6 224.5  6.5 0.78  4.1 44.96576 122.9836 21</code></pre>
-<p>The goal is to make scatterplots for every response variable vs every explanatory variable. I’ve deemed the first three variables in the dataset to be the response variables (elev, resp, grad).</p>
-<p>The plan is to loop through the variables and make the desired plots. I’m going to use vectors of the variable names for this, one vector for the response variables and one for the explanatory variables.</p>
-<p>If all of your response or explanatory variables share some unique pattern in the variable names there are some clever ways to pull out the names with some of the select helper functions in dplyr::select(). My variable names are all unique. My options are to either write the vectors out manually or pull the names out by index. I’ll do the latter since the different types of variables are grouped together.</p>
+<p>The goal is to make scatterplots for every response variable vs every explanatory variable. I’ve deemed the first three variables in the data set to be the response variables (elev, resp, grad). The plan is to loop through the variables and make the desired plots. I’m going to use vectors of the variable names for this, one vector for the response variables and one for the explanatory variables. If all of your response or explanatory variables share some unique pattern in the variable names there are some clever ways to pull out the names with some of the select helper functions in dplyr::select(). My variable names are all unique. My options are to either write the vectors out manually or pull the names out by index. I’ll do the latter since the different types of variables are grouped together.</p>
 <pre class="r"><code>response = names(dat)[1:3]
 expl = names(dat)[4:7]</code></pre>
-<p>When I know I’m going to be looping through character vectors I like to use named vectors. This helps me keep track of things in the output.</p>
-<p>The set_names() function in purrr is super handy for naming character vectors, since it can use the values of the vector as names (i.e., the vector will be named by itself). (I don’t recommend trying this with lists of data.frames like I have in the past, though, since it turns out that naming a data.frame with a data.frame isn’t so useful.)</p>
+<p>When I know I’m going to be looping through character vectors I like to use named vectors. This helps me keep track of things in the output. The set_names() function in purrr is super handy for naming character vectors, since it can use the values of the vector as names (i.e., the vector will be named by itself). (I don’t recommend trying this with lists of data.frames like I have in the past, though, since it turns out that naming a data.frame with a data.frame isn’t so useful.)</p>
 <pre class="r"><code>response = set_names(response)
 response</code></pre>
 <pre><code>##   elev   resp   grad 
@@ -74,10 +71,7 @@ expl</code></pre>
 </div>
 <div id="create-a-plotting-function" class="section level3">
 <h3>Create a plotting function</h3>
-<p>Since I’m going to make a bunch of plots that will all have the same basic form, I will make a plotting function. I am going to make a function where only the x and y variables can vary (so are arguments to the function).</p>
-<p>Since I’m making a function to plot variables from a single dataset I’m going to hard-code the dataset into the function. If you have multiple datasets or you are making a function for use across projects you’ll probably want to add the dataset as a function argument.</p>
-<p>My functions inputs are based on the variable names, so I need to pass strings into the ggplot2 functions. Strings cannot be used directly in aes(), but can be used with the .data pronoun.</p>
-<p>I’m making pretty basic graphs since these are exploratory plots, not publication-ready plots. I will make a scatterplot and add locally weighted regression (loess) lines via geom_smooth(). I use such lines with great caution, as it can be easy to get too attached any pattern the loess line shows.</p>
+<p>Since I’m going to make a bunch of plots that will all have the same basic form, I will make a plotting function. I am going to make a function where only the x and y variables can vary (so are arguments to the function). Since I’m making a function to plot variables from a single data set I’m going to hard-code the data set into the function. If you have multiple data sets or you are making a function for use across projects you’ll probably want to add the data set as a function argument. My functions inputs are based on the variable names, so I need to pass strings into the ggplot2 functions. Strings cannot be used directly in aes(), but can be used with the .data pronoun. I’m making pretty basic graphs since these are exploratory plots, not publication-ready plots. I will make a scatterplot and add locally weighted regression (loess) lines via geom_smooth(). I use such lines with great caution, as it can be easy to get too attached any pattern the loess line shows.</p>
 <pre class="r"><code>scatter_fun = function(x, y) {
   ggplot(dat, aes(x = .data[[x]], y = .data[[y]])) +
     geom_point() +
@@ -138,12 +132,7 @@ expl</code></pre>
 </div>
 <div id="looping-through-both-vectors" class="section level3">
 <h3>Looping through both vectors</h3>
-<p>For only a few response variables we could easily copy and paste the code above, changing the hard-coded response variable each time. This process can get burdensome if there are a lot of response variables, though.
-Using a nested loop</p>
-<p>Another option is to loop through both vectors of variables and make all the plots at once. Because we want a plot for each combination of variables, this is a job for a nested loop. This means one map() loop will be nested inside another. I will refer to the first map() loop as the outer loop and the second one as the inner loop.</p>
-<p>I’m going to run through the response variables in the outer loop and the explanatory variables in the inner loop. That way I can graph all of the explanatory variables for each response variable before moving on to the next response variable. This puts the output, a nested list, in a logical order.</p>
-<p>A nested loop involves more complicated code. It took some effort for me to wrap my head around how to refer to the list element from the outer loop within the inner loop when using the map() formula coding with the tilde (~). I found the answers/comments to this question on Stack Overflow to be helpful.</p>
-<p>Since my scatterplot function is so simple I ended up using formula coding for the outer loop and the function as-is in the inner loop. The inner list elements are fed to the first argument of scatter_fun() by default, which works out great since the first argument is the x variable and the inner loop loops through the explanatory variables. The .x then refers to the outer list elements (the response variable names), and is passed to the y argument of the function in the inner loop.</p>
+<p>For only a few response variables we could easily copy and paste the code above, changing the hard-coded response variable each time. This process can get burdensome if there are a lot of response variables, though. Using a nested loop is another option which involve looping through both vectors of variables to make all the plots at once. Because we want a plot for each combination of variables, this is a job for a nested loop. This means one map() loop will be nested inside another. I will refer to the first map() loop as the outer loop and the second one as the inner loop. I’m going to run through the response variables in the outer loop and the explanatory variables in the inner loop. That way I can graph all of the explanatory variables for each response variable before moving on to the next response variable. This puts the output, a nested list, in a logical order. A nested loop involves more complicated code. It took some effort for me to wrap my head around how to refer to the list element from the outer loop within the inner loop when using the map() formula coding with the tilde (~). I found the answers/comments to this question on Stack Overflow to be helpful. Since my scatter plot function is so simple I ended up using formula coding for the outer loop and the function as-is in the inner loop. The inner list elements are fed to the first argument of scatter_fun() by default, which works out great since the first argument is the x variable and the inner loop loops through the explanatory variables. The .x then refers to the outer list elements (the response variable names), and is passed to the y argument of the function in the inner loop.</p>
 <pre class="r"><code>all_plots = map(response,
                 ~ map(expl, scatter_fun, y = .x))</code></pre>
 <p>To be honest, I think it is fairly hard to follow what the above code is doing. And I’ve found it difficult to use such an approach if adding additional nested loops. At the end of the day, using anonymous functions involves more code but the results may be easier to understand. Well, as easy to follow as nested loops ever are. Here’s the same plots using anonymous functions in each map() loop.</p>
@@ -152,8 +141,7 @@ Using a nested loop</p>
     scatter_fun(x = expl, y = resp)
   })
 })</code></pre>
-<p>The output is a list of lists. Each sublist contains all the plots for a single response variable. Because I set the names for both vectors of variable names, the inner and outer lists both have names. These names can be used to pull out individual plots.</p>
-<p>For example, if I want to see all the plots for the grad response variable I can print that sublist by name. (I’m going to display only two of four grad plots here to save space.)</p>
+<p>The output is a list of lists. Each sublist contains all the plots for a single response variable. Because I set the names for both vectors of variable names, the inner and outer lists both have names. These names can be used to pull out individual plots. For example, if I want to see all the plots for the grad response variable I can print that sublist by name. (I’m going to display only two of four grad plots here to save space.)</p>
 <pre class="r"><code>all_plots$grad[1:2]</code></pre>
 <pre><code>## $slp</code></pre>
 <pre><code>## `geom_smooth()` using formula &#39;y ~ x&#39;</code></pre>
@@ -173,8 +161,7 @@ Using a nested loop</p>
 </div>
 <div id="combining-variables-for-a-single-loop" class="section level3">
 <h3>Combining variables for a single loop</h3>
-<p>Since nested loops can be complicated, another option is to create all combinations of the two input vectors and then loop through those in a single loop. This can be done, for example, using tidyr::expand_grid(). The main thing I like about tidyr::expand_grid() over expand.grid() from base R is the order of the output. Both put the results into a dataset (data.frame or tibble).</p>
-<p>Here’s how that would look, putting the response variables first to match the output order above. I’m using tidyr version 1.1.4 here.</p>
+<p>Since nested loops can be complicated, another option is to create all combinations of the two input vectors and then loop through those in a single loop. This can be done, for example, using tidyr::expand_grid(). The main thing I like about tidyr::expand_grid() over expand.grid() from base R is the order of the output. Both put the results into a data set (data.frame or tibble). Here’s how that would look, putting the response variables first to match the output order above. I’m using tidyr version 1.1.4 here.</p>
 <pre class="r"><code>resp_expl = tidyr::expand_grid(response, expl)
 resp_expl</code></pre>
 <pre><code>## # A tibble: 12 x 2
@@ -213,8 +200,8 @@ allplots2_names[1:2]</code></pre>
 <p>If you want to save every plot as a separate page in a PDF, you can do so with the pdf() function. The code below shows an example of how this works. First, a graphics device to save the plots into is created and given a name via pdf(). Then all the plots are put into that device. Finally, the device is turned off with dev.off(). The last step is important, as you can’t open the file until the device is turned off.</p>
 <p>This is a pretty coarse way to save everything, but it allows you to easily page through all the plots. I’ve used this method when I had many exploratory plots for a single response variable that I wanted to share with collaborators.</p>
 </div>
-<div id="in-this-example-code-i-save-the-file-which-i-name-all_scatterplots.pdf-into-the-working-directory." class="section level3">
-<h3>In this example code I save the file, which I name all_scatterplots.pdf, into the working directory.</h3>
+<div id="in-this-example-code-i-save-the-file-which-i-name-all_scatterplots.pdf-into-my-current-working-directory." class="section level3">
+<h3>In this example code I save the file, which I name all_scatterplots.pdf, into my current working directory.</h3>
 <pre class="r"><code>pdf(&quot;all_scatterplots.pdf&quot;)
 all_plots</code></pre>
 <pre><code>## $elev
@@ -263,12 +250,7 @@ all_plots</code></pre>
 </div>
 <div id="saving-groups-of-plots-together" class="section level3">
 <h3>Saving groups of plots together</h3>
-<p>Another option is to save each group of plots in a separate document. This might make sense in a case like this where there are a set of plots for each response variable and we might want a separate file for each set.</p>
-<p>To save each sublist separately we’ll need to loop through all_plots and save the plots for each response variable into a separate file. The list names can be used in the file names to keep the output organized.</p>
-<p>The functions in purrr that start with i are special functions that loop through a list and the names of that list simultaneously. This is useful here where we want to use the list names to identify the output files while we save them.</p>
-<p>The walk() function is part of the map family, to be used when you want a function for its side effect instead of for a return value. Saving plots is a classic example of when we want walk() instead of map().</p>
-<p>Combining the i and the walk gives us the iwalk() function. In the formula interface, .x refers to the list elements and .y refers to the names of the list. You can see I create the plot file names using the list name combined with “scatterplots.pdf”, using _ as the separator.</p>
-<p>The code below makes three files, one for each response variable, with four plots each. The files are named “elev_scatterplots.pdf”, “resp_scatterplots.pdf”, and “grad_scatterplots.pdf”.</p>
+<p>Another option is to save each group of plots in a separate document. This might make sense in a case like this where there are a set of plots for each response variable and we might want a separate file for each set. To save each sub-list separately we’ll need to loop through all_plots and save the plots for each response variable into a separate file. The list names can be used in the file names to keep the output organized. The functions in purrr that start with i are special functions that loop through a list and the names of that list simultaneously. This is useful here where we want to use the list names to identify the output files while we save them. The walk() function is part of the map family, to be used when you want a function for its side effect instead of for a return value. Saving plots is a classic example of when we want walk() instead of map(). Combining the i and the walk gives us the iwalk() function. In the formula interface, .x refers to the list elements and .y refers to the names of the list. You can see I create the plot file names using the list name combined with “scatter plots.pdf”, using _ as the separator. The code below makes three files, one for each response variable, with four plots each. The files are named “elev_scatter plots.pdf”, “resp_scatter plots.pdf”, and “grad_scatter plots.pdf”.</p>
 <pre class="r"><code>iwalk(all_plots, ~ {
   pdf(paste0(.y, &quot;_scatterplots.pdf&quot;))
   print(.x)
@@ -312,13 +294,10 @@ all_plots</code></pre>
 </div>
 <div id="saving-all-plots-separately" class="section level3">
 <h3>Saving all plots separately</h3>
-<p>All plots can be saved separately instead of combined in a single document. This might be necessary if you want to insert the plots into some larger document later.</p>
-<p>We’ll want to use the names of both the outer and inner lists to appropriately identify each plot we save. I decided to do this by looping through the all_plots list and the names of the list via imap() to make the file names in a separate step. This time I’m going to save these as PNG files so use .png at the end of the file name.</p>
-<p>The result is a list of lists, so I flatten this into a single list via flatten(). If I were to use flatten() earlier in the process I’d lose the names of the outer list. This process of combining names prior to flattening should be simplified once the proposed flatten_names() function is added to purrr.</p>
+<p>All plots can be saved separately instead of combined in a single document. This might be necessary if you want to insert the plots into some larger document later. We’ll want to use the names of both the outer and inner lists to appropriately identify each plot we save. I decided to do this by looping through the all_plots list and the names of the list via imap() to make the file names in a separate step. This time I’m going to save these as PNG files so use .png at the end of the file name. The result is a list of lists, so I flatten this into a single list via flatten(). If I were to use flatten() earlier in the process I’d lose the names of the outer list. This process of combining names prior to flattening should be simplified once the proposed flatten_names() function is added to purrr.</p>
 <pre class="r"><code>plotnames = imap(all_plots, ~ paste0(.y, &quot;_&quot;, names(.x), &quot;.png&quot;)) %&gt;%
   flatten()</code></pre>
-<p>Once the file names are created I can loop through all the file names and plots simultaneously with walk2() and save things via ggsave(). The height and width of each output file can be set as needed in ggsave().</p>
-<p>You can see I flattened the nested list of plots into a single list to use in walk2().</p>
+<p>Once the file names are created I can loop through all the file names and plots simultaneously with walk2() and save things via ggsave(). The height and width of each output file can be set as needed in ggsave(). You can see I flattened the nested list of plots into a single list to use in walk2().</p>
 <pre class="r"><code>walk2(plotnames,
       flatten(all_plots),
       ~ ggsave(
@@ -342,8 +321,7 @@ all_plots</code></pre>
 </div>
 <div id="combining-plots" class="section level3">
 <h3>Combining plots</h3>
-<p>Another way to get a set of plots together is to combine them into one plot. How useful this is will depend on how many plots you have per set. This option is a lot like faceting, except we didn’t reshape our dataset to allow the use faceting.</p>
-<p>I like the package cowplot function plot_grid() for quickly combining multiple plots into one. A list of plots can be passed via the plotlist argument.</p>
+<p>Another way to get a set of plots together is to combine them into one plot. How useful this is will depend on how many plots you have per set. This option is a lot like faceting, except we didn’t reshape our data set to allow the use faceting. I like the package cowplot function plot_grid() for quickly combining multiple plots into one. A list of plots can be passed via the plotlist argument.</p>
 </div>
 <div id="heres-what-that-looks-like-for-the-first-response-variable-elev." class="section level3">
 <h3>Here’s what that looks like for the first response variable, elev.</h3>
@@ -353,7 +331,7 @@ all_plots</code></pre>
 ## `geom_smooth()` using formula &#39;y ~ x&#39;
 ## `geom_smooth()` using formula &#39;y ~ x&#39;</code></pre>
 <p><img src="{{< blogdown/postref >}}index.en_files/figure-html/unnamed-chunk-22-1.png" width="672" /></p>
-<p>We can use a loop to combine the plots for each response variable sublist. The result could then be saved using any of the approaches shown above. If you have many subplots per combined plot you likely will want to save the plots at a larger size so the individual plots can be clearly seen.</p>
+<p>We can use a loop to combine the plots for each response variable sub-list. The result could then be saved using any of the approaches shown above. If you have many subplots per combined plot you likely will want to save the plots at a larger size so the individual plots can be clearly seen.</p>
 <pre class="r"><code>response_plots = map(all_plots, ~ cowplot::plot_grid(plotlist = .x))</code></pre>
 <pre><code>## `geom_smooth()` using formula &#39;y ~ x&#39;
 ## `geom_smooth()` using formula &#39;y ~ x&#39;
