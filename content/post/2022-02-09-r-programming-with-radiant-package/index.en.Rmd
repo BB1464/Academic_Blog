@@ -1,0 +1,49 @@
+---
+title: R Programming with Radiant Package
+author: Oluwafemi Oyedele
+date: '2022-02-09'
+slug: r-programming-with-radiant-package
+categories:
+  - R Shiny
+tags:
+  - R
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2022-02-09T11:24:40+01:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+
+I am really excited to share with you the new R package **radiant**. Radiant's goal is to provide access to the power of R for business analytics and data science using R and Shiny. Although Radiant's web-interface can handle many data and analysis tasks.
+Radiant provides a bridge to programming in R(studio) by exporting the functions used for analysis. For example, you can run your analyses in Radiant and output the relevant function calls to  R or Rmarkdown document and you can also send your codes directly to R Studio.
+At the moments radiant is on CRAN and you can install it with the function below.
+
+```{r,eval=FALSE,include=TRUE}
+install.packages("radiant")
+```
+
+Then we have to load the library
+```{r,eval=FALSE}
+library(radiant)
+```
+
+Then we have to run the app but their is also a rstudio addin that we can use to run radiant.
+```{r,eval=FALSE}
+radiant()
+```
+
+This will then load a R shiny interface in our browser and the first thing that we need to do now is for us to import our data set and then we can do some data transformation and visualization.
+Radiant has several tabs i.e the model,multivariate and the last tab is for report, where we can knit our document to generate the output alongside with the codes. Radiant is a very good R package that is well documented, and you can check the github page of radiant [**here**](https://github.com/vnijs/radiant) or you can check the vignette of radiant for more information  [**here**](http://127.0.0.1:29749/session/Rvig.2ae044e843c4.html) 
+
+```{r,echo=FALSE,warning=FALSE,message=FALSE}
+library(tidyverse)
+library(vembedr)
+embed_url('https://youtu.be/7L3hDpLw53I') %>% 
+  use_align('center')
+```

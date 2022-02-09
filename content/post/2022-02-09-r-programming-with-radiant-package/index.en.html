@@ -1,0 +1,40 @@
+---
+title: R Programming with Radiant Package
+author: Oluwafemi Oyedele
+date: '2022-02-09'
+slug: r-programming-with-radiant-package
+categories:
+  - R Shiny
+tags:
+  - R
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2022-02-09T11:24:40+01:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+<script src="{{< blogdown/postref >}}index.en_files/header-attrs/header-attrs.js"></script>
+<link href="{{< blogdown/postref >}}index.en_files/vembedr/css/vembedr.css" rel="stylesheet" />
+
+
+<p>I am really excited to share with you the new R package <strong>radiant</strong>. Radiant’s goal is to provide access to the power of R for business analytics and data science using R and Shiny. Although Radiant’s web-interface can handle many data and analysis tasks.
+Radiant provides a bridge to programming in R(studio) by exporting the functions used for analysis. For example, you can run your analyses in Radiant and output the relevant function calls to R or Rmarkdown document and you can also send your codes directly to R Studio.
+At the moments radiant is on CRAN and you can install it with the function below.</p>
+<pre class="r"><code>install.packages(&quot;radiant&quot;)</code></pre>
+<p>Then we have to load the library</p>
+<pre class="r"><code>library(radiant)</code></pre>
+<p>Then we have to run the app but their is also a rstudio addin that we can use to run radiant.</p>
+<pre class="r"><code>radiant()</code></pre>
+<p>This will then load a R shiny interface in our browser and the first thing that we need to do now is for us to import our data set and then we can do some data transformation and visualization.
+Radiant has several tabs i.e the model,multivariate and the last tab is for report, where we can knit our document to generate the output alongside with the codes. Radiant is a very good R package that is well documented, and you can check the github page of radiant <a href="https://github.com/vnijs/radiant"><strong>here</strong></a> or you can check the vignette of radiant for more information <a href="http://127.0.0.1:29749/session/Rvig.2ae044e843c4.html"><strong>here</strong></a></p>
+<div class="vembedr" align="center">
+<div>
+<iframe src="https://www.youtube.com/embed/7L3hDpLw53I" width="533" height="300" frameborder="0" allowfullscreen="" data-external="1"></iframe>
+</div>
+</div>
