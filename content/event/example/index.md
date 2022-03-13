@@ -1,5 +1,5 @@
 ---
-abstract: I along side with Dr Ibnou Dieng (Head of Biometric Unit, IITA, Ibadan), Mr Moshood Bakare (PhD Student from Cornel University, USA) and Mr Kayode Fawobaje (Data Analyst, IITA) will be presenting the introduction to R using the tidyverse principles to research fellows at the International Institute of Tropical Agriculture (IITA), Ibadan, Nigeria. We will also explain to them the basic functions of data import, data management and then We will introduce them to data visualization using ggplot2. We will also cover multi-location trial using lme4 package in R, lmerTest, statgenSTA, statgenGxE and then we will summarize with multivariate analysis in R using Factoextra package. [you can download the codes **here**](https://github.com/BB1464/Introduction-to-R-Training.git)
+abstract: I along side with Dr Ibnou Dieng (Head of Biometric Unit, IITA, Ibadan), Mr Moshood Bakare (PhD Student from Cornel University, USA) and Mr Kayode Fawobaje (Data Analyst, IITA) will be presenting the introduction to R using the tidyverse principles to research fellows at the International Institute of Tropical Agriculture (IITA), Ibadan, Nigeria. We will also explain to them the basic functions of data import, data management and then We will introduce them to data visualization using ggplot2. We will also cover multi-location trial using lme4 package in R, lmerTest, statgenSTA, statgenGxE and then we will summarize with multivariate analysis in R using Factoextra package. 
 address:
   city: Ibadan
   country: Nigeria
@@ -31,7 +31,7 @@ publishDate: "2021-10-01T00:00:00Z"
 #summary: An example talk using Wowchemy's Markdown slides feature.
 tags: []
 title: Introduction to R using the Tidyverse Principles
-url_code: ""
+url_code: "https://github.com/BB1464/Introduction-to-R-Training.git"
 url_pdf: ""
 url_slides: ""
 url_video: ""

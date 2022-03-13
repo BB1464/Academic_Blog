@@ -1,3 +1,4 @@
+---
 abstract: I will speaking on communicating data insights with visuals using ggplot2 at R Ladies Abuja
 address:
   city: Ibadan
@@ -12,7 +13,7 @@ date_end: "2022-03-26T10:00:16Z"
 event: R ladies Abuja
 featured: false
 image:
-caption: 'Image credit: [**Oluwafemi Oyedele**](https://unsplash.com/photos/bzdhc5b3Bxs)'
+  caption: 'Image credit:[**OluwafemiOyedele**](https://unsplash.com/photos/bzdhc5b3Bxs)'
   focal_point: Right
 links:
  - icon: twitter
