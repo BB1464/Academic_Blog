@@ -9,7 +9,7 @@ address:
 all_day: false
 authors: []
 date: "2022-03-26T10:00:16Z"
-date_end: "2022-03-26T10:00:16Z"
+date_end: "2022-03-26T12:00:16Z"
 event: R ladies Abuja
 featured: false
 image:
