@@ -19,10 +19,10 @@ image:
   caption: 'Image credit: [**Oluwafemi Oyedele**](https://unsplash.com/photos/bzdhc5b3Bxs)'
   focal_point: Right
 links:
-# - icon: twitter
-#   icon_pack: fab
-#   name: Follow
-#   url: https://twitter.com/georgecushen
+ - icon: twitter
+   icon_pack: fab
+   name: Follow
+   url: https://twitter.com/OluwafemOyedele
 location: IITA West Africa Hub, Ibadan
 projects:
 - internal-project

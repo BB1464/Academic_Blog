@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>📊 Data Management using the Tidyverse | Home</title>
+    <title>📊 Data Management using the Tidyverse | Oluwafemi</title>
     <link>https://statisticalinference.netlify.app/courses/example/</link>
       <atom:link href="https://statisticalinference.netlify.app/courses/example/index.xml" rel="self" type="application/rss+xml" />
     <description>📊 Data Management using the Tidyverse</description>
@@ -66,23 +66,7 @@ text-align: justify}
       <link>https://statisticalinference.netlify.app/courses/example/visualization/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
       <guid>https://statisticalinference.netlify.app/courses/example/visualization/</guid>
-      <description>&lt;h1 id=&#34;-head&#34;&gt;&amp;laquo;&amp;laquo;&amp;laquo;&amp;lt; HEAD&lt;/h1&gt;
-&lt;blockquote&gt;
-&lt;blockquote&gt;
-&lt;blockquote&gt;
-&lt;blockquote&gt;
-&lt;blockquote&gt;
-&lt;blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;main
-Learn how to visualize data with ggplot2.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
+      <description>&lt;p&gt;Learn how to visualize data with ggplot2.&lt;/p&gt;
 &lt;p&gt;
   &lt;i class=&#34;fas fa-clock  pr-1 fa-fw&#34;&gt;&lt;/i&gt; 1-2 hours per week, for 8 weeks&lt;/p&gt;
 &lt;h2 id=&#34;learn&#34;&gt;Learn&lt;/h2&gt;

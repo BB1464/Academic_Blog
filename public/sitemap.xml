@@ -12,7 +12,25 @@
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://statisticalinference.netlify.app/</loc>
-    <lastmod>2021-11-18T10:00:16+00:00</lastmod>
+    <lastmod>2022-02-09T11:24:40+01:00</lastmod>
+  </url><url>
+    <loc>https://statisticalinference.netlify.app/categories/</loc>
+    <lastmod>2022-02-09T11:24:40+01:00</lastmod>
+  </url><url>
+    <loc>https://statisticalinference.netlify.app/post/</loc>
+    <lastmod>2022-02-09T11:24:40+01:00</lastmod>
+  </url><url>
+    <loc>https://statisticalinference.netlify.app/tag/r/</loc>
+    <lastmod>2022-02-09T11:24:40+01:00</lastmod>
+  </url><url>
+    <loc>https://statisticalinference.netlify.app/post/r-programming-with-radiant-package/</loc>
+    <lastmod>2022-02-09T11:24:40+01:00</lastmod>
+  </url><url>
+    <loc>https://statisticalinference.netlify.app/category/r-shiny/</loc>
+    <lastmod>2022-02-09T11:24:40+01:00</lastmod>
+  </url><url>
+    <loc>https://statisticalinference.netlify.app/tags/</loc>
+    <lastmod>2022-02-09T11:24:40+01:00</lastmod>
   </url><url>
     <loc>https://statisticalinference.netlify.app/talk/introduction-to-r-using-the-tidyverse-principles/</loc>
     <lastmod>2021-11-18T10:00:16+00:00</lastmod>
@@ -23,19 +41,10 @@
     <loc>https://statisticalinference.netlify.app/post/automating-exploratory-plots-with-ggplot2-and-purrr/</loc>
     <lastmod>2021-11-11T02:53:49-11:00</lastmod>
   </url><url>
-    <loc>https://statisticalinference.netlify.app/categories/</loc>
-    <lastmod>2021-11-11T02:53:49-11:00</lastmod>
-  </url><url>
     <loc>https://statisticalinference.netlify.app/category/functional-programming/</loc>
     <lastmod>2021-11-11T02:53:49-11:00</lastmod>
   </url><url>
-    <loc>https://statisticalinference.netlify.app/post/</loc>
-    <lastmod>2021-11-11T02:53:49-11:00</lastmod>
-  </url><url>
     <loc>https://statisticalinference.netlify.app/tag/purrr/</loc>
-    <lastmod>2021-11-11T02:53:49-11:00</lastmod>
-  </url><url>
-    <loc>https://statisticalinference.netlify.app/tags/</loc>
     <lastmod>2021-11-11T02:53:49-11:00</lastmod>
   </url><url>
     <loc>https://statisticalinference.netlify.app/post/2021-10-13-advice-on-setting-up-of-your-r-working-directory-to-maximize-effectiveness-and-reduce-frustration/</loc>
@@ -51,9 +60,6 @@
     <lastmod>2021-10-10T04:36:58-11:00</lastmod>
   </url><url>
     <loc>https://statisticalinference.netlify.app/tag/ggplot2/</loc>
-    <lastmod>2021-10-10T04:36:58-11:00</lastmod>
-  </url><url>
-    <loc>https://statisticalinference.netlify.app/tag/r/</loc>
     <lastmod>2021-10-10T04:36:58-11:00</lastmod>
   </url><url>
     <loc>https://statisticalinference.netlify.app/courses/r-bootcamp/</loc>
@@ -122,5 +128,7 @@
     <loc>https://statisticalinference.netlify.app/admin/</loc>
   </url><url>
     <loc>https://statisticalinference.netlify.app/author/</loc>
+  </url><url>
+    <loc>https://statisticalinference.netlify.app/talk/</loc>
   </url>
 </urlset>

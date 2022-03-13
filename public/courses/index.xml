@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Training and Workshops | Home</title>
+    <title>Training and Workshops | Oluwafemi</title>
     <link>https://statisticalinference.netlify.app/courses/</link>
       <atom:link href="https://statisticalinference.netlify.app/courses/index.xml" rel="self" type="application/rss+xml" />
     <description>Training and Workshops</description>

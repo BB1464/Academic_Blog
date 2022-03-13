@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Home</title>
+    <title>Oluwafemi</title>
     <link>https://statisticalinference.netlify.app/</link>
       <atom:link href="https://statisticalinference.netlify.app/index.xml" rel="self" type="application/rss+xml" />
-    <description>Home</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 18 Nov 2021 10:00:16 +0000</lastBuildDate>
+    <description>Oluwafemi</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 09 Feb 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://statisticalinference.netlify.app/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_3.png</url>
-      <title>Home</title>
+      <title>Oluwafemi</title>
       <link>https://statisticalinference.netlify.app/</link>
     </image>
     
@@ -66,23 +66,7 @@ text-align: justify}
       <link>https://statisticalinference.netlify.app/courses/example/visualization/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
       <guid>https://statisticalinference.netlify.app/courses/example/visualization/</guid>
-      <description>&lt;h1 id=&#34;-head&#34;&gt;&amp;laquo;&amp;laquo;&amp;laquo;&amp;lt; HEAD&lt;/h1&gt;
-&lt;blockquote&gt;
-&lt;blockquote&gt;
-&lt;blockquote&gt;
-&lt;blockquote&gt;
-&lt;blockquote&gt;
-&lt;blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;main
-Learn how to visualize data with ggplot2.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
+      <description>&lt;p&gt;Learn how to visualize data with ggplot2.&lt;/p&gt;
 &lt;p&gt;
   &lt;i class=&#34;fas fa-clock  pr-1 fa-fw&#34;&gt;&lt;/i&gt; 1-2 hours per week, for 8 weeks&lt;/p&gt;
 &lt;h2 id=&#34;learn&#34;&gt;Learn&lt;/h2&gt;
@@ -159,6 +143,34 @@ text-align: justify}
     </item>
     
     <item>
+      <title>R Programming with Radiant Package</title>
+      <link>https://statisticalinference.netlify.app/post/r-programming-with-radiant-package/</link>
+      <pubDate>Wed, 09 Feb 2022 00:00:00 +0000</pubDate>
+      <guid>https://statisticalinference.netlify.app/post/r-programming-with-radiant-package/</guid>
+      <description>
+&lt;script src=&#34;https://statisticalinference.netlify.app/post/r-programming-with-radiant-package/index.en_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://statisticalinference.netlify.app/post/r-programming-with-radiant-package/index.en_files/vembedr/css/vembedr.css&#34; rel=&#34;stylesheet&#34; /&gt;
+
+
+&lt;p&gt;I am really excited to share with you the new R package &lt;strong&gt;radiant&lt;/strong&gt;. Radiant’s goal is to provide access to the power of R for business analytics and data science using R and Shiny. Although Radiant’s web-interface can handle many data and analysis tasks.
+Radiant provides a bridge to programming in R(studio) by exporting the functions used for analysis. For example, you can run your analyses in Radiant and output the relevant function calls to R or Rmarkdown document and you can also send your codes directly to R Studio.
+At the moments radiant is on CRAN and you can install it with the function below.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;install.packages(&amp;quot;radiant&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then we have to load the library&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(radiant)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then we have to run the app but their is also a rstudio addin that we can use to run radiant.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;radiant()&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This will then load a R shiny interface in our browser and the first thing that we need to do now is for us to import our data set and then we can do some data transformation and visualization.
+Radiant has several tabs i.e the model,multivariate and the last tab is for report, where we can knit our document to generate the output alongside with the codes. Radiant is a very good R package that is well documented, and you can check the github page of radiant &lt;a href=&#34;https://github.com/vnijs/radiant&#34;&gt;&lt;strong&gt;here&lt;/strong&gt;&lt;/a&gt; or you can check the vignette of radiant for more information &lt;a href=&#34;http://127.0.0.1:29749/session/Rvig.2ae044e843c4.html&#34;&gt;&lt;strong&gt;here&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&#34;vembedr&#34; align=&#34;center&#34;&gt;
+&lt;div&gt;
+&lt;iframe src=&#34;https://www.youtube.com/embed/7L3hDpLw53I&#34; width=&#34;533&#34; height=&#34;300&#34; frameborder=&#34;0&#34; allowfullscreen=&#34;&#34; data-external=&#34;1&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Introduction to R using the Tidyverse Principles</title>
       <link>https://statisticalinference.netlify.app/talk/introduction-to-r-using-the-tidyverse-principles/</link>
       <pubDate>Thu, 18 Nov 2021 10:00:16 +0000</pubDate>
@@ -190,15 +202,18 @@ text-align: justify}
 &lt;p&gt;Unfortunately making plots manually can backfire. The efficiency of using a software program you already know is quickly out-weighed by being unable to easily reproduce the plots when needed. I know I invariably have to re-make even exploratory plots, and it’d be a bummer if I had to remake them all manually rather than re-running some code.&lt;/p&gt;
 &lt;p&gt;So while I often assure students working under time constraints that it is perfectly OK to use software they already know rather than spending the time to learn how to do something in R, making many plots is a special case. To get them started I will provide students who need to automate plotting in R some example code (with explanation).&lt;/p&gt;
 &lt;p&gt;This post is based on an example that involves plotting bivariate relationships between many continuous variables.&lt;/p&gt;
-&lt;div id=&#34;load-r-packages&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;Load R packages&lt;/h3&gt;
-&lt;p&gt;I’ll be plotting with ggplot2 and looping with purrr. I’ll also be using package cowplot later to combine individual plots into one, but will use the package functions via cowplot:: instead of loading the package.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(ggplot2) 
-library(purrr) &lt;/code&gt;&lt;/pre&gt;
+&lt;div id=&#34;load-r-packages&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Load R packages&lt;/h2&gt;
+&lt;div id=&#34;load-the-necessary-library&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Load the necessary library&lt;/h3&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(ggplot2)
+library(purrr)
+library(cowplot)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I’ll be plotting with ggplot2 and looping with purrr package. I’ll also be using package cowplot later to combine individual plots into one, but will use the package functions via my name space cowplot:: instead of loading the package.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;the-set-up&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;The set-up&lt;/h3&gt;
-&lt;p&gt;Today I’m going to make an example dataset with 3 response (y) variables and 4 explanatory (x) variables for plotting.&lt;/p&gt;
+&lt;p&gt;Here I’m going to make an example dataset with 3 response (y) variables and 4 explanatory (x) variables for plotting.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;set.seed(16)
 dat = data.frame(elev = round( runif(20, 100, 500), 1),
                  resp = round( runif(20, 0, 10), 1),
@@ -215,13 +230,10 @@ head(dat)&lt;/code&gt;&lt;/pre&gt;
 ## 4 191.8  4.3 0.07 29.6 44.95022 122.7290 19
 ## 5 445.4  2.3 0.43 16.5 44.79784 122.9836 15
 ## 6 224.5  6.5 0.78  4.1 44.96576 122.9836 21&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;The goal is to make scatterplots for every response variable vs every explanatory variable. I’ve deemed the first three variables in the dataset to be the response variables (elev, resp, grad).&lt;/p&gt;
-&lt;p&gt;The plan is to loop through the variables and make the desired plots. I’m going to use vectors of the variable names for this, one vector for the response variables and one for the explanatory variables.&lt;/p&gt;
-&lt;p&gt;If all of your response or explanatory variables share some unique pattern in the variable names there are some clever ways to pull out the names with some of the select helper functions in dplyr::select(). My variable names are all unique. My options are to either write the vectors out manually or pull the names out by index. I’ll do the latter since the different types of variables are grouped together.&lt;/p&gt;
+&lt;p&gt;The goal is to make scatterplots for every response variable vs every explanatory variable. I’ve deemed the first three variables in the data set to be the response variables (elev, resp, grad). The plan is to loop through the variables and make the desired plots. I’m going to use vectors of the variable names for this, one vector for the response variables and one for the explanatory variables. If all of your response or explanatory variables share some unique pattern in the variable names there are some clever ways to pull out the names with some of the select helper functions in dplyr::select(). My variable names are all unique. My options are to either write the vectors out manually or pull the names out by index. I’ll do the latter since the different types of variables are grouped together.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;response = names(dat)[1:3]
 expl = names(dat)[4:7]&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;When I know I’m going to be looping through character vectors I like to use named vectors. This helps me keep track of things in the output.&lt;/p&gt;
-&lt;p&gt;The set_names() function in purrr is super handy for naming character vectors, since it can use the values of the vector as names (i.e., the vector will be named by itself). (I don’t recommend trying this with lists of data.frames like I have in the past, though, since it turns out that naming a data.frame with a data.frame isn’t so useful.)&lt;/p&gt;
+&lt;p&gt;When I know I’m going to be looping through character vectors I like to use named vectors. This helps me keep track of things in the output. The set_names() function in purrr is super handy for naming character vectors, since it can use the values of the vector as names (i.e., the vector will be named by itself). (I don’t recommend trying this with lists of data.frames like I have in the past, though, since it turns out that naming a data.frame with a data.frame isn’t so useful.)&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;response = set_names(response)
 response&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;##   elev   resp   grad 
@@ -233,95 +245,97 @@ expl&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div id=&#34;create-a-plotting-function&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Create a plotting function&lt;/h3&gt;
-&lt;p&gt;Since I’m going to make a bunch of plots that will all have the same basic form, I will make a plotting function. I am going to make a function where only the x and y variables can vary (so are arguments to the function).&lt;/p&gt;
-&lt;p&gt;Since I’m making a function to plot variables from a single dataset I’m going to hard-code the dataset into the function. If you have multiple datasets or you are making a function for use across projects you’ll probably want to add the dataset as a function argument.&lt;/p&gt;
-&lt;p&gt;My functions inputs are based on the variable names, so I need to pass strings into the ggplot2 functions. Strings cannot be used directly in aes(), but can be used with the .data pronoun.&lt;/p&gt;
-&lt;p&gt;I’m making pretty basic graphs since these are exploratory plots, not publication-ready plots. I will make a scatterplot and add locally weighted regression (loess) lines via geom_smooth(). I use such lines with great caution, as it can be easy to get too attached any pattern the loess line shows.&lt;/p&gt;
+&lt;p&gt;Since I’m going to make a bunch of plots that will all have the same basic form, I will make a plotting function. I am going to make a function where only the x and y variables can vary (so are arguments to the function). Since I’m making a function to plot variables from a single data set I’m going to hard-code the data set into the function. If you have multiple data sets or you are making a function for use across projects you’ll probably want to add the data set as a function argument. My functions inputs are based on the variable names, so I need to pass strings into the ggplot2 functions. Strings cannot be used directly in aes(), but can be used with the .data pronoun. I’m making pretty basic graphs since these are exploratory plots, not publication-ready plots. I will make a scatterplot and add locally weighted regression (loess) lines via geom_smooth(). I use such lines with great caution, as it can be easy to get too attached any pattern the loess line shows.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;scatter_fun = function(x, y) {
-     ggplot(dat, aes(x = .data[[x]], y = .data[[y]]) ) +
-          geom_point() +
-          geom_smooth(method = &amp;quot;loess&amp;quot;, se = FALSE, color = &amp;quot;grey74&amp;quot;) +
-          theme_bw()
+  ggplot(dat, aes(x = .data[[x]], y = .data[[y]])) +
+    geom_point() +
+    geom_smooth(method = &amp;quot;loess&amp;quot;,
+                se = FALSE,
+                color = &amp;quot;grey74&amp;quot;) + theme(
+                  panel.grid.major = element_blank(),
+                  panel.grid.minor = element_blank(),
+                  panel.background = element_blank(),
+                  axis.line = element_line()
+                )
 }&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;If using older versions of ggplot2 (and/or rlang), use the now deprecated aes_string() for working with strings.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;scatter_fun = function(x, y) {
-     ggplot(dat, aes_string(x = x, y = y ) ) +
-          geom_point() +
-          geom_smooth(method = &amp;quot;loess&amp;quot;, se = FALSE, color = &amp;quot;grey74&amp;quot;) +
-          theme_bw() 
+  ggplot(dat, aes_string(x = x, y = y)) +
+    geom_point() +
+    geom_smooth(method = &amp;quot;loess&amp;quot;,
+                se = FALSE,
+                color = &amp;quot;grey74&amp;quot;) + theme(
+                  panel.grid.major = element_blank(),
+                  panel.grid.minor = element_blank(),
+                  panel.background = element_blank(),
+                  axis.line = element_line()
+                )
 }&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div id=&#34;heres-an-example-of-the-function-output-passing-in-x-and-y-as-strings.&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Here’s an example of the function output, passing in x and y as strings.&lt;/h3&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;scatter_fun(x = &amp;quot;lat&amp;quot;, y = &amp;quot;elev&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## `geom_smooth()` using formula &amp;#39;y ~ x&amp;#39;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://statisticalinference.netlify.app/post/automating-exploratory-plots-with-ggplot2-and-purrr/index.en_files/figure-html/unnamed-chunk-8-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://statisticalinference.netlify.app/post/automating-exploratory-plots-with-ggplot2-and-purrr/index.en_files/figure-html/unnamed-chunk-7-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;looping-through-one-vector-of-variables&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Looping through one vector of variables&lt;/h3&gt;
 &lt;p&gt;One way to make all the plots I want is to loop through each explanatory variable for a fixed response variable. With this approach I would need a separate loop for each response variable.&lt;/p&gt;
 &lt;/div&gt;
-&lt;div id=&#34;i-will-use-map-from-package-purrr-for-the-looping.&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;I will use map() from package purrr for the looping.&lt;/h3&gt;
+&lt;div id=&#34;here-i-will-use-the-map-function-from-purrr-package-for-looping.&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Here I will use the map function from purrr package for looping.&lt;/h3&gt;
 &lt;p&gt;I pass each explanatory variable to the first argument in scatter_fun() and I fix the second argument to “elev”. I use the formula coding in map() and so refer to the element of the explanatory vector via .x within scatter_fun().&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;elev_plots = map(expl, ~scatter_fun(.x, &amp;quot;elev&amp;quot;) )&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;The output is a list of 4 plots (since there are 4 explanatory variables). You’ll notice that each element of the list has the variable name associated with it. This is why I used set_names() earlier, since this is convenient for printing the plots and, you’ll see later, is convenient when saving the plots in files with understandable names.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;elev_plots&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## $slp&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## `geom_smooth()` using formula &amp;#39;y ~ x&amp;#39;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://statisticalinference.netlify.app/post/automating-exploratory-plots-with-ggplot2-and-purrr/index.en_files/figure-html/unnamed-chunk-10-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://statisticalinference.netlify.app/post/automating-exploratory-plots-with-ggplot2-and-purrr/index.en_files/figure-html/unnamed-chunk-9-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;## 
 ## $lat&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## `geom_smooth()` using formula &amp;#39;y ~ x&amp;#39;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://statisticalinference.netlify.app/post/automating-exploratory-plots-with-ggplot2-and-purrr/index.en_files/figure-html/unnamed-chunk-10-2.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://statisticalinference.netlify.app/post/automating-exploratory-plots-with-ggplot2-and-purrr/index.en_files/figure-html/unnamed-chunk-9-2.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;## 
 ## $long&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## `geom_smooth()` using formula &amp;#39;y ~ x&amp;#39;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://statisticalinference.netlify.app/post/automating-exploratory-plots-with-ggplot2-and-purrr/index.en_files/figure-html/unnamed-chunk-10-3.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://statisticalinference.netlify.app/post/automating-exploratory-plots-with-ggplot2-and-purrr/index.en_files/figure-html/unnamed-chunk-9-3.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;## 
 ## $nt&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## `geom_smooth()` using formula &amp;#39;y ~ x&amp;#39;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://statisticalinference.netlify.app/post/automating-exploratory-plots-with-ggplot2-and-purrr/index.en_files/figure-html/unnamed-chunk-10-4.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://statisticalinference.netlify.app/post/automating-exploratory-plots-with-ggplot2-and-purrr/index.en_files/figure-html/unnamed-chunk-9-4.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;looping-through-both-vectors&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Looping through both vectors&lt;/h3&gt;
-&lt;p&gt;For only a few response variables we could easily copy and paste the code above, changing the hard-coded response variable each time. This process can get burdensome if there are a lot of response variables, though.
-Using a nested loop&lt;/p&gt;
-&lt;p&gt;Another option is to loop through both vectors of variables and make all the plots at once. Because we want a plot for each combination of variables, this is a job for a nested loop. This means one map() loop will be nested inside another. I will refer to the first map() loop as the outer loop and the second one as the inner loop.&lt;/p&gt;
-&lt;p&gt;I’m going to run through the response variables in the outer loop and the explanatory variables in the inner loop. That way I can graph all of the explanatory variables for each response variable before moving on to the next response variable. This puts the output, a nested list, in a logical order.&lt;/p&gt;
-&lt;p&gt;A nested loop involves more complicated code. It took some effort for me to wrap my head around how to refer to the list element from the outer loop within the inner loop when using the map() formula coding with the tilde (~). I found the answers/comments to this question on Stack Overflow to be helpful.&lt;/p&gt;
-&lt;p&gt;Since my scatterplot function is so simple I ended up using formula coding for the outer loop and the function as-is in the inner loop. The inner list elements are fed to the first argument of scatter_fun() by default, which works out great since the first argument is the x variable and the inner loop loops through the explanatory variables. The .x then refers to the outer list elements (the response variable names), and is passed to the y argument of the function in the inner loop.&lt;/p&gt;
+&lt;p&gt;For only a few response variables we could easily copy and paste the code above, changing the hard-coded response variable each time. This process can get burdensome if there are a lot of response variables, though. Using a nested loop is another option which involve looping through both vectors of variables to make all the plots at once. Because we want a plot for each combination of variables, this is a job for a nested loop. This means one map() loop will be nested inside another. I will refer to the first map() loop as the outer loop and the second one as the inner loop. I’m going to run through the response variables in the outer loop and the explanatory variables in the inner loop. That way I can graph all of the explanatory variables for each response variable before moving on to the next response variable. This puts the output, a nested list, in a logical order. A nested loop involves more complicated code. It took some effort for me to wrap my head around how to refer to the list element from the outer loop within the inner loop when using the map() formula coding with the tilde (~). I found the answers/comments to this question on Stack Overflow to be helpful. Since my scatter plot function is so simple I ended up using formula coding for the outer loop and the function as-is in the inner loop. The inner list elements are fed to the first argument of scatter_fun() by default, which works out great since the first argument is the x variable and the inner loop loops through the explanatory variables. The .x then refers to the outer list elements (the response variable names), and is passed to the y argument of the function in the inner loop.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;all_plots = map(response,
-                ~map(expl, scatter_fun, y = .x) )&lt;/code&gt;&lt;/pre&gt;
+                ~ map(expl, scatter_fun, y = .x))&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;To be honest, I think it is fairly hard to follow what the above code is doing. And I’ve found it difficult to use such an approach if adding additional nested loops. At the end of the day, using anonymous functions involves more code but the results may be easier to understand. Well, as easy to follow as nested loops ever are. Here’s the same plots using anonymous functions in each map() loop.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;all_plots2 = map(response, function(resp) {
-     map(expl, function(expl) {
-          scatter_fun(x = expl, y = resp)
-     })
+  map(expl, function(expl) {
+    scatter_fun(x = expl, y = resp)
+  })
 })&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;The output is a list of lists. Each sublist contains all the plots for a single response variable. Because I set the names for both vectors of variable names, the inner and outer lists both have names. These names can be used to pull out individual plots.&lt;/p&gt;
-&lt;p&gt;For example, if I want to see all the plots for the grad response variable I can print that sublist by name. (I’m going to display only two of four grad plots here to save space.)&lt;/p&gt;
+&lt;p&gt;The output is a list of lists. Each sublist contains all the plots for a single response variable. Because I set the names for both vectors of variable names, the inner and outer lists both have names. These names can be used to pull out individual plots. For example, if I want to see all the plots for the grad response variable I can print that sublist by name. (I’m going to display only two of four grad plots here to save space.)&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;all_plots$grad[1:2]&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## $slp&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## `geom_smooth()` using formula &amp;#39;y ~ x&amp;#39;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://statisticalinference.netlify.app/post/automating-exploratory-plots-with-ggplot2-and-purrr/index.en_files/figure-html/unnamed-chunk-13-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://statisticalinference.netlify.app/post/automating-exploratory-plots-with-ggplot2-and-purrr/index.en_files/figure-html/unnamed-chunk-12-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;## 
 ## $lat&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## `geom_smooth()` using formula &amp;#39;y ~ x&amp;#39;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://statisticalinference.netlify.app/post/automating-exploratory-plots-with-ggplot2-and-purrr/index.en_files/figure-html/unnamed-chunk-13-2.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;If I want to print a single plot, I can first extract one of the sublists using an outer list name and then extract the individual plot via an inner list name.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://statisticalinference.netlify.app/post/automating-exploratory-plots-with-ggplot2-and-purrr/index.en_files/figure-html/unnamed-chunk-12-2.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;If I want to print a single plot, I can first extract one of the sub-lists using an outer list name and then extract the individual plot via an inner list name.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;all_plots$grad$long&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## `geom_smooth()` using formula &amp;#39;y ~ x&amp;#39;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://statisticalinference.netlify.app/post/automating-exploratory-plots-with-ggplot2-and-purrr/index.en_files/figure-html/unnamed-chunk-14-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://statisticalinference.netlify.app/post/automating-exploratory-plots-with-ggplot2-and-purrr/index.en_files/figure-html/unnamed-chunk-13-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;I find the names convenient, but you can also extract plots via position. Here’s the same graph, the third element of the third list.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;all_plots[[3]][[3]]&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## `geom_smooth()` using formula &amp;#39;y ~ x&amp;#39;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://statisticalinference.netlify.app/post/automating-exploratory-plots-with-ggplot2-and-purrr/index.en_files/figure-html/unnamed-chunk-15-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://statisticalinference.netlify.app/post/automating-exploratory-plots-with-ggplot2-and-purrr/index.en_files/figure-html/unnamed-chunk-14-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;combining-variables-for-a-single-loop&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Combining variables for a single loop&lt;/h3&gt;
-&lt;p&gt;Since nested loops can be complicated, another option is to create all combinations of the two input vectors and then loop through those in a single loop. This can be done, for example, using tidyr::expand_grid(). The main thing I like about tidyr::expand_grid() over expand.grid() from base R is the order of the output. Both put the results into a dataset (data.frame or tibble).&lt;/p&gt;
-&lt;p&gt;Here’s how that would look, putting the response variables first to match the output order above. I’m using tidyr version 1.1.4 here.&lt;/p&gt;
+&lt;p&gt;Since nested loops can be complicated, another option is to create all combinations of the two input vectors and then loop through those in a single loop. This can be done, for example, using tidyr::expand_grid(). The main thing I like about tidyr::expand_grid() over expand.grid() from base R is the order of the output. Both put the results into a data set (data.frame or tibble). Here’s how that would look, putting the response variables first to match the output order above. I’m using tidyr version 1.1.4 here.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;resp_expl = tidyr::expand_grid(response, expl)
 resp_expl&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## # A tibble: 12 x 2
@@ -342,7 +356,7 @@ resp_expl&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;I can now use pmap() from purrr to loop through the rows of this tibble. I have to be careful with my argument order, though, since I have the y variable first in the tibble but it is the second argument in my function.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;allplots2 = pmap(resp_expl, ~scatter_fun(x = .y, y = .x) )&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;I’m not going to print them here, but one minor downside of this approach is that only the first variable name is carried along to the output list. If I wanted to save these plots separately and use both the response and explanatory variable in the file name I’d need to create the file names based on resp_expl. I won’t show this in the next section on saving plots, so here is a quick example of creating basic file names based on both variables.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;allplots2_names = pmap(resp_expl, ~paste0(.x, &amp;quot;_&amp;quot;, .y, &amp;quot;.png&amp;quot;))
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;allplots2_names = pmap(resp_expl, ~ paste0(.x, &amp;quot;_&amp;quot;, .y, &amp;quot;.png&amp;quot;))
 allplots2_names[1:2]&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## $elev
 ## [1] &amp;quot;elev_slp.png&amp;quot;
@@ -360,8 +374,8 @@ allplots2_names[1:2]&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;If you want to save every plot as a separate page in a PDF, you can do so with the pdf() function. The code below shows an example of how this works. First, a graphics device to save the plots into is created and given a name via pdf(). Then all the plots are put into that device. Finally, the device is turned off with dev.off(). The last step is important, as you can’t open the file until the device is turned off.&lt;/p&gt;
 &lt;p&gt;This is a pretty coarse way to save everything, but it allows you to easily page through all the plots. I’ve used this method when I had many exploratory plots for a single response variable that I wanted to share with collaborators.&lt;/p&gt;
 &lt;/div&gt;
-&lt;div id=&#34;in-this-example-code-i-save-the-file-which-i-name-all_scatterplots.pdf-into-the-working-directory.&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;In this example code I save the file, which I name all_scatterplots.pdf, into the working directory.&lt;/h3&gt;
+&lt;div id=&#34;in-this-example-code-i-save-the-file-which-i-name-all_scatterplots.pdf-into-my-current-working-directory.&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;In this example code I save the file, which I name all_scatterplots.pdf, into my current working directory.&lt;/h3&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;pdf(&amp;quot;all_scatterplots.pdf&amp;quot;)
 all_plots&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## $elev
@@ -410,16 +424,11 @@ all_plots&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div id=&#34;saving-groups-of-plots-together&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Saving groups of plots together&lt;/h3&gt;
-&lt;p&gt;Another option is to save each group of plots in a separate document. This might make sense in a case like this where there are a set of plots for each response variable and we might want a separate file for each set.&lt;/p&gt;
-&lt;p&gt;To save each sublist separately we’ll need to loop through all_plots and save the plots for each response variable into a separate file. The list names can be used in the file names to keep the output organized.&lt;/p&gt;
-&lt;p&gt;The functions in purrr that start with i are special functions that loop through a list and the names of that list simultaneously. This is useful here where we want to use the list names to identify the output files while we save them.&lt;/p&gt;
-&lt;p&gt;The walk() function is part of the map family, to be used when you want a function for its side effect instead of for a return value. Saving plots is a classic example of when we want walk() instead of map().&lt;/p&gt;
-&lt;p&gt;Combining the i and the walk gives us the iwalk() function. In the formula interface, .x refers to the list elements and .y refers to the names of the list. You can see I create the plot file names using the list name combined with “scatterplots.pdf”, using _ as the separator.&lt;/p&gt;
-&lt;p&gt;The code below makes three files, one for each response variable, with four plots each. The files are named “elev_scatterplots.pdf”, “resp_scatterplots.pdf”, and “grad_scatterplots.pdf”.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;iwalk(all_plots, ~{
-     pdf(paste0(.y, &amp;quot;_scatterplots.pdf&amp;quot;) )
-     print(.x)
-     dev.off()
+&lt;p&gt;Another option is to save each group of plots in a separate document. This might make sense in a case like this where there are a set of plots for each response variable and we might want a separate file for each set. To save each sub-list separately we’ll need to loop through all_plots and save the plots for each response variable into a separate file. The list names can be used in the file names to keep the output organized. The functions in purrr that start with i are special functions that loop through a list and the names of that list simultaneously. This is useful here where we want to use the list names to identify the output files while we save them. The walk() function is part of the map family, to be used when you want a function for its side effect instead of for a return value. Saving plots is a classic example of when we want walk() instead of map(). Combining the i and the walk gives us the iwalk() function. In the formula interface, .x refers to the list elements and .y refers to the names of the list. You can see I create the plot file names using the list name combined with “scatter plots.pdf”, using _ as the separator. The code below makes three files, one for each response variable, with four plots each. The files are named “elev_scatter plots.pdf”, “resp_scatter plots.pdf”, and “grad_scatter plots.pdf”.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;iwalk(all_plots, ~ {
+  pdf(paste0(.y, &amp;quot;_scatterplots.pdf&amp;quot;))
+  print(.x)
+  dev.off()
 })&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## $slp&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## `geom_smooth()` using formula &amp;#39;y ~ x&amp;#39;&lt;/code&gt;&lt;/pre&gt;
@@ -459,15 +468,18 @@ all_plots&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div id=&#34;saving-all-plots-separately&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Saving all plots separately&lt;/h3&gt;
-&lt;p&gt;All plots can be saved separately instead of combined in a single document. This might be necessary if you want to insert the plots into some larger document later.&lt;/p&gt;
-&lt;p&gt;We’ll want to use the names of both the outer and inner lists to appropriately identify each plot we save. I decided to do this by looping through the all_plots list and the names of the list via imap() to make the file names in a separate step. This time I’m going to save these as PNG files so use .png at the end of the file name.&lt;/p&gt;
-&lt;p&gt;The result is a list of lists, so I flatten this into a single list via flatten(). If I were to use flatten() earlier in the process I’d lose the names of the outer list. This process of combining names prior to flattening should be simplified once the proposed flatten_names() function is added to purrr.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;plotnames = imap(all_plots, ~paste0(.y, &amp;quot;_&amp;quot;, names(.x), &amp;quot;.png&amp;quot;)) %&amp;gt;%
-     flatten()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Once the file names are created I can loop through all the file names and plots simultaneously with walk2() and save things via ggsave(). The height and width of each output file can be set as needed in ggsave().&lt;/p&gt;
-&lt;p&gt;You can see I flattened the nested list of plots into a single list to use in walk2().&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;walk2(plotnames, flatten(all_plots), ~ggsave(filename = .x, plot = .y, 
-                                             height = 7, width = 7))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;All plots can be saved separately instead of combined in a single document. This might be necessary if you want to insert the plots into some larger document later. We’ll want to use the names of both the outer and inner lists to appropriately identify each plot we save. I decided to do this by looping through the all_plots list and the names of the list via imap() to make the file names in a separate step. This time I’m going to save these as PNG files so use .png at the end of the file name. The result is a list of lists, so I flatten this into a single list via flatten(). If I were to use flatten() earlier in the process I’d lose the names of the outer list. This process of combining names prior to flattening should be simplified once the proposed flatten_names() function is added to purrr.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;plotnames = imap(all_plots, ~ paste0(.y, &amp;quot;_&amp;quot;, names(.x), &amp;quot;.png&amp;quot;)) %&amp;gt;%
+  flatten()&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Once the file names are created I can loop through all the file names and plots simultaneously with walk2() and save things via ggsave(). The height and width of each output file can be set as needed in ggsave(). You can see I flattened the nested list of plots into a single list to use in walk2().&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;walk2(plotnames,
+      flatten(all_plots),
+      ~ ggsave(
+        filename = .x,
+        plot = .y,
+        height = 7,
+        width = 7
+      ))&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## `geom_smooth()` using formula &amp;#39;y ~ x&amp;#39;
 ## `geom_smooth()` using formula &amp;#39;y ~ x&amp;#39;
 ## `geom_smooth()` using formula &amp;#39;y ~ x&amp;#39;
@@ -483,8 +495,7 @@ all_plots&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div id=&#34;combining-plots&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Combining plots&lt;/h3&gt;
-&lt;p&gt;Another way to get a set of plots together is to combine them into one plot. How useful this is will depend on how many plots you have per set. This option is a lot like faceting, except we didn’t reshape our dataset to allow the use faceting.&lt;/p&gt;
-&lt;p&gt;I like the package cowplot function plot_grid() for quickly combining multiple plots into one. A list of plots can be passed via the plotlist argument.&lt;/p&gt;
+&lt;p&gt;Another way to get a set of plots together is to combine them into one plot. How useful this is will depend on how many plots you have per set. This option is a lot like faceting, except we didn’t reshape our data set to allow the use faceting. I like the package cowplot function plot_grid() for quickly combining multiple plots into one. A list of plots can be passed via the plotlist argument.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;heres-what-that-looks-like-for-the-first-response-variable-elev.&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Here’s what that looks like for the first response variable, elev.&lt;/h3&gt;
@@ -493,9 +504,9 @@ all_plots&lt;/code&gt;&lt;/pre&gt;
 ## `geom_smooth()` using formula &amp;#39;y ~ x&amp;#39;
 ## `geom_smooth()` using formula &amp;#39;y ~ x&amp;#39;
 ## `geom_smooth()` using formula &amp;#39;y ~ x&amp;#39;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://statisticalinference.netlify.app/post/automating-exploratory-plots-with-ggplot2-and-purrr/index.en_files/figure-html/unnamed-chunk-23-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;We can use a loop to combine the plots for each response variable sublist. The result could then be saved using any of the approaches shown above. If you have many subplots per combined plot you likely will want to save the plots at a larger size so the individual plots can be clearly seen.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;response_plots = map(all_plots, ~cowplot::plot_grid(plotlist = .x))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://statisticalinference.netlify.app/post/automating-exploratory-plots-with-ggplot2-and-purrr/index.en_files/figure-html/unnamed-chunk-22-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;We can use a loop to combine the plots for each response variable sub-list. The result could then be saved using any of the approaches shown above. If you have many subplots per combined plot you likely will want to save the plots at a larger size so the individual plots can be clearly seen.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;response_plots = map(all_plots, ~ cowplot::plot_grid(plotlist = .x))&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## `geom_smooth()` using formula &amp;#39;y ~ x&amp;#39;
 ## `geom_smooth()` using formula &amp;#39;y ~ x&amp;#39;
 ## `geom_smooth()` using formula &amp;#39;y ~ x&amp;#39;
@@ -510,14 +521,15 @@ all_plots&lt;/code&gt;&lt;/pre&gt;
 ## `geom_smooth()` using formula &amp;#39;y ~ x&amp;#39;&lt;/code&gt;&lt;/pre&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;response_plots&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## $elev&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://statisticalinference.netlify.app/post/automating-exploratory-plots-with-ggplot2-and-purrr/index.en_files/figure-html/unnamed-chunk-24-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://statisticalinference.netlify.app/post/automating-exploratory-plots-with-ggplot2-and-purrr/index.en_files/figure-html/unnamed-chunk-23-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;## 
 ## $resp&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://statisticalinference.netlify.app/post/automating-exploratory-plots-with-ggplot2-and-purrr/index.en_files/figure-html/unnamed-chunk-24-2.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://statisticalinference.netlify.app/post/automating-exploratory-plots-with-ggplot2-and-purrr/index.en_files/figure-html/unnamed-chunk-23-2.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;## 
 ## $grad&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://statisticalinference.netlify.app/post/automating-exploratory-plots-with-ggplot2-and-purrr/index.en_files/figure-html/unnamed-chunk-24-3.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;To learn more on functional programming in R you can look at Jenny Bryan blog post &lt;a href=&#34;https://jennybc.github.io/purrr-tutorial/&#34;&gt;&lt;strong&gt;here&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://statisticalinference.netlify.app/post/automating-exploratory-plots-with-ggplot2-and-purrr/index.en_files/figure-html/unnamed-chunk-23-3.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;To learn more on functional programming in R you can look at Jenny Bryan blog post on functional programming &lt;a href=&#34;https://jennybc.github.io/purrr-tutorial/&#34;&gt;&lt;strong&gt;here&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 </description>
     </item>
@@ -813,6 +825,61 @@ Three
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://statisticalinference.netlify.app/admin/config.yml</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://statisticalinference.netlify.app/talk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://statisticalinference.netlify.app/talk/</guid>
+      <description>&lt;p&gt;abstract: I will speaking on communicating data insights with visuals using ggplot2 at R Ladies Abuja
+address:
+city: Ibadan
+country: Nigeria
+postcode: &amp;ldquo;5320&amp;rdquo;
+region: NG
+street: Akingbile Street, Oyo Road, Ibadan
+all_day: false
+authors: []
+date: &amp;ldquo;2022-03-26T10:00:16Z&amp;rdquo;
+date_end: &amp;ldquo;2022-03-26T10:00:16Z&amp;rdquo;
+event: R ladies Abuja
+featured: false
+image:
+caption: &amp;lsquo;Image credit: &lt;a href=&#34;https://unsplash.com/photos/bzdhc5b3Bxs&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Oluwafemi Oyedele&lt;/strong&gt;&lt;/a&gt;&amp;rsquo;
+focal_point: Right
+links:&lt;/p&gt;
+&lt;h1 id=&#34;--icon-twitter&#34;&gt;- icon: twitter&lt;/h1&gt;
+&lt;h1 id=&#34;icon_pack-fab&#34;&gt;icon_pack: fab&lt;/h1&gt;
+&lt;h1 id=&#34;name-follow&#34;&gt;name: Follow&lt;/h1&gt;
+&lt;h1 id=&#34;url-httpstwittercomgeorgecushen&#34;&gt;url: &lt;a href=&#34;https://twitter.com/georgecushen&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://twitter.com/georgecushen&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;location: Online via Zoom
+projects:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;internal-project
+publishDate: &amp;ldquo;2022-03-13T00:00:00Z&amp;rdquo;
+#slides: example
+#summary: An example talk using Wowchemy&amp;rsquo;s Markdown slides feature.
+tags: []
+title: Communicating Data insights with Visuals using ggplot2
+url_code: &amp;ldquo;&lt;a href=&#34;https://github.com/BB1464/R-Ladies-Abuja.git%22&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/BB1464/R-Ladies-Abuja.git&#34;&lt;/a&gt;
+url_pdf: &amp;quot;&amp;rdquo;
+url_slides: &amp;quot;&amp;quot;
+url_video: &amp;quot;&amp;quot;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;style type=&#34;text/css&#34;&gt;
+
+h1.title {
+  font-size: 12px;
+  color: Dark;
+  text-align: centre;
+}
+
+&lt;style&gt;
+body{
+text-align: justify}
+</description>
     </item>
     
   </channel>
