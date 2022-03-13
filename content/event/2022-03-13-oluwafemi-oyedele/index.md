@@ -1,11 +1,5 @@
 ---
 abstract: I will speaking on communicating data insights with visuals using ggplot2 at R Ladies Abuja. Here I will be talking on all the layers of ggplot2 and the session is going to be very impactful.
-address:
-  city: Ibadan
-  country: Nigeria
-  postcode: "5320"
-  region: NG
-  street: Akingbile Street, Oyo Road, Ibadan
 all_day: false
 authors: []
 date: "2022-03-26T10:00:16Z"
