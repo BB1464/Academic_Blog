@@ -1,27 +1,36 @@
 ---
-abstract: I will speaking on communicating data insights with visuals using ggplot2 at R Ladies Abuja. Here I will be talking on all the layers of ggplot2 and the session is going to be very impact-full.
+abstract: I will speaking on communicating data insights with visuals using ggplot2 at R Ladies Abuja. Here I will be talking on all the layers of ggplot2 and the session is going to be very impactful. 
+address:
+  city: 
+  country: Nigeria
+  postcode: 
+  region: NG
+  street: 
 all_day: false
 authors: []
 date: "2022-03-26T10:00:16Z"
 date_end: "2022-03-26T12:00:16Z"
-event: R ladies Abuja
+#date: "2021-11-01T15:00:15Z"
+#date_end: "2021-11-01T15:00:00Z"
+event: R-Ladies Abuja Talk on ggplot2
+# event_url: https://example.org
 featured: false
 image:
-  caption: 'Image credit:[**OluwafemiOyedele**](https://unsplash.com/photos/bzdhc5b3Bxs)'
+  caption: 'Image credit: [**Oluwafemi Oyedele**](https://unsplash.com/photos/bzdhc5b3Bxs)'
   focal_point: Right
 links:
  - icon: twitter
    icon_pack: fab
    name: Follow
    url: https://twitter.com/OluwafemOyedele
-location: Online via Zoom
+location: online via zoom
 projects:
 - internal-project
 publishDate: "2022-03-13T00:00:00Z"
-slides: ggplot2
-summary: Communicating Data Insights with Visuals using ggplot2
+#slides: example
+#summary: An example talk using Wowchemy's Markdown slides feature.
 tags: []
-title: Communicating Data insights with Visuals using ggplot2
+title: Communicating Data Insights with Visuals using ggplot2
 url_code: "https://github.com/BB1464/R-Ladies-Abuja.git"
 url_pdf: ""
 url_slides: "https://bb1464.github.io/R-Ladies-Abuja/"
@@ -29,7 +38,6 @@ url_video: ""
 ---
 
 <style type="text/css">
-
 
 h1.title {
   font-size: 12px;
@@ -40,3 +48,10 @@ h1.title {
 <style>
 body{
 text-align: justify}
+
+
+
+
+
+
+
