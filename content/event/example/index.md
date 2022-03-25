@@ -33,7 +33,7 @@ tags: []
 title: Introduction to R using the Tidyverse Principles
 url_code: "https://github.com/BB1464/Introduction-to-R-Training.git"
 url_pdf: ""
-url_slides: "https://bb1464.github.io/R-Ladies-Abuja/"
+url_slides: ""
 url_video: ""
 ---
 
