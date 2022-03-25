@@ -5,7 +5,7 @@
     <link>https://statisticalinference.netlify.app/event/</link>
       <atom:link href="https://statisticalinference.netlify.app/event/index.xml" rel="self" type="application/rss+xml" />
     <description>Recent and Upcoming Talks</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 18 Nov 2021 10:00:16 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 26 Mar 2022 10:00:16 +0000</lastBuildDate>
     <image>
       <url>https://statisticalinference.netlify.app/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_3.png</url>
       <title>Recent and Upcoming Talks</title>
@@ -13,10 +13,10 @@
     </image>
     
     <item>
-      <title>Introduction to R using the Tidyverse Principles</title>
-      <link>https://statisticalinference.netlify.app/talk/introduction-to-r-using-the-tidyverse-principles/</link>
-      <pubDate>Thu, 18 Nov 2021 10:00:16 +0000</pubDate>
-      <guid>https://statisticalinference.netlify.app/talk/introduction-to-r-using-the-tidyverse-principles/</guid>
+      <title>Communicating Data insights with Visuals using ggplot2</title>
+      <link>https://statisticalinference.netlify.app/talk/communicating-data-insights-with-visuals-using-ggplot2/</link>
+      <pubDate>Sat, 26 Mar 2022 10:00:16 +0000</pubDate>
+      <guid>https://statisticalinference.netlify.app/talk/communicating-data-insights-with-visuals-using-ggplot2/</guid>
       <description>&lt;style type=&#34;text/css&#34;&gt;
 
 h1.title {
@@ -32,47 +32,11 @@ text-align: justify}
     </item>
     
     <item>
-      <title></title>
-      <link>https://statisticalinference.netlify.app/talk/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://statisticalinference.netlify.app/talk/</guid>
-      <description>&lt;p&gt;abstract: I will speaking on communicating data insights with visuals using ggplot2 at R Ladies Abuja
-address:
-city: Ibadan
-country: Nigeria
-postcode: &amp;ldquo;5320&amp;rdquo;
-region: NG
-street: Akingbile Street, Oyo Road, Ibadan
-all_day: false
-authors: []
-date: &amp;ldquo;2022-03-26T10:00:16Z&amp;rdquo;
-date_end: &amp;ldquo;2022-03-26T10:00:16Z&amp;rdquo;
-event: R ladies Abuja
-featured: false
-image:
-caption: &amp;lsquo;Image credit: &lt;a href=&#34;https://unsplash.com/photos/bzdhc5b3Bxs&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Oluwafemi Oyedele&lt;/strong&gt;&lt;/a&gt;&amp;rsquo;
-focal_point: Right
-links:&lt;/p&gt;
-&lt;h1 id=&#34;--icon-twitter&#34;&gt;- icon: twitter&lt;/h1&gt;
-&lt;h1 id=&#34;icon_pack-fab&#34;&gt;icon_pack: fab&lt;/h1&gt;
-&lt;h1 id=&#34;name-follow&#34;&gt;name: Follow&lt;/h1&gt;
-&lt;h1 id=&#34;url-httpstwittercomgeorgecushen&#34;&gt;url: &lt;a href=&#34;https://twitter.com/georgecushen&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://twitter.com/georgecushen&lt;/a&gt;&lt;/h1&gt;
-&lt;p&gt;location: Online via Zoom
-projects:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;internal-project
-publishDate: &amp;ldquo;2022-03-13T00:00:00Z&amp;rdquo;
-#slides: example
-#summary: An example talk using Wowchemy&amp;rsquo;s Markdown slides feature.
-tags: []
-title: Communicating Data insights with Visuals using ggplot2
-url_code: &amp;ldquo;&lt;a href=&#34;https://github.com/BB1464/R-Ladies-Abuja.git%22&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/BB1464/R-Ladies-Abuja.git&#34;&lt;/a&gt;
-url_pdf: &amp;quot;&amp;rdquo;
-url_slides: &amp;quot;&amp;quot;
-url_video: &amp;quot;&amp;quot;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;style type=&#34;text/css&#34;&gt;
+      <title>Introduction to R using the Tidyverse Principles</title>
+      <link>https://statisticalinference.netlify.app/talk/introduction-to-r-using-the-tidyverse-principles/</link>
+      <pubDate>Thu, 18 Nov 2021 10:00:16 +0000</pubDate>
+      <guid>https://statisticalinference.netlify.app/talk/introduction-to-r-using-the-tidyverse-principles/</guid>
+      <description>&lt;style type=&#34;text/css&#34;&gt;
 
 h1.title {
   font-size: 12px;
