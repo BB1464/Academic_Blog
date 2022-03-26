@@ -1,5 +1,5 @@
 ---
-abstract: I will speaking on communicating data insights with visuals using ggplot2 at R Ladies Abuja. Here I will be talking on all the layers of ggplot2 and the session is going to be very impactful. 
+abstract: I will speaking on communicating data insights with visuals using ggplot2 at Abuja R Users Group. Here I will be talking on all the layers of ggplot2 and the session is going to be very impactful. 
 address:
   city: 
   country: Nigeria
@@ -12,7 +12,7 @@ date: "2022-03-26T10:00:16Z"
 date_end: "2022-03-26T12:00:16Z"
 #date: "2021-11-01T15:00:15Z"
 #date_end: "2021-11-01T15:00:00Z"
-event: R-Ladies Abuja Talk on ggplot2
+event: Abuja R Users Group Talk on ggplot2
 # event_url: https://example.org
 featured: false
 image:
