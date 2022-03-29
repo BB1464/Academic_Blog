@@ -34,7 +34,7 @@ title: Communicating Data Insights with Visuals using ggplot2
 url_code: "https://github.com/BB1464/R-Ladies-Abuja.git"
 url_pdf: ""
 url_slides: "https://bb1464.github.io/R-Ladies-Abuja/"
-url_video: ""
+url_video: "https://www.youtube.com/watch?v=zlPd79MJGa0"
 ---
 
 
