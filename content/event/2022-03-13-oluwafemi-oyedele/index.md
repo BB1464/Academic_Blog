@@ -13,7 +13,6 @@ date_end: "2022-03-26T12:00:16Z"
 #date: "2021-11-01T15:00:15Z"
 #date_end: "2021-11-01T15:00:00Z"
 event: Abuja R Users Group Talk on ggplot2
-# event_url: https://example.org
 featured: false
 image:
   caption: 'Image credit: [**Oluwafemi Oyedele**](https://unsplash.com/photos/bzdhc5b3Bxs)'
