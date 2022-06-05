@@ -24,7 +24,7 @@ In this post I’m going to show some cool feature of Purrr. Purrr is an R packa
 
 Suppose if we want to run regression model on 3 sets of data sets grouped by certain feature (cyl in our case), we need to regress data set separately.
 
-```{r,include=TRUE}
+```{r,include=TRUE,message=FALSE}
 library(tidyverse)
 library(tidytext)
 library(broom)
