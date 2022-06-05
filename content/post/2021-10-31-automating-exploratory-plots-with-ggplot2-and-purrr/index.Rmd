@@ -22,7 +22,7 @@ projects: []
 ---
 
 
-When you have a lot of variables and need to make multiple exploratory plots it's usually worthwhile to automate the process in R instead of manually copying and pasting code for every plot, this thing happen to me a lot but when I read Hadley Wickham Advance R book on functional programming, I knew that what I was doing was wrong. However, the coding approach needed to automate plots can look pretty daunting to a beginner R user. It can look so daunting, in fact, that it can appear easier to manually make the plots (like in Excel) rather than using R at all.
+When you have a lot of variables and need to make multiple exploratory plots it's usually worthwhile to automate the process in R instead of manually copying and pasting code for every plot, this thing happen to me a lot but when I read Hadley Wickham Advance on functional programming, I knew that what I was doing was wrong. However, the coding approach needed to automate plots can look pretty daunting to a beginner R user. It can look so daunting, in fact, that it can appear easier to manually make the plots (like in Excel) rather than using R at all.
 
 Unfortunately making plots manually can backfire. The efficiency of using a software program you already know is quickly out-weighed by being unable to easily reproduce the plots when needed. I know I invariably have to re-make even exploratory plots, and it'd be a bummer if I had to remake them all manually rather than re-running some code.
 
@@ -61,7 +61,7 @@ head(dat)
 
 
 
-The goal is to make scatterplots for every response variable vs every explanatory variable. I've deemed the first three variables in the data set to be the response variables (elev, resp, grad). The plan is to loop through the variables and make the desired plots. I'm going to use vectors of the variable names for this, one vector for the response variables and one for the explanatory variables. If all of your response or explanatory variables share some unique pattern in the variable names there are some clever ways to pull out the names with some of the select helper functions in dplyr::select(). My variable names are all unique. My options are to either write the vectors out manually or pull the names out by index. I'll do the latter since the different types of variables are grouped together.
+The goal is to make scatter plots for every response variable vs every explanatory variable. I've deemed the first three variables in the data set to be the response variables (elev, resp, grad). The plan is to loop through the variables and make the desired plots. I'm going to use vectors of the variable names for this, one vector for the response variables and one for the explanatory variables. If all of your response or explanatory variables share some unique pattern in the variable names there are some clever ways to pull out the names with some of the select helper functions in dplyr::select(). My variable names are all unique. My options are to either write the vectors out manually or pull the names out by index. I'll do the latter since the different types of variables are grouped together.
 
 ```{r,include=TRUE}
 response = names(dat)[1:3]
@@ -174,7 +174,7 @@ Since nested loops can be complicated, another option is to create all combinati
 
 
 ```{r,include=TRUE}
-resp_expl = tidyr::expand_grid(response, expl)
+resp_expl = tidyr::expand_grid(expl,response)
 resp_expl
 ```
 
@@ -183,7 +183,7 @@ I can now use pmap() from purrr to loop through the rows of this tibble. I have 
 
 
 ```{r,include=TRUE}
-allplots2 = pmap(.l = resp_expl, .f = ~scatter_fun(x = .y, y = .x) )
+allplots2 = pmap(.l = resp_expl, .f = ~scatter_fun(x = .x, y = .y) )
 ```
 
 

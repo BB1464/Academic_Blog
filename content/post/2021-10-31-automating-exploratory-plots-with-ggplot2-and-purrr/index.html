@@ -23,7 +23,7 @@ projects: []
 
 
 
-<p>When you have a lot of variables and need to make multiple exploratory plots it’s usually worthwhile to automate the process in R instead of manually copying and pasting code for every plot, this thing happen to me a lot but when I read Hadley Wickham Advance R book on functional programming, I knew that what I was doing was wrong. However, the coding approach needed to automate plots can look pretty daunting to a beginner R user. It can look so daunting, in fact, that it can appear easier to manually make the plots (like in Excel) rather than using R at all.</p>
+<p>When you have a lot of variables and need to make multiple exploratory plots it’s usually worthwhile to automate the process in R instead of manually copying and pasting code for every plot, this thing happen to me a lot but when I read Hadley Wickham Advance on functional programming, I knew that what I was doing was wrong. However, the coding approach needed to automate plots can look pretty daunting to a beginner R user. It can look so daunting, in fact, that it can appear easier to manually make the plots (like in Excel) rather than using R at all.</p>
 <p>Unfortunately making plots manually can backfire. The efficiency of using a software program you already know is quickly out-weighed by being unable to easily reproduce the plots when needed. I know I invariably have to re-make even exploratory plots, and it’d be a bummer if I had to remake them all manually rather than re-running some code.</p>
 <p>So while I often assure students working under time constraints that it is perfectly OK to use software they already know rather than spending the time to learn how to do something in R, making many plots is a special case. To get them started I will provide students who need to automate plotting in R some example code (with explanation).</p>
 <p>This post is based on an example that involves plotting bivariate relationships between many continuous variables.</p>
@@ -55,7 +55,7 @@ head(dat)</code></pre>
 ## 4 191.8  4.3 0.07 29.6 44.95022 122.7290 19
 ## 5 445.4  2.3 0.43 16.5 44.79784 122.9836 15
 ## 6 224.5  6.5 0.78  4.1 44.96576 122.9836 21</code></pre>
-<p>The goal is to make scatterplots for every response variable vs every explanatory variable. I’ve deemed the first three variables in the data set to be the response variables (elev, resp, grad). The plan is to loop through the variables and make the desired plots. I’m going to use vectors of the variable names for this, one vector for the response variables and one for the explanatory variables. If all of your response or explanatory variables share some unique pattern in the variable names there are some clever ways to pull out the names with some of the select helper functions in dplyr::select(). My variable names are all unique. My options are to either write the vectors out manually or pull the names out by index. I’ll do the latter since the different types of variables are grouped together.</p>
+<p>The goal is to make scatter plots for every response variable vs every explanatory variable. I’ve deemed the first three variables in the data set to be the response variables (elev, resp, grad). The plan is to loop through the variables and make the desired plots. I’m going to use vectors of the variable names for this, one vector for the response variables and one for the explanatory variables. If all of your response or explanatory variables share some unique pattern in the variable names there are some clever ways to pull out the names with some of the select helper functions in dplyr::select(). My variable names are all unique. My options are to either write the vectors out manually or pull the names out by index. I’ll do the latter since the different types of variables are grouped together.</p>
 <pre class="r"><code>response = names(dat)[1:3]
 expl = names(dat)[4:7]</code></pre>
 <p>When I know I’m going to be looping through character vectors I like to use named vectors. This helps me keep track of things in the output. The set_names() function in purrr is super handy for naming character vectors, since it can use the values of the vector as names (i.e., the vector will be named by itself). (I don’t recommend trying this with lists of data.frames like I have in the past, though, since it turns out that naming a data.frame with a data.frame isn’t so useful.)</p>
@@ -148,33 +148,33 @@ expl</code></pre>
 <div id="combining-variables-for-a-single-loop" class="section level3">
 <h3>Combining variables for a single loop</h3>
 <p>Since nested loops can be complicated, another option is to create all combinations of the two input vectors and then loop through those in a single loop. This can be done, for example, using tidyr::expand_grid(). The main thing I like about tidyr::expand_grid() over expand.grid() from base R is the order of the output. Both put the results into a data set (data.frame or tibble). Here’s how that would look, putting the response variables first to match the output order above. I’m using tidyr version 1.1.4 here.</p>
-<pre class="r"><code>resp_expl = tidyr::expand_grid(response, expl)
+<pre class="r"><code>resp_expl = tidyr::expand_grid(expl,response)
 resp_expl</code></pre>
 <pre><code>## # A tibble: 12 × 2
-##    response expl 
-##    &lt;chr&gt;    &lt;chr&gt;
-##  1 elev     slp  
-##  2 elev     lat  
-##  3 elev     long 
-##  4 elev     nt   
-##  5 resp     slp  
-##  6 resp     lat  
-##  7 resp     long 
-##  8 resp     nt   
-##  9 grad     slp  
-## 10 grad     lat  
-## 11 grad     long 
-## 12 grad     nt</code></pre>
+##    expl  response
+##    &lt;chr&gt; &lt;chr&gt;   
+##  1 slp   elev    
+##  2 slp   resp    
+##  3 slp   grad    
+##  4 lat   elev    
+##  5 lat   resp    
+##  6 lat   grad    
+##  7 long  elev    
+##  8 long  resp    
+##  9 long  grad    
+## 10 nt    elev    
+## 11 nt    resp    
+## 12 nt    grad</code></pre>
 <p>I can now use pmap() from purrr to loop through the rows of this tibble. I have to be careful with my argument order, though, since I have the y variable first in the tibble but it is the second argument in my function.</p>
-<pre class="r"><code>allplots2 = pmap(.l = resp_expl, .f = ~scatter_fun(x = .y, y = .x) )</code></pre>
+<pre class="r"><code>allplots2 = pmap(.l = resp_expl, .f = ~scatter_fun(x = .x, y = .y) )</code></pre>
 <p>I’m not going to print them here, but one minor downside of this approach is that only the first variable name is carried along to the output list. If I wanted to save these plots separately and use both the response and explanatory variable in the file name I’d need to create the file names based on resp_expl. I won’t show this in the next section on saving plots, so here is a quick example of creating basic file names based on both variables.</p>
 <pre class="r"><code>allplots2_names = pmap(resp_expl, ~ paste0(.x, &quot;_&quot;, .y, &quot;.png&quot;))
 allplots2_names[1:2]</code></pre>
-<pre><code>## $elev
-## [1] &quot;elev_slp.png&quot;
+<pre><code>## $slp
+## [1] &quot;slp_elev.png&quot;
 ## 
-## $elev
-## [1] &quot;elev_lat.png&quot;</code></pre>
+## $slp
+## [1] &quot;slp_resp.png&quot;</code></pre>
 </div>
 <div id="saving-the-plots" class="section level3">
 <h3>Saving the plots</h3>
