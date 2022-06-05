@@ -78,4 +78,52 @@ So in our above code, we can be certain that our result will be a list. You may 
 model_nested$model[[1]]
 ```
 
+As we see, its one of the models. We can get more info into it by running summary function.
 
+```{r}
+summary(model_nested$model[[1]])
+```
+
+But why do summary separately, if we know we Purrr :)
+
+```{r}
+model_nested_summarised<-model_nested %>% 
+  mutate(model_summary = map(model, ~summary(.)))
+
+model_nested_summarised
+```
+
+Again, here we can see ‘model_summary’ is a list column which stores summaries of each model. The first entry should be the same as above result.
+
+```{r}
+model_nested_summarised$model_summary[[1]]
+```
+
+We can extract the necessary information from those list columns separately.
+
+```{r}
+model_nested_summarised$model_summary[[1]][["r.squared"]]
+```
+
+But lets go one step and get all ‘r.squared’ values of each model and store them under separate column with the help of Purrr.
+
+```{r}
+model_nested_summarised %>% 
+  mutate(rsqr = map_dbl(.x=model_summary,.f = ~.[["r.squared"]]))
+```
+
+Here we used map_dbl() as we want our result as Doubles not a list. Thus,we managed to get all the requested values under one data frame. This is neat.
+
+Now let’s try all of this using a package called ‘broom’. It presents all the result into a tidy format. I will compact all into one single block this time.
+
+```{r}
+all_in_one<- mtcars %>% 
+  nest(-cyl) %>% 
+  mutate(model = map(data, ~lm(mpg~wt, data = .)),
+         tidied = map(model,glance)) %>% 
+  unnest(tidied)
+
+all_in_one
+```
+
+We use ‘glance’ function to return all the output on each row-wise basis for each dataframe. We can now use this output straight to plot some nice figures

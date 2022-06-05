@@ -5,20 +5,12 @@
     <link>https://statisticalinference.netlify.app/post/</link>
       <atom:link href="https://statisticalinference.netlify.app/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Post</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 02 Jun 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 09 Feb 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://statisticalinference.netlify.app/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_3.png</url>
       <title>Post</title>
       <link>https://statisticalinference.netlify.app/post/</link>
     </image>
-    
-    <item>
-      <title>Function</title>
-      <link>https://statisticalinference.netlify.app/post/function/</link>
-      <pubDate>Thu, 02 Jun 2022 00:00:00 +0000</pubDate>
-      <guid>https://statisticalinference.netlify.app/post/function/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>R Programming with Radiant Package</title>

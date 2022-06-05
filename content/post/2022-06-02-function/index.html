@@ -1,0 +1,195 @@
+---
+title: Functional Programming with Purrr
+author: Oluwafemi
+date: '2022-06-02'
+slug: function
+categories:
+  - Functional Programming
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2022-06-02T16:59:21+01:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+
+
+<div id="purrr" class="section level1">
+<h1>Purrr</h1>
+<p>In this post I’m going to show some cool feature of Purrr. Purrr is an R package for functional programming. I have always been fascinated by functional programming. I first heard about it while I was learning reading Hadley R for Data Science book. With this approach, not only it makes our code more succinct and clear, but more expressive. Without further ado lets dive straight in. For this exercise, I’m using ‘mtcars’ data set.</p>
+</div>
+<div id="lets-load-some-libraries-like-tidyverse-tidytext." class="section level1">
+<h1>Lets load some libraries like tidyverse, tidytext.</h1>
+<p>Suppose if we want to run regression model on 3 sets of data sets grouped by certain feature (cyl in our case), we need to regress data set separately.</p>
+<pre class="r"><code>library(tidyverse)</code></pre>
+<pre><code>## ── Attaching packages ─────────────────────────────────────── tidyverse 1.3.1 ──</code></pre>
+<pre><code>## ✔ ggplot2 3.3.6.9000     ✔ purrr   0.3.4     
+## ✔ tibble  3.1.7          ✔ dplyr   1.0.9     
+## ✔ tidyr   1.2.0          ✔ stringr 1.4.0     
+## ✔ readr   2.1.2          ✔ forcats 0.5.1</code></pre>
+<pre><code>## ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+## ✖ dplyr::filter() masks stats::filter()
+## ✖ dplyr::lag()    masks stats::lag()</code></pre>
+<pre class="r"><code>library(tidytext)
+library(broom)</code></pre>
+</div>
+<div id="regression-for-dataset-with-cyl-8" class="section level1">
+<h1>Regression for dataset with cyl == 8</h1>
+<pre class="r"><code>cyl8 &lt;- mtcars %&gt;% 
+  filter(cyl == 8)
+
+summary(lm(mpg~wt, data=cyl8))</code></pre>
+<pre><code>## 
+## Call:
+## lm(formula = mpg ~ wt, data = cyl8)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -2.1491 -1.4664 -0.8458  1.5711  3.7619 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept)  23.8680     3.0055   7.942 4.05e-06 ***
+## wt           -2.1924     0.7392  -2.966   0.0118 *  
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 2.024 on 12 degrees of freedom
+## Multiple R-squared:  0.423,  Adjusted R-squared:  0.3749 
+## F-statistic: 8.796 on 1 and 12 DF,  p-value: 0.01179</code></pre>
+<p>So we have to do like this for each cyl. One thing you might have noticed is that we have separate results. Imagine doing some analysis on bigger data set and having to keep track of each result separately. It would be really a nightmare. You might say we can achieve by using loops but they have their own disadvantages. We can achieve this easily by use of Purrr. Another thing which is crucial is use of ‘tibble’. A tibble is similar to traditional data frame but much more efficient. I like mostly of the fact that it can store ‘list columns’. Let me show this.</p>
+<pre class="r"><code>nested&lt;-mtcars %&gt;% 
+  nest(-cyl)</code></pre>
+<pre><code>## Warning: All elements of `...` must be named.
+## Did you want `data = -cyl`?</code></pre>
+<pre class="r"><code>nested</code></pre>
+<pre><code>## # A tibble: 3 × 2
+##     cyl data              
+##   &lt;dbl&gt; &lt;list&gt;            
+## 1     6 &lt;tibble [7 × 10]&gt; 
+## 2     4 &lt;tibble [11 × 10]&gt;
+## 3     8 &lt;tibble [14 × 10]&gt;</code></pre>
+<p>Here if you look at column ‘data’, its a list column. Each entry is a separate data frame. Its like an entire Excel spreadsheet stored into that tiny cell. And this is made possible by using ‘nest’ function from <strong>tidyr</strong> package. Lets see what’s inside one of them.</p>
+<pre class="r"><code>nested$data[[1]]</code></pre>
+<pre><code>## # A tibble: 7 × 10
+##     mpg  disp    hp  drat    wt  qsec    vs    am  gear  carb
+##   &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
+## 1  21    160    110  3.9   2.62  16.5     0     1     4     4
+## 2  21    160    110  3.9   2.88  17.0     0     1     4     4
+## 3  21.4  258    110  3.08  3.22  19.4     1     0     3     1
+## 4  18.1  225    105  2.76  3.46  20.2     1     0     3     1
+## 5  19.2  168.   123  3.92  3.44  18.3     1     0     4     4
+## 6  17.8  168.   123  3.92  3.44  18.9     1     0     4     4
+## 7  19.7  145    175  3.62  2.77  15.5     0     1     5     6</code></pre>
+<p>Ok! as mentioned each entry of that list is a separate data frame.</p>
+<p>Now we can run regression on each entry of that list and store each model into another list column. For this we have to use map() function, which helps to iterate on each entry of that list and run regression.</p>
+<pre class="r"><code>model_nested&lt;-nested %&gt;% 
+  mutate(model = map(.x=data,.f =~lm(mpg~wt, data=.)))
+
+model_nested</code></pre>
+<pre><code>## # A tibble: 3 × 3
+##     cyl data               model 
+##   &lt;dbl&gt; &lt;list&gt;             &lt;list&gt;
+## 1     6 &lt;tibble [7 × 10]&gt;  &lt;lm&gt;  
+## 2     4 &lt;tibble [11 × 10]&gt; &lt;lm&gt;  
+## 3     8 &lt;tibble [14 × 10]&gt; &lt;lm&gt;</code></pre>
+<p>Here, <strong>mutate</strong> is generic command to create a column called ‘model’. The meat of the operation starts with ‘map’ function.</p>
+<p>Purrr comes different flavors of map function. We have map(), map_int(), map_dbl(), map_chr(). As you may have guessed, each one returns certain kind of data like map_int() returns Integers, map_dbl() returns Doubles, map() always returns list.</p>
+<p>So in our above code, we can be certain that our result will be a list. You may be wondering what is (~)? It denotes an anonymous function, a function which is defined on a fly. so, lm(mpg~wt) denotes a linear regression being run with ‘mpg’ against ‘wt’. The (.) denotes the current data frame in that context. So what map has done is run 3 regression models and stored the respective results under ‘model’ column. We can see what’s the first entry</p>
+<pre class="r"><code>model_nested$model[[1]]</code></pre>
+<pre><code>## 
+## Call:
+## lm(formula = mpg ~ wt, data = .)
+## 
+## Coefficients:
+## (Intercept)           wt  
+##       28.41        -2.78</code></pre>
+<p>As we see, its one of the models. We can get more info into it by running summary function.</p>
+<pre class="r"><code>summary(model_nested$model[[1]])</code></pre>
+<pre><code>## 
+## Call:
+## lm(formula = mpg ~ wt, data = .)
+## 
+## Residuals:
+##       1       2       3       4       5       6       7 
+## -0.1250  0.5840  1.9292 -0.6897  0.3547 -1.0453 -1.0080 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(&gt;|t|)   
+## (Intercept)   28.409      4.184   6.789  0.00105 **
+## wt            -2.780      1.335  -2.083  0.09176 . 
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 1.165 on 5 degrees of freedom
+## Multiple R-squared:  0.4645, Adjusted R-squared:  0.3574 
+## F-statistic: 4.337 on 1 and 5 DF,  p-value: 0.09176</code></pre>
+<p>But why do summary separately, if we know we Purrr :)</p>
+<pre class="r"><code>model_nested_summarised&lt;-model_nested %&gt;% 
+  mutate(model_summary = map(model, ~summary(.)))
+
+model_nested_summarised</code></pre>
+<pre><code>## # A tibble: 3 × 4
+##     cyl data               model  model_summary
+##   &lt;dbl&gt; &lt;list&gt;             &lt;list&gt; &lt;list&gt;       
+## 1     6 &lt;tibble [7 × 10]&gt;  &lt;lm&gt;   &lt;smmry.lm&gt;   
+## 2     4 &lt;tibble [11 × 10]&gt; &lt;lm&gt;   &lt;smmry.lm&gt;   
+## 3     8 &lt;tibble [14 × 10]&gt; &lt;lm&gt;   &lt;smmry.lm&gt;</code></pre>
+<p>Again, here we can see ‘model_summary’ is a list column which stores summaries of each model. The first entry should be the same as above result.</p>
+<pre class="r"><code>model_nested_summarised$model_summary[[1]]</code></pre>
+<pre><code>## 
+## Call:
+## lm(formula = mpg ~ wt, data = .)
+## 
+## Residuals:
+##       1       2       3       4       5       6       7 
+## -0.1250  0.5840  1.9292 -0.6897  0.3547 -1.0453 -1.0080 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(&gt;|t|)   
+## (Intercept)   28.409      4.184   6.789  0.00105 **
+## wt            -2.780      1.335  -2.083  0.09176 . 
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 1.165 on 5 degrees of freedom
+## Multiple R-squared:  0.4645, Adjusted R-squared:  0.3574 
+## F-statistic: 4.337 on 1 and 5 DF,  p-value: 0.09176</code></pre>
+<p>We can extract the necessary information from those list columns separately.</p>
+<pre class="r"><code>model_nested_summarised$model_summary[[1]][[&quot;r.squared&quot;]]</code></pre>
+<pre><code>## [1] 0.4645102</code></pre>
+<p>But lets go one step and get all ‘r.squared’ values of each model and store them under separate column with the help of Purrr.</p>
+<pre class="r"><code>model_nested_summarised %&gt;% 
+  mutate(rsqr = map_dbl(.x=model_summary,.f = ~.[[&quot;r.squared&quot;]]))</code></pre>
+<pre><code>## # A tibble: 3 × 5
+##     cyl data               model  model_summary  rsqr
+##   &lt;dbl&gt; &lt;list&gt;             &lt;list&gt; &lt;list&gt;        &lt;dbl&gt;
+## 1     6 &lt;tibble [7 × 10]&gt;  &lt;lm&gt;   &lt;smmry.lm&gt;    0.465
+## 2     4 &lt;tibble [11 × 10]&gt; &lt;lm&gt;   &lt;smmry.lm&gt;    0.509
+## 3     8 &lt;tibble [14 × 10]&gt; &lt;lm&gt;   &lt;smmry.lm&gt;    0.423</code></pre>
+<p>Here we used map_dbl() as we want our result as Doubles not a list. Thus,we managed to get all the requested values under one data frame. This is neat.</p>
+<p>Now let’s try all of this using a package called ‘broom’. It presents all the result into a tidy format. I will compact all into one single block this time.</p>
+<pre class="r"><code>all_in_one&lt;- mtcars %&gt;% 
+  nest(-cyl) %&gt;% 
+  mutate(model = map(data, ~lm(mpg~wt, data = .)),
+         tidied = map(model,glance)) %&gt;% 
+  unnest(tidied)</code></pre>
+<pre><code>## Warning: All elements of `...` must be named.
+## Did you want `data = -cyl`?</code></pre>
+<pre class="r"><code>all_in_one</code></pre>
+<pre><code>## # A tibble: 3 × 15
+##     cyl data     model  r.squared adj.r.squared sigma statistic p.value    df
+##   &lt;dbl&gt; &lt;list&gt;   &lt;list&gt;     &lt;dbl&gt;         &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt;   &lt;dbl&gt; &lt;dbl&gt;
+## 1     6 &lt;tibble&gt; &lt;lm&gt;       0.465         0.357  1.17      4.34  0.0918     1
+## 2     4 &lt;tibble&gt; &lt;lm&gt;       0.509         0.454  3.33      9.32  0.0137     1
+## 3     8 &lt;tibble&gt; &lt;lm&gt;       0.423         0.375  2.02      8.80  0.0118     1
+## # … with 6 more variables: logLik &lt;dbl&gt;, AIC &lt;dbl&gt;, BIC &lt;dbl&gt;, deviance &lt;dbl&gt;,
+## #   df.residual &lt;int&gt;, nobs &lt;int&gt;</code></pre>
+<p>We use ‘glance’ function to return all the output on each row-wise basis for each dataframe. We can now use this output straight to plot some nice figures</p>
+</div>
