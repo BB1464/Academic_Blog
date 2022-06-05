@@ -26,6 +26,56 @@ In this post I’m going to show some cool feature of Purrr. Purrr is an R packa
 Suppose if we want to run regression model on 3 sets of data sets grouped by certain feature (cyl in our case), we need to regress data set separately.
 
 ```{r}
+library(tidyverse)
+library(tidytext)
+library(broom)
 
 ```
+
+# Regression for dataset with cyl == 8
+
+```{r}
+cyl8 <- mtcars %>% 
+  filter(cyl == 8)
+
+summary(lm(mpg~wt, data=cyl8))
+
+```
+
+So we have to do like this for each cyl. One thing you might have noticed is that we have separate results. Imagine doing some analysis on bigger data set and having to keep track of each result separately. It would be really a nightmare. You might say we can achieve by using loops but they have their own disadvantages. We can achieve this easily by use of Purrr. Another thing which is crucial is use of ‘tibble’. A tibble is similar to traditional data frame but much more efficient. I like mostly of the fact that it can store ‘list columns’. Let me show this.
+
+```{r}
+nested<-mtcars %>% 
+  nest(-cyl)
+
+nested
+```
+
+Here if you look at column ‘data’, its a list column. Each entry is a separate data frame. Its like an entire Excel spreadsheet stored into that tiny cell. And this is made possible by using ‘nest’ function from **tidyr** package. Lets see what’s inside one of them.
+
+```{r}
+nested$data[[1]]
+```
+
+Ok! as mentioned each entry of that list is a separate data frame.
+
+Now we can run regression on each entry of that list and store each model into another list column. For this we have to use map() function, which helps to iterate on each entry of that list and run regression.
+
+```{r}
+model_nested<-nested %>% 
+  mutate(model = map(.x=data,.f =~lm(mpg~wt, data=.)))
+
+model_nested
+```
+
+Here, **mutate** is generic command to create a column called ‘model’. The meat of the operation starts with ‘map’ function.
+
+Purrr comes different flavors of map function. We have map(), map_int(), map_dbl(), map_chr(). As you may have guessed, each one returns certain kind of data like map_int() returns Integers, map_dbl() returns Doubles, map() always returns list.
+
+So in our above code, we can be certain that our result will be a list. You may be wondering what is (~)? It denotes an anonymous function, a function which is defined on a fly. so, lm(mpg~wt) denotes a linear regression being run with ‘mpg’ against ‘wt’. The (.) denotes the current data frame in that context. So what map has done is run 3 regression models and stored the respective results under ‘model’ column. We can see what’s the first entry
+
+```{r}
+model_nested$model[[1]]
+```
+
 
