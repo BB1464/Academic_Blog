@@ -88,6 +88,7 @@ expl
 Since I'm going to make a bunch of plots that will all have the same basic form, I will make a plotting function. I am going to make a function where only the x and y variables can vary (so are arguments to the function). Since I'm making a function to plot variables from a single data set I'm going to hard-code the data set into the function. If you have multiple data sets or you are making a function for use across projects you'll probably want to add the data set as a function argument. My functions inputs are based on the variable names, so I need to pass strings into the ggplot2 functions. Strings cannot be used directly in aes(), but can be used with the .data pronoun. I'm making pretty basic graphs since these are exploratory plots, not publication-ready plots. I will make a scatterplot and add locally weighted regression (loess) lines via geom_smooth(). I use such lines with great caution, as it can be easy to get too attached any pattern the loess line shows.
 
 ```{r,include=TRUE}
+
 scatter_fun = function(x, y) {
   ggplot(data=dat, aes(x = .data[[x]], y = .data[[y]])) +
     geom_point() +

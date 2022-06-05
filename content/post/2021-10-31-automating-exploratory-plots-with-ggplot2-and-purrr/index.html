@@ -72,20 +72,7 @@ expl</code></pre>
 <h3>Create a plotting function</h3>
 <p>Since I’m going to make a bunch of plots that will all have the same basic form, I will make a plotting function. I am going to make a function where only the x and y variables can vary (so are arguments to the function). Since I’m making a function to plot variables from a single data set I’m going to hard-code the data set into the function. If you have multiple data sets or you are making a function for use across projects you’ll probably want to add the data set as a function argument. My functions inputs are based on the variable names, so I need to pass strings into the ggplot2 functions. Strings cannot be used directly in aes(), but can be used with the .data pronoun. I’m making pretty basic graphs since these are exploratory plots, not publication-ready plots. I will make a scatterplot and add locally weighted regression (loess) lines via geom_smooth(). I use such lines with great caution, as it can be easy to get too attached any pattern the loess line shows.</p>
 <pre class="r"><code>scatter_fun = function(x, y) {
-  ggplot(dat, aes(x = .data[[x]], y = .data[[y]])) +
-    geom_point() +
-    geom_smooth(method = &quot;loess&quot;,
-                se = FALSE,
-                color = &quot;grey74&quot;) + theme(
-                  panel.grid.major = element_blank(),
-                  panel.grid.minor = element_blank(),
-                  panel.background = element_blank(),
-                  axis.line = element_line()
-                )
-}</code></pre>
-<p>If using older versions of ggplot2 (and/or rlang), use the now deprecated aes_string() for working with strings.</p>
-<pre class="r"><code>scatter_fun = function(x, y) {
-  ggplot(dat, aes_string(x = x, y = y)) +
+  ggplot(data=dat, aes(x = .data[[x]], y = .data[[y]])) +
     geom_point() +
     geom_smooth(method = &quot;loess&quot;,
                 se = FALSE,
@@ -100,10 +87,8 @@ expl</code></pre>
 <div id="heres-an-example-of-the-function-output-passing-in-x-and-y-as-strings." class="section level3">
 <h3>Here’s an example of the function output, passing in x and y as strings.</h3>
 <pre class="r"><code>scatter_fun(x = &quot;lat&quot;, y = &quot;elev&quot;)</code></pre>
-<pre><code>## Warning: `aes_string()` was deprecated in ggplot2 3.0.0.
-## Please use tidy evaluation ideoms with `aes()`</code></pre>
 <pre><code>## `geom_smooth()` using formula = &#39;y ~ x&#39;</code></pre>
-<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
+<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
 </div>
 <div id="looping-through-one-vector-of-variables" class="section level3">
 <h3>Looping through one vector of variables</h3>
@@ -112,109 +97,53 @@ expl</code></pre>
 <div id="here-i-will-use-the-map-function-from-purrr-package-for-looping." class="section level3">
 <h3>Here I will use the map function from purrr package for looping.</h3>
 <p>I pass each explanatory variable to the first argument in scatter_fun() and I fix the second argument to “elev”. I use the formula coding in map() and so refer to the element of the explanatory vector via .x within scatter_fun().</p>
-<pre class="r"><code>elev_plots = map(expl, ~scatter_fun(.x, &quot;elev&quot;) )</code></pre>
-<pre><code>## Warning: `aes_string()` was deprecated in ggplot2 3.0.0.
-## Please use tidy evaluation ideoms with `aes()`
-## `aes_string()` was deprecated in ggplot2 3.0.0.
-## Please use tidy evaluation ideoms with `aes()`
-## `aes_string()` was deprecated in ggplot2 3.0.0.
-## Please use tidy evaluation ideoms with `aes()`
-## `aes_string()` was deprecated in ggplot2 3.0.0.
-## Please use tidy evaluation ideoms with `aes()`</code></pre>
+<pre class="r"><code>elev_plots = map(.x = expl, .f = ~scatter_fun(x = .x, y = &quot;elev&quot;) )</code></pre>
 <p>The output is a list of 4 plots (since there are 4 explanatory variables). You’ll notice that each element of the list has the variable name associated with it. This is why I used set_names() earlier, since this is convenient for printing the plots and, you’ll see later, is convenient when saving the plots in files with understandable names.</p>
 <pre class="r"><code>elev_plots</code></pre>
 <pre><code>## $slp</code></pre>
 <pre><code>## `geom_smooth()` using formula = &#39;y ~ x&#39;</code></pre>
-<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
+<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
 <pre><code>## 
 ## $lat</code></pre>
 <pre><code>## `geom_smooth()` using formula = &#39;y ~ x&#39;</code></pre>
-<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-9-2.png" width="672" /></p>
+<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-8-2.png" width="672" /></p>
 <pre><code>## 
 ## $long</code></pre>
 <pre><code>## `geom_smooth()` using formula = &#39;y ~ x&#39;</code></pre>
-<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-9-3.png" width="672" /></p>
+<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-8-3.png" width="672" /></p>
 <pre><code>## 
 ## $nt</code></pre>
 <pre><code>## `geom_smooth()` using formula = &#39;y ~ x&#39;</code></pre>
-<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-9-4.png" width="672" /></p>
+<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-8-4.png" width="672" /></p>
 </div>
 <div id="looping-through-both-vectors" class="section level3">
 <h3>Looping through both vectors</h3>
 <p>For only a few response variables we could easily copy and paste the code above, changing the hard-coded response variable each time. This process can get burdensome if there are a lot of response variables, though. Using a nested loop is another option which involve looping through both vectors of variables to make all the plots at once. Because we want a plot for each combination of variables, this is a job for a nested loop. This means one map() loop will be nested inside another. I will refer to the first map() loop as the outer loop and the second one as the inner loop. I’m going to run through the response variables in the outer loop and the explanatory variables in the inner loop. That way I can graph all of the explanatory variables for each response variable before moving on to the next response variable. This puts the output, a nested list, in a logical order. A nested loop involves more complicated code. It took some effort for me to wrap my head around how to refer to the list element from the outer loop within the inner loop when using the map() formula coding with the tilde (~). I found the answers/comments to this question on Stack Overflow to be helpful. Since my scatter plot function is so simple I ended up using formula coding for the outer loop and the function as-is in the inner loop. The inner list elements are fed to the first argument of scatter_fun() by default, which works out great since the first argument is the x variable and the inner loop loops through the explanatory variables. The .x then refers to the outer list elements (the response variable names), and is passed to the y argument of the function in the inner loop.</p>
-<pre class="r"><code>all_plots = map(response,
-                ~ map(expl, scatter_fun, y = .x))</code></pre>
-<pre><code>## Warning: `aes_string()` was deprecated in ggplot2 3.0.0.
-## Please use tidy evaluation ideoms with `aes()`
-## `aes_string()` was deprecated in ggplot2 3.0.0.
-## Please use tidy evaluation ideoms with `aes()`
-## `aes_string()` was deprecated in ggplot2 3.0.0.
-## Please use tidy evaluation ideoms with `aes()`
-## `aes_string()` was deprecated in ggplot2 3.0.0.
-## Please use tidy evaluation ideoms with `aes()`
-## `aes_string()` was deprecated in ggplot2 3.0.0.
-## Please use tidy evaluation ideoms with `aes()`
-## `aes_string()` was deprecated in ggplot2 3.0.0.
-## Please use tidy evaluation ideoms with `aes()`
-## `aes_string()` was deprecated in ggplot2 3.0.0.
-## Please use tidy evaluation ideoms with `aes()`
-## `aes_string()` was deprecated in ggplot2 3.0.0.
-## Please use tidy evaluation ideoms with `aes()`
-## `aes_string()` was deprecated in ggplot2 3.0.0.
-## Please use tidy evaluation ideoms with `aes()`
-## `aes_string()` was deprecated in ggplot2 3.0.0.
-## Please use tidy evaluation ideoms with `aes()`
-## `aes_string()` was deprecated in ggplot2 3.0.0.
-## Please use tidy evaluation ideoms with `aes()`
-## `aes_string()` was deprecated in ggplot2 3.0.0.
-## Please use tidy evaluation ideoms with `aes()`</code></pre>
+<pre class="r"><code>all_plots = map(.x = response,
+                  .f=~ map(.x = expl, .f = scatter_fun, y = .x))</code></pre>
 <p>To be honest, I think it is fairly hard to follow what the above code is doing. And I’ve found it difficult to use such an approach if adding additional nested loops. At the end of the day, using anonymous functions involves more code but the results may be easier to understand. Well, as easy to follow as nested loops ever are. Here’s the same plots using anonymous functions in each map() loop.</p>
 <pre class="r"><code>all_plots2 = map(response, function(resp) {
   map(expl, function(expl) {
     scatter_fun(x = expl, y = resp)
   })
 })</code></pre>
-<pre><code>## Warning: `aes_string()` was deprecated in ggplot2 3.0.0.
-## Please use tidy evaluation ideoms with `aes()`
-## `aes_string()` was deprecated in ggplot2 3.0.0.
-## Please use tidy evaluation ideoms with `aes()`
-## `aes_string()` was deprecated in ggplot2 3.0.0.
-## Please use tidy evaluation ideoms with `aes()`
-## `aes_string()` was deprecated in ggplot2 3.0.0.
-## Please use tidy evaluation ideoms with `aes()`
-## `aes_string()` was deprecated in ggplot2 3.0.0.
-## Please use tidy evaluation ideoms with `aes()`
-## `aes_string()` was deprecated in ggplot2 3.0.0.
-## Please use tidy evaluation ideoms with `aes()`
-## `aes_string()` was deprecated in ggplot2 3.0.0.
-## Please use tidy evaluation ideoms with `aes()`
-## `aes_string()` was deprecated in ggplot2 3.0.0.
-## Please use tidy evaluation ideoms with `aes()`
-## `aes_string()` was deprecated in ggplot2 3.0.0.
-## Please use tidy evaluation ideoms with `aes()`
-## `aes_string()` was deprecated in ggplot2 3.0.0.
-## Please use tidy evaluation ideoms with `aes()`
-## `aes_string()` was deprecated in ggplot2 3.0.0.
-## Please use tidy evaluation ideoms with `aes()`
-## `aes_string()` was deprecated in ggplot2 3.0.0.
-## Please use tidy evaluation ideoms with `aes()`</code></pre>
 <p>The output is a list of lists. Each sublist contains all the plots for a single response variable. Because I set the names for both vectors of variable names, the inner and outer lists both have names. These names can be used to pull out individual plots. For example, if I want to see all the plots for the grad response variable I can print that sublist by name. (I’m going to display only two of four grad plots here to save space.)</p>
 <pre class="r"><code>all_plots$grad[1:2]</code></pre>
 <pre><code>## $slp</code></pre>
 <pre><code>## `geom_smooth()` using formula = &#39;y ~ x&#39;</code></pre>
-<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
+<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
 <pre><code>## 
 ## $lat</code></pre>
 <pre><code>## `geom_smooth()` using formula = &#39;y ~ x&#39;</code></pre>
-<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-12-2.png" width="672" /></p>
+<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-11-2.png" width="672" /></p>
 <p>If I want to print a single plot, I can first extract one of the sub-lists using an outer list name and then extract the individual plot via an inner list name.</p>
 <pre class="r"><code>all_plots$grad$long</code></pre>
 <pre><code>## `geom_smooth()` using formula = &#39;y ~ x&#39;</code></pre>
-<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-13-1.png" width="672" /></p>
+<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
 <p>I find the names convenient, but you can also extract plots via position. Here’s the same graph, the third element of the third list.</p>
 <pre class="r"><code>all_plots[[3]][[3]]</code></pre>
 <pre><code>## `geom_smooth()` using formula = &#39;y ~ x&#39;</code></pre>
-<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-14-1.png" width="672" /></p>
+<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-13-1.png" width="672" /></p>
 </div>
 <div id="combining-variables-for-a-single-loop" class="section level3">
 <h3>Combining variables for a single loop</h3>
@@ -237,31 +166,7 @@ resp_expl</code></pre>
 ## 11 grad     long 
 ## 12 grad     nt</code></pre>
 <p>I can now use pmap() from purrr to loop through the rows of this tibble. I have to be careful with my argument order, though, since I have the y variable first in the tibble but it is the second argument in my function.</p>
-<pre class="r"><code>allplots2 = pmap(resp_expl, ~scatter_fun(x = .y, y = .x) )</code></pre>
-<pre><code>## Warning: `aes_string()` was deprecated in ggplot2 3.0.0.
-## Please use tidy evaluation ideoms with `aes()`
-## `aes_string()` was deprecated in ggplot2 3.0.0.
-## Please use tidy evaluation ideoms with `aes()`
-## `aes_string()` was deprecated in ggplot2 3.0.0.
-## Please use tidy evaluation ideoms with `aes()`
-## `aes_string()` was deprecated in ggplot2 3.0.0.
-## Please use tidy evaluation ideoms with `aes()`
-## `aes_string()` was deprecated in ggplot2 3.0.0.
-## Please use tidy evaluation ideoms with `aes()`
-## `aes_string()` was deprecated in ggplot2 3.0.0.
-## Please use tidy evaluation ideoms with `aes()`
-## `aes_string()` was deprecated in ggplot2 3.0.0.
-## Please use tidy evaluation ideoms with `aes()`
-## `aes_string()` was deprecated in ggplot2 3.0.0.
-## Please use tidy evaluation ideoms with `aes()`
-## `aes_string()` was deprecated in ggplot2 3.0.0.
-## Please use tidy evaluation ideoms with `aes()`
-## `aes_string()` was deprecated in ggplot2 3.0.0.
-## Please use tidy evaluation ideoms with `aes()`
-## `aes_string()` was deprecated in ggplot2 3.0.0.
-## Please use tidy evaluation ideoms with `aes()`
-## `aes_string()` was deprecated in ggplot2 3.0.0.
-## Please use tidy evaluation ideoms with `aes()`</code></pre>
+<pre class="r"><code>allplots2 = pmap(.l = resp_expl, .f = ~scatter_fun(x = .y, y = .x) )</code></pre>
 <p>I’m not going to print them here, but one minor downside of this approach is that only the first variable name is carried along to the output list. If I wanted to save these plots separately and use both the response and explanatory variable in the file name I’d need to create the file names based on resp_expl. I won’t show this in the next section on saving plots, so here is a quick example of creating basic file names based on both variables.</p>
 <pre class="r"><code>allplots2_names = pmap(resp_expl, ~ paste0(.x, &quot;_&quot;, .y, &quot;.png&quot;))
 allplots2_names[1:2]</code></pre>
@@ -411,7 +316,7 @@ all_plots</code></pre>
 ## `geom_smooth()` using formula = &#39;y ~ x&#39;
 ## `geom_smooth()` using formula = &#39;y ~ x&#39;
 ## `geom_smooth()` using formula = &#39;y ~ x&#39;</code></pre>
-<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-22-1.png" width="672" /></p>
+<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-21-1.png" width="672" /></p>
 <p>We can use a loop to combine the plots for each response variable sub-list. The result could then be saved using any of the approaches shown above. If you have many subplots per combined plot you likely will want to save the plots at a larger size so the individual plots can be clearly seen.</p>
 <pre class="r"><code>response_plots = map(all_plots, ~ cowplot::plot_grid(plotlist = .x))</code></pre>
 <pre><code>## `geom_smooth()` using formula = &#39;y ~ x&#39;
@@ -428,13 +333,13 @@ all_plots</code></pre>
 ## `geom_smooth()` using formula = &#39;y ~ x&#39;</code></pre>
 <pre class="r"><code>response_plots</code></pre>
 <pre><code>## $elev</code></pre>
-<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-23-1.png" width="672" /></p>
+<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-22-1.png" width="672" /></p>
 <pre><code>## 
 ## $resp</code></pre>
-<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-23-2.png" width="672" /></p>
+<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-22-2.png" width="672" /></p>
 <pre><code>## 
 ## $grad</code></pre>
-<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-23-3.png" width="672" /></p>
+<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-22-3.png" width="672" /></p>
 <p>To learn more on functional programming in R you can look at Jenny Bryan blog post on functional programming <a href="https://jennybc.github.io/purrr-tutorial/"><strong>here</strong></a></p>
 </div>
 </div>
