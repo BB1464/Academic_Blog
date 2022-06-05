@@ -98,10 +98,10 @@ Again, here we can see `model_summary` is a list column which stores summaries o
 ```{r}
 model_nested_summarised$model_summary[[1]]
 ```
-We can also get the summary of the entire  group using the `pluck` function from purrr package.
+We can also get the summary for the first  group using the `pluck` function from purrr package.
 
 ```{r}
-model_nested_summarised |> pluck('model_summary')
+model_nested_summarised |> pluck('model_summary',1)
 ```
 
 We can extract the necessary information from those list columns separately.
