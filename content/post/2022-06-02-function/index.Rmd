@@ -1,6 +1,6 @@
 ---
 title: Functional Programming with Purrr
-author: Oluwafemi
+author: Oluwafemi Oyedele
 date: '2022-06-02'
 slug: function
 categories:
@@ -18,10 +18,9 @@ image:
 projects: []
 ---
 
-# Purrr
-In this post I’m going to show some cool feature of Purrr. Purrr is an R package for functional programming. I have always been fascinated by functional programming. I first heard about it while I was learning reading Hadley R for Data Science book. With this approach, not only it makes our code more succinct and clear, but more expressive. Without further ado lets dive straight in. For this exercise, I’m using ‘mtcars’ data set.
+In this post I’m going to show some cool feature of Purrr. Purrr is an R package for functional programming. I have always been fascinated by functional programming. I first heard about it while I was reading Hadley R for Data Science book. With this approach, not only it makes our code more succinct and clear, but more expressive. Without further ado lets dive straight in. For this exercise, I’m using `mtcars` data set.
 
-# Lets load some libraries like tidyverse, tidytext.
+# Lets load some libraries like tidyverse, broom and tidytext.   
 
 Suppose if we want to run regression model on 3 sets of data sets grouped by certain feature (cyl in our case), we need to regress data set separately.
 
@@ -35,18 +34,19 @@ library(broom)
 # Regression for dataset with cyl == 8
 
 ```{r}
-cyl8 <- mtcars %>% 
+cyl8 <- mtcars |> 
   filter(cyl == 8)
 
 summary(lm(mpg~wt, data=cyl8))
 
 ```
 
-So we have to do like this for each cyl. One thing you might have noticed is that we have separate results. Imagine doing some analysis on bigger data set and having to keep track of each result separately. It would be really a nightmare. You might say we can achieve by using loops but they have their own disadvantages. We can achieve this easily by use of Purrr. Another thing which is crucial is use of ‘tibble’. A tibble is similar to traditional data frame but much more efficient. I like mostly of the fact that it can store ‘list columns’. Let me show this.
+So we have to do like this for each cyl. One thing you might have noticed is that we have separate results. Imagine doing some analysis on bigger data set and having to keep track of each result separately. It would be a nightmare. You might say we can achieve by using loops but they have their own disadvantages. We can achieve this easily by use of Purrr. Another thing which is crucial is use of ‘tibble’. A tibble is similar to traditional data frame but much more efficient. I like mostly of the fact that it can store ‘list columns’. Let me show this.
 
 ```{r}
-nested<-mtcars %>% 
-  nest(-cyl)
+nested<-mtcars |> 
+  group_by(cyl) |> 
+  nest(cyl)
 
 nested
 ```
