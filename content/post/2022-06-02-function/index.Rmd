@@ -24,7 +24,7 @@ In this post I’m going to show some cool feature of Purrr. Purrr is an R packa
 
 Suppose if we want to run regression model on 3 sets of data sets grouped by certain feature (cyl in our case), we need to regress data set separately.
 
-```{r,echo=FALSE,warning=FALSE,message=FALSE}
+```{r,echo=FALSE,warning=FALSE,message=FALSE,include=TRUE}
 library(tidyverse)
 library(tidytext)
 library(broom)
@@ -33,7 +33,7 @@ library(broom)
 
 # Regression for dataset with cyl == 8
 
-```{r}
+```{r,include=TRUE}
 cyl8 <- mtcars |> 
   filter(cyl == 8)
 
@@ -43,7 +43,7 @@ summary(lm(mpg~wt, data=cyl8))
 
 So we have to do like this for each cyl. One thing you might have noticed is that we have separate results. Imagine doing some analysis on bigger data set and having to keep track of each result separately. It would be a nightmare. You might say we can achieve by using loops but they have their own disadvantages. We can achieve this easily by use of Purrr. Another thing which is crucial is use of ‘tibble’. A tibble is similar to traditional data frame but much more efficient. I like mostly of the fact that it can store ‘list columns’. Let me show this.
 
-```{r}
+```{r,include=TRUE}
 nested<-mtcars |> 
   group_by(cyl) |> 
   nest(cyl)
@@ -53,7 +53,7 @@ nested
 
 Here if you look at column `data`, it's a list column. Each entry is a separate data frame. It's like an entire Excel spreadsheet stored into that tiny cell. And this is made possible by using `nest` function from **tidyr** package. Lets see what’s inside one of them.
 
-```{r}
+```{r,include=TRUE}
 nested$data[[1]]
 ```
 
@@ -61,7 +61,7 @@ Ok! as mentioned each entry of that list is a separate data frame.
 
 Now we can run regression on each entry of that list and store each model into another list column. For this we have to use map() function, which helps to iterate on each entry of that list and run regression.
 
-```{r}
+```{r,include=TRUE}
 model_nested<-nested |> 
   mutate(model = map(.x=data,.f =~lm(mpg~wt, data=.)))
 
@@ -74,19 +74,19 @@ Purrr have a different variant of map function. We have map(), map_int(), map_db
 
 So in our above code, we can be certain that our result will be a list. You may be wondering what is `(~)`? It denotes an anonymous function, a function which is defined on a fly. so, `lm(mpg~wt)` denotes a linear regression being run with ‘mpg’ against `wt`. The (.) denotes the current data frame in that context. So what map has done is run 3 regression models and stored the respective results under `model` column. We can see what’s the first entry
 
-```{r}
+```{r,include=TRUE}
 model_nested$model[[1]]
 ```
 
 As we see, it's one of the models. We can get more info into it by running summary function.
 
-```{r}
+```{r,include=TRUE}
 summary(model_nested$model[[1]])
 ```
 
 But why do summary separately, if we know how to `Purrr`
 
-```{r}
+```{r,include=TRUE}
 model_nested_summarised<-model_nested |>  
   mutate(model_summary = map(.x = model, .f = ~summary(.) |>tidy()))
 
@@ -95,24 +95,24 @@ model_nested_summarised
 
 Again, here we can see `model_summary` is a list column which stores summaries of each model. The first entry should be the same as above result.
 
-```{r}
+```{r,include=TRUE}
 model_nested_summarised$model_summary[[1]]
 ```
 We can also get the summary for the first  group using the `pluck` function from purrr package.
 
-```{r}
+```{r,include=TRUE}
 model_nested_summarised |> pluck('model_summary',1)
 ```
 
 We can extract the necessary information from those list columns separately.
 
-```{r}
+```{r,include=TRUE}
 model_nested_summarised$model_summary[[1]][["r.squared"]]
 ```
 
 But lets go one step and get all `r.squared` values of each model and store them under separate column with the help of `Purrr`.
 
-```{r}
+```{r,include=TRUE}
 model_nested_summarised |>  
   mutate(rsqr = map_dbl(.x=model_summary,.f = ~.[["r.squared"]]))
 ```
@@ -121,7 +121,7 @@ Here we used map_dbl() as we want our result as Doubles not a list. Thus,we mana
 
 Now let’s try all of this using a package called `broom`. It presents all the result into a tidy format. I will compact all into one single block this time.
 
-```{r}
+```{r,include=TRUE}
 all_in_one<- mtcars |> 
   nest(-cyl) |> 
   mutate(model = map(.x = data, .f = ~lm(mpg~wt, data = .)),

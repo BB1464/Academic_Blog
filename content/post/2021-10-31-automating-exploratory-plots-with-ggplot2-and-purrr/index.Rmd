@@ -89,7 +89,7 @@ Since I'm going to make a bunch of plots that will all have the same basic form,
 
 ```{r,include=TRUE}
 scatter_fun = function(x, y) {
-  ggplot(dat, aes(x = .data[[x]], y = .data[[y]])) +
+  ggplot(data=dat, aes(x = .data[[x]], y = .data[[y]])) +
     geom_point() +
     geom_smooth(method = "loess",
                 se = FALSE,
@@ -101,26 +101,6 @@ scatter_fun = function(x, y) {
                 )
 }
 ```
-
-
-If using older versions of ggplot2 (and/or rlang), use the now deprecated aes_string() for working with strings.
-
-```{r,include=TRUE}
-scatter_fun = function(x, y) {
-  ggplot(dat, aes_string(x = x, y = y)) +
-    geom_point() +
-    geom_smooth(method = "loess",
-                se = FALSE,
-                color = "grey74") + theme(
-                  panel.grid.major = element_blank(),
-                  panel.grid.minor = element_blank(),
-                  panel.background = element_blank(),
-                  axis.line = element_line()
-                )
-}
-```
-
-
 ### Here's an example of the function output, passing in x and y as strings.
 
 ```{r,include=TRUE}
@@ -138,7 +118,7 @@ One way to make all the plots I want is to loop through each explanatory variabl
 I pass each explanatory variable to the first argument in scatter_fun() and I fix the second argument to "elev". I use the formula coding in map() and so refer to the element of the explanatory vector via .x within scatter_fun().
 
 ```{r,include=TRUE}
-elev_plots = map(expl, ~scatter_fun(.x, "elev") )
+elev_plots = map(.x = expl, .f = ~scatter_fun(x = .x, y = "elev") )
 ```
 
 
@@ -153,8 +133,8 @@ elev_plots
 For only a few response variables we could easily copy and paste the code above, changing the hard-coded response variable each time. This process can get burdensome if there are a lot of response variables, though. Using a nested loop is another option which involve looping through both vectors of variables to make all the plots at once. Because we want a plot for each combination of variables, this is a job for a nested loop. This means one map() loop will be nested inside another. I will refer to the first map() loop as the outer loop and the second one as the inner loop. I'm going to run through the response variables in the outer loop and the explanatory variables in the inner loop. That way I can graph all of the explanatory variables for each response variable before moving on to the next response variable. This puts the output, a nested list, in a logical order. A nested loop involves more complicated code. It took some effort for me to wrap my head around how to refer to the list element from the outer loop within the inner loop when using the map() formula coding with the tilde (~). I found the answers/comments to this question on Stack Overflow to be helpful. Since my scatter plot function is so simple I ended up using formula coding for the outer loop and the function as-is in the inner loop. The inner list elements are fed to the first argument of scatter_fun() by default, which works out great since the first argument is the x variable and the inner loop loops through the explanatory variables. The .x then refers to the outer list elements (the response variable names), and is passed to the y argument of the function in the inner loop.
 
 ```{r,include=TRUE}
-all_plots = map(response,
-                ~ map(expl, scatter_fun, y = .x))
+all_plots = map(.x = response,
+                  .f=~ map(.x = expl, .f = scatter_fun, y = .x))
 ```
 
 To be honest, I think it is fairly hard to follow what the above code is doing. And I've found it difficult to use such an approach if adding additional nested loops. At the end of the day, using anonymous functions involves more code but the results may be easier to understand. Well, as easy to follow as nested loops ever are. Here's the same plots using anonymous functions in each map() loop.
@@ -202,7 +182,7 @@ I can now use pmap() from purrr to loop through the rows of this tibble. I have 
 
 
 ```{r,include=TRUE}
-allplots2 = pmap(resp_expl, ~scatter_fun(x = .y, y = .x) )
+allplots2 = pmap(.l = resp_expl, .f = ~scatter_fun(x = .y, y = .x) )
 ```
 
 
