@@ -7,7 +7,7 @@ AlwaysSaveHistory: Default
 EnableCodeIndexing: Yes
 UseSpacesForTab: Yes
 NumSpacesForTab: 2
-Encoding: ISO8859-1
+Encoding: UTF-8
 
 RnwWeave: Sweave
 LaTeX: XeLaTeX
@@ -20,7 +20,3 @@ BuildType: Website
 MarkdownReferences: Document
 
 ZoteroLibraries: "My Library"
-
-PythonType: system
-PythonVersion: 3.8.3
-PythonPath: C:/Users/OLUWAFEMI/AppData/Local/Programs/Python/Python38-32/python.exe

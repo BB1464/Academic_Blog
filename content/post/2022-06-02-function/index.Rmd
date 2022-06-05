@@ -1,0 +1,31 @@
+---
+title: Functional Programming with Purrr
+author: Oluwafemi
+date: '2022-06-02'
+slug: function
+categories:
+  - Functional Programming
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2022-06-02T16:59:21+01:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+# Purrr
+In this post I’m going to show some cool feature of Purrr. Purrr is an R package for functional programming. I have always been fascinated by functional programming. I first heard about it while I was learning reading Hadley R for Data Science book. With this approach, not only it makes our code more succinct and clear, but more expressive. Without further ado lets dive straight in. For this exercise, I’m using ‘mtcars’ data set.
+
+# Lets load some libraries like tidyverse, tidytext.
+
+Suppose if we want to run regression model on 3 sets of data sets grouped by certain feature (cyl in our case), we need to regress data set separately.
+
+```{r}
+
+```
+
