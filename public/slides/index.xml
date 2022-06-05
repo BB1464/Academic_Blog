@@ -59,11 +59,9 @@ $$&lt;/p&gt;
 &lt;p&gt;Press &lt;code&gt;Space&lt;/code&gt; to play!&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;fragment &#34; &gt;
 One 
-&lt;/span&gt;
-&lt;span class=&#34;fragment &#34; &gt;
+&lt;/span&gt; &lt;span class=&#34;fragment &#34; &gt;
 &lt;strong&gt;Two&lt;/strong&gt; 
-&lt;/span&gt;
-&lt;span class=&#34;fragment &#34; &gt;
+&lt;/span&gt; &lt;span class=&#34;fragment &#34; &gt;
 Three 
 &lt;/span&gt;&lt;/p&gt;
 &lt;hr&gt;

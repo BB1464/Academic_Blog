@@ -1,12 +1,13 @@
 ---
 date: "2021-01-24"
-linkTitle: Data Science
+Title: Data Science
 summary: A 2-weeks workshop introducing the Tidyverse. In this workshop, you will learn how to read data with readr, readxl and haven, how to tidy and transform data with Tidyr, dplyr, lubridate and forcats, and how to produce high quality visualization with ggplot2. You will also learn how to build model with broom and tidymodel and then how to produce report with rmarkdown.
 title: "\U0001F4CA Learn Data Science using the Tidyverse"
-summary: An example of using the tidyverse to solve real world problem.
 title: "\U0001F4CA Data Management using the Tidyverse"
 type: book
 ---
+
+summary: An example of using the tidyverse to solve real world problem.
 
 {{< figure src="featured.jpg" >}}
 

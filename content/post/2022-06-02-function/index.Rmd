@@ -24,11 +24,10 @@ In this post I’m going to show some cool feature of Purrr. Purrr is an R packa
 
 Suppose if we want to run regression model on 3 sets of data sets grouped by certain feature (cyl in our case), we need to regress data set separately.
 
-```{r,echo=FALSE,warning=FALSE,message=FALSE,include=TRUE}
+```{r,include=TRUE}
 library(tidyverse)
 library(tidytext)
 library(broom)
-
 ```
 
 # Regression for dataset with cyl == 8
@@ -41,12 +40,11 @@ summary(lm(mpg~wt, data=cyl8))
 
 ```
 
-So we have to do like this for each cyl. One thing you might have noticed is that we have separate results. Imagine doing some analysis on bigger data set and having to keep track of each result separately. It would be a nightmare. You might say we can achieve by using loops but they have their own disadvantages. We can achieve this easily by use of Purrr. Another thing which is crucial is use of ‘tibble’. A tibble is similar to traditional data frame but much more efficient. I like mostly of the fact that it can store ‘list columns’. Let me show this.
+So we have to do like this for each `cyl`. One thing you might have noticed is that we have separate results. Imagine doing some analysis on bigger data set and having to keep track of each result separately. It would be a nightmare. You might say we can achieve by using loops but they have their own disadvantages. We can achieve this easily by use of Purrr. Another thing which is crucial is use of ‘tibble’. A tibble is similar to traditional data frame but much more efficient. I like mostly of the fact that it can store ‘list columns’. Let me show this.
 
 ```{r,include=TRUE}
 nested<-mtcars |> 
-  group_by(cyl) |> 
-  nest(cyl)
+  nest(-cyl)
 
 nested
 ```
@@ -88,7 +86,7 @@ But why do summary separately, if we know how to `Purrr`
 
 ```{r,include=TRUE}
 model_nested_summarised<-model_nested |>  
-  mutate(model_summary = map(.x = model, .f = ~summary(.) |>tidy()))
+  mutate(model_summary = map(.x = model, .f = ~summary(.)))
 
 model_nested_summarised
 ```
@@ -98,10 +96,9 @@ Again, here we can see `model_summary` is a list column which stores summaries o
 ```{r,include=TRUE}
 model_nested_summarised$model_summary[[1]]
 ```
-We can also get the summary for the first  group using the `pluck` function from purrr package.
-
+Again, here we can see ‘model_summary’ is a list column which stores summaries of each model. The first entry should be the same as above result.
 ```{r,include=TRUE}
-model_nested_summarised |> pluck('model_summary',1)
+model_nested_summarised$model_summary[[1]]
 ```
 
 We can extract the necessary information from those list columns separately.

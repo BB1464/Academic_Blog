@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>📊 Data Management using the Tidyverse | Oluwafemi</title>
+    <title>Data Science | Oluwafemi</title>
     <link>https://statisticalinference.netlify.app/courses/example/</link>
       <atom:link href="https://statisticalinference.netlify.app/courses/example/index.xml" rel="self" type="application/rss+xml" />
-    <description>📊 Data Management using the Tidyverse</description>
+    <description>Data Science</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 24 Jan 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://statisticalinference.netlify.app/courses/example/featured.jpg</url>
-      <title>📊 Data Management using the Tidyverse</title>
+      <title>Data Science</title>
       <link>https://statisticalinference.netlify.app/courses/example/</link>
     </image>
     

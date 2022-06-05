@@ -10,7 +10,6 @@ abstract: The study highlights the evaluation of saturated hydraulic characteris
 author_notes:
 - Equal contribution
 - Equal contribution
-authors:
 - admin
 doi: "https://doi.org/10.9734/arja/2020/v13i430111"
 authors: []
