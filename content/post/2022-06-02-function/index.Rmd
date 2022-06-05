@@ -72,7 +72,7 @@ Here, **mutate** is generic command to create a column called `model`. The meat 
 
 Purrr have a different variant of map function. We have map(), map_int(), map_dbl(), map_chr(), map_lgl(). As you may have guessed, each one returns certain kind of data like map_int() returns Integers, map_dbl() returns Doubles, map() always returns list.
 
-So in our above code, we can be certain that our result will be a list. You may be wondering what is (~)? It denotes an anonymous function, a function which is defined on a fly. so, lm(mpg~wt) denotes a linear regression being run with ‘mpg’ against `wt`. The (.) denotes the current data frame in that context. So what map has done is run 3 regression models and stored the respective results under `model` column. We can see what’s the first entry
+So in our above code, we can be certain that our result will be a list. You may be wondering what is `(~)`? It denotes an anonymous function, a function which is defined on a fly. so, `lm(mpg~wt)` denotes a linear regression being run with ‘mpg’ against `wt`. The (.) denotes the current data frame in that context. So what map has done is run 3 regression models and stored the respective results under `model` column. We can see what’s the first entry
 
 ```{r}
 model_nested$model[[1]]
@@ -124,7 +124,7 @@ Now let’s try all of this using a package called `broom`. It presents all the 
 ```{r}
 all_in_one<- mtcars |> 
   nest(-cyl) |> 
-  mutate(model = map(data, ~lm(mpg~wt, data = .)),
+  mutate(model = map(.x = data, .f = ~lm(mpg~wt, data = .)),
          tidied = map(model,glance)) |> 
   unnest(tidied)
 
