@@ -178,7 +178,7 @@ model_nested_summarised</code></pre>
 ## Residual standard error: 3.046 on 30 degrees of freedom
 ## Multiple R-squared:  0.7528, Adjusted R-squared:  0.7446 
 ## F-statistic: 91.38 on 1 and 30 DF,  p-value: 1.294e-10</code></pre>
-<p>We can also get the summary of the entire group</p>
+<p>We can also get the summary of the entire group using the <code>pluck</code> function from purrr package.</p>
 <pre class="r"><code>model_nested_summarised |&gt; pluck(&#39;model_summary&#39;)</code></pre>
 <pre><code>## [[1]]
 ## 

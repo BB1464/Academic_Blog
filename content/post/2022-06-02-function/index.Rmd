@@ -88,7 +88,7 @@ But why do summary separately, if we know how to `Purrr`
 
 ```{r}
 model_nested_summarised<-model_nested |>  
-  mutate(model_summary = map(.x = model, .f = ~summary(.)))
+  mutate(model_summary = map(.x = model, .f = ~summary(.) |>tidy()))
 
 model_nested_summarised
 ```
@@ -98,7 +98,7 @@ Again, here we can see `model_summary` is a list column which stores summaries o
 ```{r}
 model_nested_summarised$model_summary[[1]]
 ```
-We can also get the summary of the entire  group
+We can also get the summary of the entire  group using the `pluck` function from purrr package.
 
 ```{r}
 model_nested_summarised |> pluck('model_summary')
@@ -110,7 +110,7 @@ We can extract the necessary information from those list columns separately.
 model_nested_summarised$model_summary[[1]][["r.squared"]]
 ```
 
-But lets go one step and get all ‘r.squared’ values of each model and store them under separate column with the help of Purrr.
+But lets go one step and get all `r.squared` values of each model and store them under separate column with the help of `Purrr`.
 
 ```{r}
 model_nested_summarised |>  
@@ -119,7 +119,7 @@ model_nested_summarised |>
 
 Here we used map_dbl() as we want our result as Doubles not a list. Thus,we managed to get all the requested values under one data frame. This is neat.
 
-Now let’s try all of this using a package called ‘broom’. It presents all the result into a tidy format. I will compact all into one single block this time.
+Now let’s try all of this using a package called `broom`. It presents all the result into a tidy format. I will compact all into one single block this time.
 
 ```{r}
 all_in_one<- mtcars |> 
