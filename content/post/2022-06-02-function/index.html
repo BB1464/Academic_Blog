@@ -130,26 +130,6 @@ model_nested_summarised</code></pre>
 ## 1     6 &lt;tibble [7 × 10]&gt;  &lt;lm&gt;   &lt;smmry.lm&gt;   
 ## 2     4 &lt;tibble [11 × 10]&gt; &lt;lm&gt;   &lt;smmry.lm&gt;   
 ## 3     8 &lt;tibble [14 × 10]&gt; &lt;lm&gt;   &lt;smmry.lm&gt;</code></pre>
-<p>Again, here we can see <code>model_summary</code> is a list column which stores summaries of each model. The first entry should be the same as above result.</p>
-<pre class="r"><code>model_nested_summarised$model_summary[[1]]</code></pre>
-<pre><code>## 
-## Call:
-## lm(formula = mpg ~ wt, data = .)
-## 
-## Residuals:
-##       1       2       3       4       5       6       7 
-## -0.1250  0.5840  1.9292 -0.6897  0.3547 -1.0453 -1.0080 
-## 
-## Coefficients:
-##             Estimate Std. Error t value Pr(&gt;|t|)   
-## (Intercept)   28.409      4.184   6.789  0.00105 **
-## wt            -2.780      1.335  -2.083  0.09176 . 
-## ---
-## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
-## 
-## Residual standard error: 1.165 on 5 degrees of freedom
-## Multiple R-squared:  0.4645, Adjusted R-squared:  0.3574 
-## F-statistic: 4.337 on 1 and 5 DF,  p-value: 0.09176</code></pre>
 <p>Again, here we can see ‘model_summary’ is a list column which stores summaries of each model. The first entry should be the same as above result.</p>
 <pre class="r"><code>model_nested_summarised$model_summary[[1]]</code></pre>
 <pre><code>## 
@@ -182,7 +162,7 @@ model_nested_summarised</code></pre>
 ## 1     6 &lt;tibble [7 × 10]&gt;  &lt;lm&gt;   &lt;smmry.lm&gt;    0.465
 ## 2     4 &lt;tibble [11 × 10]&gt; &lt;lm&gt;   &lt;smmry.lm&gt;    0.509
 ## 3     8 &lt;tibble [14 × 10]&gt; &lt;lm&gt;   &lt;smmry.lm&gt;    0.423</code></pre>
-<p>Here we used map_dbl() as we want our result as Doubles not a list. Thus,we managed to get all the requested values under one data frame. This is neat.</p>
+<p>Here we used <code>map_dbl()</code> as we want our result as Doubles not a list. Thus,we managed to get all the requested values under one data frame. This is neat.</p>
 <p>Now let’s try all of this using a package called <code>broom</code>. It presents all the result into a tidy format. I will compact all into one single block this time.</p>
 <pre class="r"><code>all_in_one&lt;- mtcars |&gt; 
   nest(-cyl) |&gt; 
