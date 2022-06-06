@@ -22,7 +22,7 @@ projects: []
 ---
 
 
-When you have a lot of variables and need to make multiple exploratory plots it's usually worthwhile to automate the process in R instead of manually copying and pasting code for every plot, this thing happen to me a lot but when I read Hadley Wickham Advance on functional programming, I knew that what I was doing was wrong. However, the coding approach needed to automate plots can look pretty daunting to a beginner R user. It can look so daunting, in fact, that it can appear easier to manually make the plots (like in Excel) rather than using R at all.
+When you have a lot of variables and need to make multiple exploratory plots it's usually worthwhile to automate the process in R instead of manually copying and pasting code for every plot, this thing happen to me a lot but when I read Hadley Wickham `Advance R` on `functional programming`, I knew that what I was doing was wrong. However, the coding approach needed to automate plots can look pretty daunting to a beginner R user. It can look so daunting, in fact, that it can appear easier to manually make the plots (like in Excel) rather than using R at all.
 
 Unfortunately making plots manually can backfire. The efficiency of using a software program you already know is quickly out-weighed by being unable to easily reproduce the plots when needed. I know I invariably have to re-make even exploratory plots, and it'd be a bummer if I had to remake them all manually rather than re-running some code.
 
@@ -40,7 +40,7 @@ library(cowplot)
 ```
 
 
-I'll be plotting with ggplot2 and looping with purrr package. I'll also be using package cowplot later to combine individual plots into one, but will use the package functions via my name space cowplot:: instead of loading the package.
+I'll be plotting with ggplot2 and looping with purrr package. I'll also be using package `cowplot` later to combine individual plots into one, but will use the package functions via my name space `cowplot::` instead of loading the package.
 
 
 ### The set-up
@@ -85,7 +85,7 @@ expl
 
 ### Create a plotting function
 
-Since I'm going to make a bunch of plots that will all have the same basic form, I will make a plotting function. I am going to make a function where only the x and y variables can vary (so are arguments to the function). Since I'm making a function to plot variables from a single data set I'm going to hard-code the data set into the function. If you have multiple data sets or you are making a function for use across projects you'll probably want to add the data set as a function argument. My functions inputs are based on the variable names, so I need to pass strings into the ggplot2 functions. Strings cannot be used directly in aes(), but can be used with the .data pronoun. I'm making pretty basic graphs since these are exploratory plots, not publication-ready plots. I will make a scatterplot and add locally weighted regression (loess) lines via geom_smooth(). I use such lines with great caution, as it can be easy to get too attached any pattern the loess line shows.
+Since I'm going to make a bunch of plots that will all have the same basic form, I will make a plotting function. I am going to make a function where only the x and y variables can vary (so are arguments to the function). Since I'm making a function to plot variables from a single data set I'm going to hard-code the data set into the function. If you have multiple data sets or you are making a function for use across projects you'll probably want to add the data set as a function argument. My functions inputs are based on the variable names, so I need to pass strings into the ggplot2 functions. Strings cannot be used directly in `aes()`, but can be used with the .data pronoun. I'm making pretty basic graphs since these are exploratory plots, not publication-ready plots. I will make a `scatter plot` and add locally weighted regression `(loess)` lines via `geom_smooth()`. I use such lines with great caution, as it can be easy to get too attached any pattern the `loess` line shows.
 
 ```{r,include=TRUE}
 
@@ -131,7 +131,7 @@ elev_plots
 
 ### Looping through both vectors
 
-For only a few response variables we could easily copy and paste the code above, changing the hard-coded response variable each time. This process can get burdensome if there are a lot of response variables, though. Using a nested loop is another option which involve looping through both vectors of variables to make all the plots at once. Because we want a plot for each combination of variables, this is a job for a nested loop. This means one map() loop will be nested inside another. I will refer to the first map() loop as the outer loop and the second one as the inner loop. I'm going to run through the response variables in the outer loop and the explanatory variables in the inner loop. That way I can graph all of the explanatory variables for each response variable before moving on to the next response variable. This puts the output, a nested list, in a logical order. A nested loop involves more complicated code. It took some effort for me to wrap my head around how to refer to the list element from the outer loop within the inner loop when using the map() formula coding with the tilde (~). I found the answers/comments to this question on Stack Overflow to be helpful. Since my scatter plot function is so simple I ended up using formula coding for the outer loop and the function as-is in the inner loop. The inner list elements are fed to the first argument of scatter_fun() by default, which works out great since the first argument is the x variable and the inner loop loops through the explanatory variables. The .x then refers to the outer list elements (the response variable names), and is passed to the y argument of the function in the inner loop.
+For only a few response variables we could easily copy and paste the code above, changing the hard-coded response variable each time. This process can get burdensome if there are a lot of response variables, though. Using a `nested loop` is another option which involve looping through both vectors of variables to make all the plots at once. Because we want a plot for each combination of variables, this is a job for a nested loop. This means `one map() loop` will be `nested inside another`. `I will refer to the first map() loop as the outer loop` and `the second one as the inner loop`. I'm going to run through the response variables in the outer loop and the explanatory variables in the inner loop. That way I can graph all of the explanatory variables for each response variable before moving on to the next response variable. `This puts the output, a nested list`, in a logical order. `A nested loop involves more complicated code`. It took some effort for me to wrap my head around how to refer to the list element from the outer loop within the inner loop when using the map() formula coding with the tilde `(~)`. I found the answers/comments to this question on Stack Overflow to be helpful. Since my scatter plot function is so simple I ended up using formula coding for the outer loop and the function as in the inner loop. The inner list elements are fed to the first argument of scatter_fun() by default, which works out great since the first argument is the x variable and the inner loop loops through the explanatory variables. The .x then refers to the outer list elements (the response variable names), and is passed to the y argument of the function in the inner loop.
 
 ```{r,include=TRUE}
 all_plots = map(.x = response,
@@ -150,7 +150,7 @@ all_plots2 = map(response, function(resp) {
 ```
 
 
-The output is a list of lists. Each sublist contains all the plots for a single response variable. Because I set the names for both vectors of variable names, the inner and outer lists both have names. These names can be used to pull out individual plots. For example, if I want to see all the plots for the grad response variable I can print that sublist by name. (I'm going to display only two of four grad plots here to save space.)
+The output is a list of lists. Each sub-list contains all the plots for a single response variable. Because I set the names for both vectors of variable names, the inner and outer lists both have names. These names can be used to pull out individual plots. For example, if I want to see all the plots for the grad response variable I can print that sub-list by name. (I'm going to display only two of four grad plots here to save space.)
 
 ```{r,include=TRUE}
 all_plots$grad[1:2]
@@ -170,16 +170,16 @@ all_plots[[3]][[3]]
 
 ### Combining variables for a single loop
 
-Since nested loops can be complicated, another option is to create all combinations of the two input vectors and then loop through those in a single loop. This can be done, for example, using tidyr::expand_grid(). The main thing I like about tidyr::expand_grid() over expand.grid() from base R is the order of the output. Both put the results into a data set (data.frame or tibble). Here's how that would look, putting the response variables first to match the output order above. I'm using tidyr version 1.1.4 here.
+Since nested loops can be complicated, another option is to create all combinations of the two input vectors and then loop through the vectors in a single loop. This can be done, for example, using `tidyr::expand_grid()`. The main thing I like about `tidyr::expand_grid()` over `expand.grid()` from base R is the order of the output. Both put the results into a data set (data.frame or tibble). Here's how that would look, putting the response variables first to match the output order above. I'm using `tidyr version 1.1.4` here.
 
 
 ```{r,include=TRUE}
-resp_expl = tidyr::expand_grid(expl,response)
+resp_expl <-  tidyr::expand_grid(expl,response)
 resp_expl
 ```
 
 
-I can now use pmap() from purrr to loop through the rows of this tibble. I have to be careful with my argument order, though, since I have the y variable first in the tibble but it is the second argument in my function.
+I can now use `pmap()` from purrr to loop through the rows of this tibble. I have to be careful with my argument order, though, since I have the y variable first in the tibble but it is the second argument in my function.
 
 
 ```{r,include=TRUE}
@@ -187,7 +187,7 @@ allplots2 = pmap(.l = resp_expl, .f = ~scatter_fun(x = .x, y = .y) )
 ```
 
 
-I'm not going to print them here, but one minor downside of this approach is that only the first variable name is carried along to the output list. If I wanted to save these plots separately and use both the response and explanatory variable in the file name I'd need to create the file names based on resp_expl. I won't show this in the next section on saving plots, so here is a quick example of creating basic file names based on both variables.
+I'm not going to print them here, but one minor downside of this approach is that only the first variable name is carried along to the output list. If I wanted to save these plots separately and use both the response and explanatory variable in the file name I'd need to create the file names based on `resp_expl`. I won't show this in the next section on saving plots, so here is a quick example of creating basic file names based on both variables.
 
 
 ```{r,include=TRUE}
@@ -219,7 +219,7 @@ dev.off()
 
 ### Saving groups of plots together
 
-Another option is to save each group of plots in a separate document. This might make sense in a case like this where there are a set of plots for each response variable and we might want a separate file for each set. To save each sub-list separately we'll need to loop through all_plots and save the plots for each response variable into a separate file. The list names can be used in the file names to keep the output organized. The functions in purrr that start with i are special functions that loop through a list and the names of that list simultaneously. This is useful here where we want to use the list names to identify the output files while we save them. The walk() function is part of the map family, to be used when you want a function for its side effect instead of for a return value. Saving plots is a classic example of when we want walk() instead of map(). Combining the i and the walk gives us the iwalk() function. In the formula interface, .x refers to the list elements and .y refers to the names of the list. You can see I create the plot file names using the list name combined with "scatter plots.pdf", using _ as the separator. The code below makes three files, one for each response variable, with four plots each. The files are named "elev_scatter plots.pdf", "resp_scatter plots.pdf", and "grad_scatter plots.pdf".
+Another option is to save each group of plots in a separate document. This might make sense in a case like this where there are a set of plots for each response variable and we might want a separate file for each set. To save each sub-list separately we'll need to loop through all_plots and save the plots for each response variable into a separate file. The list names can be used in the file names to keep the output organized. The functions in purrr that start with i are special functions that loop through a list and the names of that list simultaneously. This is useful here where we want to use the list names to identify the output files while we save them. The `walk()` function is part of the map family, to be used when you want a function for its side effect instead of for a return value. Saving plots is a classic example of when we want `walk()` instead of `map()`. Combining the i and the walk gives us the `iwalk()` function. In the formula interface, .x refers to the list elements and .y refers to the names of the list. You can see I create the plot file names using the list name combined with "scatter plots.pdf", using _ as the separator. The code below makes three files, one for each response variable, with four plots each. The files are named "elev_scatter plots.pdf", "resp_scatter plots.pdf", and "grad_scatter plots.pdf".
 
 
 ```{r,include=TRUE}
@@ -233,7 +233,7 @@ iwalk(all_plots, ~ {
 
 ### Saving all plots separately
 
-All plots can be saved separately instead of combined in a single document. This might be necessary if you want to insert the plots into some larger document later. We'll want to use the names of both the outer and inner lists to appropriately identify each plot we save. I decided to do this by looping through the all_plots list and the names of the list via imap() to make the file names in a separate step. This time I'm going to save these as PNG files so use .png at the end of the file name. The result is a list of lists, so I flatten this into a single list via flatten(). If I were to use flatten() earlier in the process I'd lose the names of the outer list. This process of combining names prior to flattening should be simplified once the proposed flatten_names() function is added to purrr.
+All plots can be saved separately instead of combined in a single document. This might be necessary if you want to insert the plots into some larger document later. We'll want to use the names of both the outer and inner lists to appropriately identify each plot we save. I decided to do this by looping through the all_plots list and the names of the list via `imap()` to make the file names in a separate step. This time I'm going to save these as PNG files so use .png at the end of the file name. The result is a list of lists, so I flatten this into a single list via flatten(). If I were to use flatten() earlier in the process I'd lose the names of the outer list. This process of combining names prior to flattening should be simplified once the proposed flatten_names() function is added to purrr.
 
 
 ```{r,include=TRUE}
