@@ -43,9 +43,7 @@ experience:
         Responsibilities include: To better understand the links between cocoa production, biodiversity and ecosystem services of cocoa systems, and how this is influenced by farmers values and biophysical or socio-economic factors.
         
         * To asess biodiversity in CocoaSoils Satellite Trial Sites in Nigeria.
-        
         * Quantify carbon stocks in these same systems
-        
         * Assess other ecosystem services of cocoa farms as perceived by cocoa farmers (advantages and disadvantages) (economic and non-economic) according to farmers.
         
 
