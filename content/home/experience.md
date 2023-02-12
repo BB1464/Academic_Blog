@@ -32,7 +32,7 @@ experience:
     description: |2-
         Responsibilities include: I conducted research work on the contribution of cocoa litter to nutrients recycling in low-shade Southwestern Nigeria.
 
-- title: Research Assistant
+  - title: Research Assistant
     company: Cocoa Soils Project: International Institute of Tropical Agriculture (IITA)
     company_url: ''
     # company_logo: org-gc
@@ -46,7 +46,7 @@ experience:
         * Assess other ecosystem services of cocoa farms as perceived by cocoa farmers (advantages and disadvantages) (economic and non-economic) according to farmers.
         
 
-- title: Data Analyst
+  - title: Data Analyst
     company: University of Ibadan
     company_url: ''
     # company_logo: org-gc
