@@ -1,4 +1,3 @@
----
 # An instance of the Experience widget.
 # Documentation: https://wowchemy.com/docs/page-builder/
 widget: experience
@@ -47,4 +46,4 @@ experience:
     
 design:
   columns: '2'
----
+
