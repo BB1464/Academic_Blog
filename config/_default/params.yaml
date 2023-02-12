@@ -5,6 +5,7 @@
 
 # Appearance
 #theme: ocean, forest, minimal
+---
 theme: ocean
 day_night: true
 font: ''
@@ -161,3 +162,4 @@ cms:
 icon:
   pack:
     ai: false
+---
